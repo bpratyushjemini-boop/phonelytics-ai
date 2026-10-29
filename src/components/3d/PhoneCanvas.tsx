@@ -2,8 +2,9 @@
 
 import React, { useState, useEffect, useRef, Suspense } from "react";
 import { Canvas } from "@react-three/fiber";
+import { Environment, Lightformer, ContactShadows } from "@react-three/drei";
 import { InteractivePhone } from "./InteractivePhone";
-import { Sparkles, Eye, RotateCw, ShieldCheck, Activity } from "lucide-react";
+import { RotateCw, ShieldCheck } from "lucide-react";
 
 interface PhoneCanvasProps {
   deviceModel?: string;
@@ -12,7 +13,7 @@ interface PhoneCanvasProps {
   accentColor?: string;
 }
 
-// Fallback high-fidelity CSS 3D phone representation when WebGL is unavailable or loading
+// Fallback high-fidelity CSS 3D phone representation when WebGL is unavailable or during SSR
 export function PhoneFallback({
   deviceModel = "iPhone 15 Pro",
   priceText = "₹89,400",
@@ -23,86 +24,81 @@ export function PhoneFallback({
   tradeinText?: string;
 }) {
   return (
-    <div className="phone-viewport relative w-[310px] sm:w-[340px] h-[520px] sm:h-[560px] flex items-center justify-center">
-      <div className="absolute inset-0 bg-brand-orange/10 blur-2xl rounded-full scale-90 pointer-events-none" />
-      <div className="phone-3d-model animate-phone-float relative w-[260px] sm:w-[280px] h-[500px] sm:h-[530px] rounded-[48px] p-3 bg-gradient-to-b from-[#2B2B2B] via-[#1E1E1E] to-[#141414] shadow-2xl border-2 border-brand-orange/40">
-        <div className="w-full h-full rounded-[40px] bg-charcoal-950 border border-charcoal-600/80 p-3.5 relative overflow-hidden flex flex-col justify-between">
-          <div className="relative z-10 flex items-center justify-between px-2 pt-1">
-            <span className="text-[10px] font-semibold text-brand-grey tracking-wider">9:41</span>
-            <div className="w-20 h-4 bg-charcoal-900 rounded-full border border-charcoal-700/80 flex items-center justify-center gap-1.5">
-              <div className="w-1.5 h-1.5 rounded-full bg-charcoal-950" />
-              <div className="w-1.5 h-1.5 rounded-full bg-brand-orange/60" />
+    <div className="relative w-full max-w-[340px] sm:max-w-[390px] h-[520px] sm:h-[560px] flex items-center justify-center select-none">
+      <div className="absolute inset-0 bg-brand-orange/8 blur-3xl rounded-full scale-90 pointer-events-none" />
+
+      {/* Modern Slim Phone Chassis */}
+      <div className="relative w-[250px] sm:w-[270px] h-[490px] sm:h-[520px] rounded-[42px] p-2.5 bg-gradient-to-b from-[#323236] via-[#242428] to-[#18181A] shadow-2xl border-2 border-brand-orange/30">
+        <div className="w-full h-full rounded-[34px] bg-[#0C0C0D] border border-charcoal-700/80 p-3.5 relative overflow-hidden flex flex-col justify-between">
+          {/* Status Bar */}
+          <div className="relative z-10 flex items-center justify-between px-2 pt-0.5">
+            <span className="text-[11px] font-bold text-brand-ivory tracking-wider">09:41</span>
+            <div className="w-20 h-4 bg-black rounded-full border border-charcoal-800 flex items-center justify-center gap-1.5">
+              <div className="w-1.5 h-1.5 rounded-full bg-charcoal-900" />
+              <div className="w-1.5 h-1.5 rounded-full bg-brand-orange/70" />
             </div>
-            <div className="flex items-center gap-1">
-              <div className="w-2.5 h-2 bg-brand-grey rounded-[1px]" />
-              <div className="w-1.5 h-2 bg-brand-orange rounded-[1px]" />
+            <div className="flex items-center gap-1.5 text-[10px] font-semibold text-brand-ivory">
+              <span>5G</span>
+              <div className="w-3.5 h-2 border border-brand-ivory rounded-sm flex items-center p-0.5">
+                <div className="w-2 h-1 bg-brand-orange rounded-[0.5px]" />
+              </div>
             </div>
           </div>
 
-          <div className="absolute inset-0 bg-gradient-to-tr from-transparent via-white/[0.03] to-white/[0.08] pointer-events-none rounded-[40px]" />
-
-          <div className="relative z-10 space-y-3.5 my-auto px-1">
-            <div className="flex items-center justify-between pb-2 border-b border-charcoal-600">
+          {/* Screen Content: Live Valuation Preview */}
+          <div className="relative z-10 space-y-3 my-auto px-1">
+            <div className="flex items-center justify-between pb-1.5 border-b border-charcoal-800">
               <div>
-                <div className="text-[11px] font-semibold text-brand-beige uppercase tracking-wider">Market Analysis</div>
+                <div className="text-[10px] font-bold text-brand-beige uppercase tracking-wider">AI Valuation</div>
                 <div className="text-sm font-bold text-brand-ivory">{deviceModel}</div>
               </div>
-              <div className="px-2 py-0.5 rounded bg-charcoal-700 text-[10px] font-medium text-brand-grey border border-charcoal-600">
+              <div className="px-2 py-0.5 rounded bg-charcoal-800 text-[10px] font-medium text-brand-grey border border-charcoal-700">
                 256 GB
               </div>
             </div>
 
-            <div className="p-3.5 rounded-xl bg-charcoal-800/90 border border-charcoal-600 space-y-2">
-              <div className="flex items-center justify-between text-xs">
-                <span className="text-brand-grey">Fair Peer-to-Peer</span>
-                <span className="text-[10px] font-medium text-brand-beige">Est. Resale</span>
+            {/* Valuation Card */}
+            <div className="p-3.5 rounded-xl bg-charcoal-900/90 border border-brand-orange/40 space-y-1.5">
+              <div className="flex items-center justify-between text-[11px]">
+                <span className="text-brand-grey">Estimated Peer Resale</span>
+                <span className="text-[9px] font-semibold px-1.5 py-0.5 rounded bg-brand-beige/10 text-brand-beige border border-brand-beige/30">
+                  R² 0.988
+                </span>
               </div>
-              <div className="text-2xl font-bold tracking-tight text-brand-orange">{priceText}</div>
-              <div className="flex items-center justify-between text-[11px] pt-1 border-t border-charcoal-700/80 text-brand-grey">
+              <div className="text-2xl font-extrabold tracking-tight text-brand-orange">{priceText}</div>
+              <div className="flex items-center justify-between text-[10px] pt-1 border-t border-charcoal-800 text-brand-grey">
                 <span>Original: ₹1,34,900</span>
                 <span className="text-brand-beige font-semibold">-33.7%</span>
               </div>
             </div>
 
-            <div className="p-2.5 rounded-lg bg-charcoal-900 border border-charcoal-700 flex items-center justify-between text-xs">
+            {/* Instant Trade-in Quote */}
+            <div className="p-2.5 rounded-lg bg-charcoal-900/70 border border-charcoal-700 flex items-center justify-between text-xs">
               <div className="flex items-center gap-1.5">
                 <ShieldCheck className="w-3.5 h-3.5 text-brand-beige" />
-                <span className="text-brand-ivory text-[11px]">Cashify Trade-in</span>
+                <span className="text-brand-ivory text-[11px]">Cashify Buyback</span>
               </div>
-              <span className="font-semibold text-brand-ivory text-[12px]">{tradeinText}</span>
+              <span className="font-bold text-brand-ivory text-[12px]">{tradeinText}</span>
             </div>
 
+            {/* Diagnostic Metrics */}
             <div className="grid grid-cols-2 gap-2 text-[10px]">
-              <div className="p-2 rounded bg-charcoal-800 border border-charcoal-700">
-                <div className="text-brand-grey">Condition</div>
-                <div className="font-semibold text-brand-ivory mt-0.5">Like New (1.0x)</div>
-              </div>
-              <div className="p-2 rounded bg-charcoal-800 border border-charcoal-700">
+              <div className="p-2 rounded bg-charcoal-900 border border-charcoal-800">
                 <div className="text-brand-grey">Battery Health</div>
                 <div className="font-semibold text-brand-ivory mt-0.5">93% (Healthy)</div>
+              </div>
+              <div className="p-2 rounded bg-charcoal-900 border border-charcoal-800">
+                <div className="text-brand-grey">Condition</div>
+                <div className="font-semibold text-brand-ivory mt-0.5">Like New (1.0x)</div>
               </div>
             </div>
           </div>
 
-          <div className="relative z-10 w-24 h-1 bg-charcoal-500 rounded-full mx-auto mb-1" />
+          {/* Home Indicator */}
+          <div className="relative z-10 w-24 h-1 bg-charcoal-600 rounded-full mx-auto mb-1" />
         </div>
       </div>
     </div>
-  );
-}
-
-// Procedural contact shadow disc rendered in 3D scene
-function StudioShadowPlane() {
-  return (
-    <mesh position={[0, -3.1, 0]} rotation={[-Math.PI / 2, 0, 0]} receiveShadow>
-      <circleGeometry args={[2.5, 32]} />
-      <meshBasicMaterial
-        color="#000000"
-        transparent
-        opacity={0.35}
-        depthWrite={false}
-      />
-    </mesh>
   );
 }
 
@@ -131,7 +127,7 @@ export default function PhoneCanvas({
     }
   }, []);
 
-  // If WebGL is verified as unsupported, render the CSS fallback directly
+  // Gracefully fallback to high-fidelity CSS component if WebGL is unavailable
   if (webGLSupported === false) {
     return <PhoneFallback deviceModel={deviceModel} priceText={priceText} tradeinText={tradeinText} />;
   }
@@ -139,19 +135,19 @@ export default function PhoneCanvas({
   return (
     <div
       ref={containerRef}
-      className="relative w-full max-w-[340px] sm:max-w-[380px] h-[520px] sm:h-[580px] flex flex-col items-center justify-center select-none"
+      className="relative w-full max-w-[360px] sm:max-w-[420px] h-[520px] sm:h-[580px] flex flex-col items-center justify-center select-none"
       onPointerDown={() => setHasInteracted(true)}
     >
-      {/* Burnt-Orange Ambient Glow Behind 3D Phone */}
-      <div className="absolute inset-0 bg-brand-orange/10 blur-[100px] rounded-full scale-90 pointer-events-none" />
+      {/* Subtle Studio Ambient Background Halo (#F28C45 / #E0C58F) */}
+      <div className="absolute inset-0 bg-brand-orange/8 blur-[110px] rounded-full scale-90 pointer-events-none" />
 
-      {/* R3F 3D Canvas */}
+      {/* Three.js / React Three Fiber Canvas */}
       <div className="w-full h-full relative cursor-grab active:cursor-grabbing">
         <Suspense fallback={<PhoneFallback deviceModel={deviceModel} priceText={priceText} tradeinText={tradeinText} />}>
           <Canvas
             shadows
             dpr={[1, 2]}
-            camera={{ position: [0, 0, 8.8], fov: 42 }}
+            camera={{ position: [0, 0, 7.6], fov: 40 }}
             gl={{
               antialias: true,
               alpha: true,
@@ -159,14 +155,22 @@ export default function PhoneCanvas({
             }}
             style={{ width: "100%", height: "100%" }}
           >
-            {/* 1. Cinematic Studio Lighting */}
-            {/* Ambient fill */}
-            <ambientLight intensity={1.1} color="#1c1c1c" />
+            {/* 1. Offline Cinematic Studio Environment with Metallic Lightformers */}
+            <Environment resolution={256}>
+              <group rotation={[-Math.PI / 3, 0, 1]}>
+                <Lightformer form="rect" intensity={3.0} position={[0, 4, -8]} scale={[12, 12, 1]} color="#FAF7F2" />
+                <Lightformer form="ring" intensity={2.2} position={[-5, 2, -1]} scale={[16, 3, 1]} color="#F28C45" />
+                <Lightformer form="rect" intensity={1.8} position={[8, 1, 0]} scale={[16, 4, 1]} color="#E0C58F" />
+              </group>
+            </Environment>
 
-            {/* Studio Key Light (Top-Right Warm Ivory) */}
+            {/* 2. Studio Lighting */}
+            <ambientLight intensity={1.2} color="#18181A" />
+
+            {/* Key Light: Top-Right Warm Ivory */}
             <directionalLight
-              position={[4, 6, 5]}
-              intensity={2.8}
+              position={[4.5, 6.0, 5.0]}
+              intensity={3.2}
               color="#FAF7F2"
               castShadow
               shadow-mapSize-width={1024}
@@ -174,41 +178,39 @@ export default function PhoneCanvas({
               shadow-bias={-0.0001}
             />
 
-            {/* Studio Fill Light (Left Slate/Charcoal) */}
+            {/* Fill Light: Left Slate Charcoal */}
             <directionalLight
-              position={[-5, -2, 3]}
-              intensity={1.0}
-              color="#2a303a"
+              position={[-5.0, -1.5, 3.5]}
+              intensity={1.2}
+              color="#2A2E38"
             />
 
             {/* Signature Burnt-Orange Rim Light (Rear-Left Edge Glint) */}
             <directionalLight
-              position={[-4, 2.5, -4]}
-              intensity={5.2}
+              position={[-4.0, 2.5, -4.5]}
+              intensity={6.0}
               color="#F28C45"
             />
 
             {/* Secondary Warm Edge Accent (Bottom-Right Muted Gold) */}
             <pointLight
-              position={[3.5, -2.5, -2.5]}
-              intensity={2.2}
+              position={[3.5, -2.5, -3.0]}
+              intensity={2.8}
               color="#E0C58F"
-              distance={10}
+              distance={12}
             />
 
-            {/* Top Down Hair Light */}
-            <spotLight
-              position={[0, 8, 0]}
-              intensity={1.5}
-              angle={0.6}
-              penumbra={0.8}
-              color="#F5F0E9"
+            {/* Realistic Floor Contact Shadow */}
+            <ContactShadows
+              position={[0, -2.55, 0]}
+              opacity={0.65}
+              scale={8.5}
+              blur={2.4}
+              far={3.5}
+              color="#000000"
             />
 
-            {/* Realistic Contact Shadow Disc */}
-            <StudioShadowPlane />
-
-            {/* 2. Interactive Realistic Smartphone Mesh */}
+            {/* 3. Realistic Flagship Interactive Smartphone */}
             <InteractivePhone
               deviceModel={deviceModel}
               priceText={priceText}
@@ -220,20 +222,20 @@ export default function PhoneCanvas({
         </Suspense>
       </div>
 
-      {/* 3. PeachWeb-style Interactive Mode Switcher Bar */}
-      <div className="absolute top-2 right-2 sm:right-4 z-20 flex items-center gap-1.5 p-1 rounded-lg bg-charcoal-800/90 border border-charcoal-600/80 backdrop-blur-md text-[11px] font-medium text-brand-grey shadow-lg">
+      {/* 4. PeachWeb-style View Switcher Tabs (Hero / Display / Optics) */}
+      <div className="absolute top-2 right-2 sm:right-3 z-20 flex items-center gap-1 p-1 rounded-lg bg-charcoal-900/90 border border-charcoal-700/80 backdrop-blur-md text-[11px] font-medium text-brand-grey shadow-xl">
         <button
           type="button"
           onClick={() => {
             setViewMode("hero");
             setHasInteracted(true);
           }}
-          className={`px-2.5 py-1 rounded transition-colors ${
+          className={`px-3 py-1 rounded transition-all duration-150 cursor-pointer ${
             viewMode === "hero"
-              ? "bg-brand-orange text-charcoal-950 font-semibold"
-              : "hover:text-brand-ivory hover:bg-charcoal-700/60"
+              ? "bg-brand-orange text-charcoal-950 font-bold shadow-sm"
+              : "hover:text-brand-ivory hover:bg-charcoal-800"
           }`}
-          title="Hero Isometric View"
+          title="Hero 3/4 Isometric Perspective"
         >
           Hero
         </button>
@@ -243,12 +245,12 @@ export default function PhoneCanvas({
             setViewMode("front");
             setHasInteracted(true);
           }}
-          className={`px-2.5 py-1 rounded transition-colors ${
+          className={`px-3 py-1 rounded transition-all duration-150 cursor-pointer ${
             viewMode === "front"
-              ? "bg-brand-orange text-charcoal-950 font-semibold"
-              : "hover:text-brand-ivory hover:bg-charcoal-700/60"
+              ? "bg-brand-orange text-charcoal-950 font-bold shadow-sm"
+              : "hover:text-brand-ivory hover:bg-charcoal-800"
           }`}
-          title="Front Display View"
+          title="Front Valuation Display"
         >
           Display
         </button>
@@ -258,40 +260,26 @@ export default function PhoneCanvas({
             setViewMode("back");
             setHasInteracted(true);
           }}
-          className={`px-2.5 py-1 rounded transition-colors ${
+          className={`px-3 py-1 rounded transition-all duration-150 cursor-pointer ${
             viewMode === "back"
-              ? "bg-brand-orange text-charcoal-950 font-semibold"
-              : "hover:text-brand-ivory hover:bg-charcoal-700/60"
+              ? "bg-brand-orange text-charcoal-950 font-bold shadow-sm"
+              : "hover:text-brand-ivory hover:bg-charcoal-800"
           }`}
-          title="Rear Optics & Chassis"
+          title="Rear Camera Optics & Titanium Band"
         >
           Optics
         </button>
       </div>
 
-      {/* 4. Natural Interaction Cue Banner (fades out after first interaction) */}
+      {/* 5. Natural Drag Hint (Fades out immediately once user interacts) */}
       {!hasInteracted && (
-        <div className="absolute bottom-16 z-20 pointer-events-none transition-opacity duration-500 animate-pulse">
-          <div className="flex items-center gap-2 px-3 py-1.5 rounded-full bg-charcoal-900/95 border border-brand-orange/40 text-[11px] text-brand-beige backdrop-blur-md shadow-xl">
-            <RotateCw className="w-3 h-3 text-brand-orange animate-spin" style={{ animationDuration: "8s" }} />
+        <div className="absolute bottom-6 z-20 pointer-events-none transition-opacity duration-300">
+          <div className="flex items-center gap-2 px-3 py-1.5 rounded-full bg-charcoal-900/90 border border-charcoal-700 text-[11px] text-brand-beige backdrop-blur-md shadow-lg">
+            <RotateCw className="w-3 h-3 text-brand-orange animate-spin" style={{ animationDuration: "9s" }} />
             <span>Drag to rotate • Move cursor for parallax</span>
           </div>
         </div>
       )}
-
-      {/* 5. Editorial Badge in Bottom-Left */}
-      <div className="absolute -bottom-4 -left-3 sm:-left-6 p-3 rounded-xl bg-charcoal-800/95 border border-charcoal-500/80 shadow-2xl backdrop-blur-md flex items-center gap-3 z-20 pointer-events-auto">
-        <div className="w-8 h-8 rounded-lg bg-brand-orange/20 border border-brand-orange/40 flex items-center justify-center">
-          <Activity className="w-4 h-4 text-brand-orange" />
-        </div>
-        <div className="text-left">
-          <div className="text-[11px] font-semibold text-brand-ivory flex items-center gap-1.5">
-            <span>Interactive 3D Engine</span>
-            <span className="w-1.5 h-1.5 rounded-full bg-brand-orange" />
-          </div>
-          <div className="text-[10px] text-brand-grey">Physically based studio rendering</div>
-        </div>
-      </div>
     </div>
   );
 }

@@ -9,9 +9,8 @@ interface InteractivePhoneProps {
   deviceModel?: string;
   priceText?: string;
   tradeinText?: string;
-  accentColor?: string; // e.g. #F28C45
+  accentColor?: string;
   viewMode?: "hero" | "front" | "back";
-  onInspectChange?: (mode: "hero" | "front" | "back") => void;
 }
 
 export function InteractivePhone({
@@ -27,6 +26,7 @@ export function InteractivePhone({
   const isDraggingRef = useRef(false);
   const dragStartRef = useRef({ x: 0, y: 0, rotX: 0, rotY: 0 });
   const manualRotRef = useRef({ x: 0, y: 0 });
+  const entranceProgressRef = useRef(0);
   const [reducedMotion, setReducedMotion] = useState(false);
 
   // Check reduced motion preference
@@ -40,14 +40,14 @@ export function InteractivePhone({
     }
   }, []);
 
-  // Track window scroll for PeachWeb-style coordinated choreography
+  // Track window scroll for coordinated camera & phone transition into valuation section
   useEffect(() => {
     if (typeof window === "undefined") return;
 
     const handleScroll = () => {
       const scrollY = window.scrollY;
-      const heroHeight = window.innerHeight * 0.9;
-      const progress = Math.min(1.5, Math.max(0, scrollY / heroHeight));
+      const heroHeight = window.innerHeight * 0.85;
+      const progress = Math.min(1.4, Math.max(0, scrollY / heroHeight));
       scrollRef.current = progress;
     };
 
@@ -55,25 +55,23 @@ export function InteractivePhone({
     return () => window.removeEventListener("scroll", handleScroll);
   }, []);
 
-  // Track pointer movements
+  // Pointer movement tracking
   useEffect(() => {
     if (typeof window === "undefined") return;
 
     const handlePointerMove = (e: PointerEvent) => {
       if (isDraggingRef.current) {
-        const deltaX = (e.clientX - dragStartRef.current.x) * 0.008;
-        const deltaY = (e.clientY - dragStartRef.current.y) * 0.008;
+        const deltaX = (e.clientX - dragStartRef.current.x) * 0.007;
+        const deltaY = (e.clientY - dragStartRef.current.y) * 0.007;
         manualRotRef.current.y = dragStartRef.current.rotY + deltaX;
-        manualRotRef.current.x = Math.max(-0.8, Math.min(0.8, dragStartRef.current.rotX + deltaY));
+        manualRotRef.current.x = Math.max(-0.7, Math.min(0.7, dragStartRef.current.rotX + deltaY));
       } else {
-        // Normalized device coordinates (-1 to 1)
         pointerRef.current.targetX = (e.clientX / window.innerWidth) * 2 - 1;
         pointerRef.current.targetY = -(e.clientY / window.innerHeight) * 2 + 1;
       }
     };
 
     const handlePointerDown = (e: PointerEvent) => {
-      // If clicking near center canvas, enable manual rotation
       isDraggingRef.current = true;
       dragStartRef.current = {
         x: e.clientX,
@@ -98,38 +96,96 @@ export function InteractivePhone({
     };
   }, []);
 
-  // Screen Canvas Texture
+  // 1. High-DPI Screen Canvas Texture
   const screenTexture = useMemo(() => {
     return createPhoneScreenTexture(deviceModel, priceText, tradeinText);
   }, [deviceModel, priceText, tradeinText]);
 
-  // Procedural Chassis Geometry (Rounded Extruded Box)
+  // 2. Chassis Dimensions (Realistic Flagship: 2.16 x 4.68 x 0.21)
+  const phoneWidth = 2.16;
+  const phoneHeight = 4.68;
+  const cornerRadius = 0.36;
+
+  // Extruded Chassis Geometry with Chamfered Bevel
   const chassisGeometry = useMemo(() => {
-    const width = 2.75;
-    const height = 5.75;
-    const radius = 0.42;
-
     const shape = new THREE.Shape();
-    const x = -width / 2;
-    const y = -height / 2;
+    const x = -phoneWidth / 2;
+    const y = -phoneHeight / 2;
 
-    shape.moveTo(x + radius, y);
-    shape.lineTo(x + width - radius, y);
-    shape.quadraticCurveTo(x + width, y, x + width, y + radius);
-    shape.lineTo(x + width, y + height - radius);
-    shape.quadraticCurveTo(x + width, y + height, x + width - radius, y + height);
-    shape.lineTo(x + radius, y + height);
-    shape.quadraticCurveTo(x, y + height, x, y + height - radius);
-    shape.lineTo(x, y + radius);
-    shape.quadraticCurveTo(x, y, x + radius, y);
+    shape.moveTo(x + cornerRadius, y);
+    shape.lineTo(x + phoneWidth - cornerRadius, y);
+    shape.quadraticCurveTo(x + phoneWidth, y, x + phoneWidth, y + cornerRadius);
+    shape.lineTo(x + phoneWidth, y + phoneHeight - cornerRadius);
+    shape.quadraticCurveTo(x + phoneWidth, y + phoneHeight, x + phoneWidth - cornerRadius, y + phoneHeight);
+    shape.lineTo(x + cornerRadius, y + phoneHeight);
+    shape.quadraticCurveTo(x, y + phoneHeight, x, y + phoneHeight - cornerRadius);
+    shape.lineTo(x, y + cornerRadius);
+    shape.quadraticCurveTo(x, y, x + cornerRadius, y);
 
     const extrudeSettings = {
-      depth: 0.28,
+      depth: 0.20,
       bevelEnabled: true,
-      bevelSegments: 6,
+      bevelSegments: 8,
       steps: 1,
-      bevelSize: 0.04,
-      bevelThickness: 0.04,
+      bevelSize: 0.035,
+      bevelThickness: 0.035,
+    };
+
+    const geom = new THREE.ExtrudeGeometry(shape, extrudeSettings);
+    geom.center();
+    return geom;
+  }, [phoneWidth, phoneHeight, cornerRadius]);
+
+  // 3. Display Screen Geometry (Thin Bezels: 2.06 x 4.58)
+  const screenGeometry = useMemo(() => {
+    const sWidth = 2.06;
+    const sHeight = 4.58;
+    const sRadius = 0.32;
+
+    const shape = new THREE.Shape();
+    const x = -sWidth / 2;
+    const y = -sHeight / 2;
+
+    shape.moveTo(x + sRadius, y);
+    shape.lineTo(x + sWidth - sRadius, y);
+    shape.quadraticCurveTo(x + sWidth, y, x + sWidth, y + sRadius);
+    shape.lineTo(x + sWidth, y + sHeight - sRadius);
+    shape.quadraticCurveTo(x + sWidth, y + sHeight, x + sWidth - sRadius, y + sHeight);
+    shape.lineTo(x + sRadius, y + sHeight);
+    shape.quadraticCurveTo(x, y + sHeight, x, y + sHeight - sRadius);
+    shape.lineTo(x, y + sRadius);
+    shape.quadraticCurveTo(x, y, x + sRadius, y);
+
+    return new THREE.ShapeGeometry(shape, 32);
+  }, []);
+
+  // 4. Rear Camera Plateau Geometry
+  const plateauGeometry = useMemo(() => {
+    const pWidth = 1.05;
+    const pHeight = 1.10;
+    const pRadius = 0.22;
+
+    const shape = new THREE.Shape();
+    const x = -pWidth / 2;
+    const y = -pHeight / 2;
+
+    shape.moveTo(x + pRadius, y);
+    shape.lineTo(x + pWidth - pRadius, y);
+    shape.quadraticCurveTo(x + pWidth, y, x + pWidth, y + pRadius);
+    shape.lineTo(x + pWidth, y + pHeight - pRadius);
+    shape.quadraticCurveTo(x + pWidth, y + pHeight, x + pWidth - pRadius, y + pHeight);
+    shape.lineTo(x + pRadius, y + pHeight);
+    shape.quadraticCurveTo(x, y + pHeight, x, y + pHeight - pRadius);
+    shape.lineTo(x, y + pRadius);
+    shape.quadraticCurveTo(x, y, x + pRadius, y);
+
+    const extrudeSettings = {
+      depth: 0.05,
+      bevelEnabled: true,
+      bevelSegments: 4,
+      steps: 1,
+      bevelSize: 0.018,
+      bevelThickness: 0.018,
     };
 
     const geom = new THREE.ExtrudeGeometry(shape, extrudeSettings);
@@ -137,261 +193,284 @@ export function InteractivePhone({
     return geom;
   }, []);
 
-  // Screen Face Geometry
-  const screenGeometry = useMemo(() => {
-    const width = 2.62;
-    const height = 5.56;
-    const radius = 0.36;
-
-    const shape = new THREE.Shape();
-    const x = -width / 2;
-    const y = -height / 2;
-
-    shape.moveTo(x + radius, y);
-    shape.lineTo(x + width - radius, y);
-    shape.quadraticCurveTo(x + width, y, x + width, y + radius);
-    shape.lineTo(x + width, y + height - radius);
-    shape.quadraticCurveTo(x + width, y + height, x + width - radius, y + height);
-    shape.lineTo(x + radius, y + height);
-    shape.quadraticCurveTo(x, y + height, x, y + height - radius);
-    shape.lineTo(x, y + radius);
-    shape.quadraticCurveTo(x, y, x + radius, y);
-
-    return new THREE.ShapeGeometry(shape, 32);
-  }, []);
-
-  // Frame animation loop with damped lerping
+  // Frame animation loop with damped lerping & camera transitions
   useFrame((state, delta) => {
-    if (!groupRef.current || reducedMotion) return;
+    if (!groupRef.current) return;
 
-    // Smooth pointer damping
-    pointerRef.current.x = THREE.MathUtils.damp(
-      pointerRef.current.x,
-      pointerRef.current.targetX,
-      6,
-      delta
-    );
-    pointerRef.current.y = THREE.MathUtils.damp(
-      pointerRef.current.y,
-      pointerRef.current.targetY,
-      6,
-      delta
-    );
-
-    // If user is not dragging, decay manual rotation slowly back towards equilibrium
-    if (!isDraggingRef.current) {
-      manualRotRef.current.x = THREE.MathUtils.damp(manualRotRef.current.x, 0, 3, delta);
-      manualRotRef.current.y = THREE.MathUtils.damp(manualRotRef.current.y, 0, 3, delta);
+    // Entrance animation progress easing
+    if (entranceProgressRef.current < 1) {
+      entranceProgressRef.current = THREE.MathUtils.damp(entranceProgressRef.current, 1, 4, delta);
     }
 
-    const scroll = scrollRef.current; // 0 to 1.5+
+    if (reducedMotion) {
+      groupRef.current.position.set(0, 0, 0);
+      groupRef.current.rotation.set(0.1, -0.2, 0);
+      return;
+    }
+
+    // Pointer smoothing
+    pointerRef.current.x = THREE.MathUtils.damp(pointerRef.current.x, pointerRef.current.targetX, 5, delta);
+    pointerRef.current.y = THREE.MathUtils.damp(pointerRef.current.y, pointerRef.current.targetY, 5, delta);
+
+    // Manual rotation decay when user releases pointer
+    if (!isDraggingRef.current) {
+      manualRotRef.current.x = THREE.MathUtils.damp(manualRotRef.current.x, 0, 3.5, delta);
+      manualRotRef.current.y = THREE.MathUtils.damp(manualRotRef.current.y, 0, 3.5, delta);
+    }
+
+    const scroll = scrollRef.current;
     const t = state.clock.getElapsedTime();
 
-    // Base PeachWeb Hero equilibrium angles
-    let baseRotY = -0.32;
-    let baseRotX = 0.14;
-    let basePosY = 0;
-    let basePosZ = 0;
+    // Mode-specific target choreography
+    let targetRotY = -0.32;
+    let targetRotX = 0.12;
+    let targetRotZ = 0;
+    let targetPosX = 0.05;
+    let targetPosY = 0;
+    let targetPosZ = 0;
 
     if (viewMode === "front") {
-      baseRotY = 0;
-      baseRotX = 0;
+      // Front view: Direct face-on orientation, brought closer to camera for maximum readability
+      targetRotY = 0;
+      targetRotX = 0;
+      targetRotZ = 0;
+      targetPosX = 0;
+      targetPosY = 0;
+      targetPosZ = 0.35;
     } else if (viewMode === "back") {
-      baseRotY = Math.PI - 0.2;
-      baseRotX = 0.05;
+      // Back view: Smooth 180° rotation revealing rear frosted glass and camera optics
+      targetRotY = Math.PI - 0.22;
+      targetRotX = 0.08;
+      targetRotZ = -0.04;
+      targetPosX = -0.05;
+      targetPosY = 0;
+      targetPosZ = 0.25;
     } else {
-      // Coordinated scroll animation:
-      // As user scrolls, the phone pitches, rotates from front to side-isometric view, and glides
-      baseRotY = -0.32 + scroll * 0.95;
-      baseRotX = 0.14 - scroll * 0.22;
-      basePosY = -scroll * 0.65;
-      basePosZ = -scroll * 0.8;
+      // Hero view: Dynamic 3/4 isometric angle with scroll-linked camera/phone storytelling
+      targetRotY = -0.32 + scroll * 0.75;
+      targetRotX = 0.12 - scroll * 0.18;
+      targetRotZ = 0.02 - scroll * 0.06;
+      targetPosX = 0.05 - scroll * 0.2;
+      targetPosY = -scroll * 0.55;
+      targetPosZ = -scroll * 0.65;
     }
 
-    // Subtle gentle breathing micro-animation
-    const floatY = Math.sin(t * 1.2) * 0.05;
-    const floatRotZ = Math.cos(t * 0.8) * 0.015;
+    // Gentle physical breathing floating micro-motion
+    const floatY = Math.sin(t * 1.4) * 0.035;
+    const floatRotZ = Math.cos(t * 1.0) * 0.012;
 
-    // Target rotation including mouse parallax and manual drag
-    const targetY =
-      baseRotY + pointerRef.current.x * 0.35 + manualRotRef.current.y;
-    const targetX =
-      baseRotX - pointerRef.current.y * 0.25 + manualRotRef.current.x;
-    const targetZ = floatRotZ - pointerRef.current.x * 0.08;
+    // Apply pointer parallax & manual rotation
+    const finalRotY = targetRotY + pointerRef.current.x * 0.28 + manualRotRef.current.y;
+    const finalRotX = targetRotX - pointerRef.current.y * 0.20 + manualRotRef.current.x;
+    const finalRotZ = targetRotZ + floatRotZ - pointerRef.current.x * 0.05;
 
-    groupRef.current.rotation.y = THREE.MathUtils.damp(
-      groupRef.current.rotation.y,
-      targetY,
-      7,
-      delta
-    );
-    groupRef.current.rotation.x = THREE.MathUtils.damp(
-      groupRef.current.rotation.x,
-      targetX,
-      7,
-      delta
-    );
-    groupRef.current.rotation.z = THREE.MathUtils.damp(
-      groupRef.current.rotation.z,
-      targetZ,
-      7,
-      delta
-    );
+    // Smooth entrance interpolation
+    const entranceOffset = (1 - entranceProgressRef.current) * 0.8;
+    const finalPosY = targetPosY + floatY - entranceOffset;
+    const finalPosZ = targetPosZ;
 
-    // Target position
-    groupRef.current.position.y = THREE.MathUtils.damp(
-      groupRef.current.position.y,
-      basePosY + floatY,
-      6,
-      delta
-    );
-    groupRef.current.position.z = THREE.MathUtils.damp(
-      groupRef.current.position.z,
-      basePosZ,
-      6,
-      delta
-    );
+    groupRef.current.rotation.y = THREE.MathUtils.damp(groupRef.current.rotation.y, finalRotY, 6, delta);
+    groupRef.current.rotation.x = THREE.MathUtils.damp(groupRef.current.rotation.x, finalRotX, 6, delta);
+    groupRef.current.rotation.z = THREE.MathUtils.damp(groupRef.current.rotation.z, finalRotZ, 6, delta);
+
+    groupRef.current.position.x = THREE.MathUtils.damp(groupRef.current.position.x, targetPosX, 6, delta);
+    groupRef.current.position.y = THREE.MathUtils.damp(groupRef.current.position.y, finalPosY, 6, delta);
+    groupRef.current.position.z = THREE.MathUtils.damp(groupRef.current.position.z, finalPosZ, 6, delta);
   });
 
   return (
     <group ref={groupRef} dispose={null}>
-      {/* 1. Main Metallic Titanium Chassis Frame */}
+      {/* 1. Main Metallic Titanium Band Chassis */}
       <mesh geometry={chassisGeometry} castShadow receiveShadow>
         <meshStandardMaterial
-          color="#222222"
-          metalness={0.92}
-          roughness={0.22}
+          color="#2A2A2E"
+          metalness={0.96}
+          roughness={0.16}
+          envMapIntensity={2.0}
+        />
+      </mesh>
+
+      {/* 2. Thin Dark Ceramic Screen Bezel Border */}
+      <mesh position={[0, 0, 0.136]}>
+        <planeGeometry args={[2.10, 4.62]} />
+        <meshBasicMaterial color="#050505" />
+      </mesh>
+
+      {/* 3. Front OLED Display Screen with Ultra-Crisp Valuation Texture */}
+      <mesh geometry={screenGeometry} position={[0, 0, 0.138]}>
+        <meshBasicMaterial map={screenTexture} toneMapped={false} />
+      </mesh>
+
+      {/* 4. Front Glass Specular Sheen Layer (Subtle surface reflection, zero transmission block) */}
+      <mesh geometry={screenGeometry} position={[0, 0, 0.140]}>
+        <meshStandardMaterial
+          transparent
+          opacity={0.07}
+          roughness={0.05}
+          metalness={0.85}
+          color="#FFFFFF"
+          envMapIntensity={2.5}
+        />
+      </mesh>
+
+      {/* 5. Rear Frosted Matte Glass Backplate */}
+      <mesh geometry={screenGeometry} position={[0, 0, -0.138]} rotation={[0, Math.PI, 0]}>
+        <meshStandardMaterial
+          color="#161619"
+          roughness={0.42}
+          metalness={0.22}
           envMapIntensity={1.5}
         />
       </mesh>
 
-      {/* 2. Front Screen Panel with Active Valuation Canvas Texture */}
-      <mesh geometry={screenGeometry} position={[0, 0, 0.185]}>
-        <meshBasicMaterial map={screenTexture} toneMapped={false} />
+      {/* Rear Subtle Phonelytics Emblem Ring */}
+      <mesh position={[0, 0, -0.140]} rotation={[0, Math.PI, 0]}>
+        <ringGeometry args={[0.22, 0.25, 32]} />
+        <meshStandardMaterial color="#2E2E34" metalness={0.9} roughness={0.2} />
       </mesh>
 
-      {/* Front Glass Clearcoat Reflection Layer */}
-      <mesh geometry={screenGeometry} position={[0, 0, 0.187]}>
-        <meshPhysicalMaterial
-          transparent
-          opacity={0.12}
-          roughness={0.05}
-          metalness={0.1}
-          transmission={0.9}
-          ior={1.5}
-          clearcoat={1.0}
-        />
-      </mesh>
-
-      {/* 3. Rear Frosted Matte Glass Backplate */}
-      <mesh geometry={screenGeometry} position={[0, 0, -0.185]} rotation={[0, Math.PI, 0]}>
-        <meshStandardMaterial
-          color="#161616"
-          roughness={0.32}
-          metalness={0.25}
-          envMapIntensity={1.2}
-        />
-      </mesh>
-
-      {/* 4. Rear Camera Island (Plateau on top-left of rear) */}
-      <group position={[-0.6, 1.85, -0.22]} rotation={[0, Math.PI, 0]}>
-        {/* Rounded Plateau Box */}
-        <mesh position={[0, 0, 0]}>
-          <boxGeometry args={[1.2, 1.25, 0.08]} />
-          <meshStandardMaterial color="#202020" metalness={0.88} roughness={0.24} />
+      {/* 6. Rear Triple Camera Plateau (Top-Left of Rear) */}
+      <group position={[-0.48, 1.48, -0.16]} rotation={[0, Math.PI, 0]}>
+        {/* Rounded Beveled Plateau */}
+        <mesh geometry={plateauGeometry}>
+          <meshStandardMaterial
+            color="#222226"
+            metalness={0.92}
+            roughness={0.22}
+            envMapIntensity={1.8}
+          />
         </mesh>
 
-        {/* Camera Lens 1 (Top Left) */}
-        <group position={[-0.32, 0.32, 0.05]}>
+        {/* Camera Lens 1: Top Left */}
+        <group position={[-0.26, 0.28, 0.045]}>
+          {/* Polished Titanium Outer Ring */}
           <mesh rotation={[Math.PI / 2, 0, 0]}>
-            <cylinderGeometry args={[0.22, 0.22, 0.06, 32]} />
-            <meshStandardMaterial color="#303030" metalness={0.95} roughness={0.15} />
+            <cylinderGeometry args={[0.18, 0.18, 0.045, 32]} />
+            <meshStandardMaterial color="#3C3C44" metalness={0.98} roughness={0.12} />
           </mesh>
-          <mesh position={[0, 0, 0.035]}>
-            <circleGeometry args={[0.18, 32]} />
-            <meshBasicMaterial color="#080e1a" />
+          {/* Inner Sapphire Glass */}
+          <mesh position={[0, 0, 0.025]}>
+            <circleGeometry args={[0.15, 32]} />
+            <meshBasicMaterial color="#06090F" />
           </mesh>
-          <mesh position={[0.04, 0.04, 0.038]}>
-            <circleGeometry args={[0.04, 16]} />
-            <meshBasicMaterial color="rgba(242, 140, 69, 0.6)" />
+          {/* Anti-reflective Optical Coating Specular Glint */}
+          <mesh position={[0.035, 0.035, 0.027]}>
+            <circleGeometry args={[0.045, 16]} />
+            <meshBasicMaterial color="rgba(242, 140, 69, 0.65)" />
+          </mesh>
+          <mesh position={[-0.035, -0.035, 0.027]}>
+            <circleGeometry args={[0.025, 16]} />
+            <meshBasicMaterial color="rgba(224, 197, 143, 0.45)" />
           </mesh>
         </group>
 
-        {/* Camera Lens 2 (Bottom Left) */}
-        <group position={[-0.32, -0.32, 0.05]}>
+        {/* Camera Lens 2: Bottom Left */}
+        <group position={[-0.26, -0.28, 0.045]}>
           <mesh rotation={[Math.PI / 2, 0, 0]}>
-            <cylinderGeometry args={[0.22, 0.22, 0.06, 32]} />
-            <meshStandardMaterial color="#303030" metalness={0.95} roughness={0.15} />
+            <cylinderGeometry args={[0.18, 0.18, 0.045, 32]} />
+            <meshStandardMaterial color="#3C3C44" metalness={0.98} roughness={0.12} />
           </mesh>
-          <mesh position={[0, 0, 0.035]}>
-            <circleGeometry args={[0.18, 32]} />
-            <meshBasicMaterial color="#080e1a" />
+          <mesh position={[0, 0, 0.025]}>
+            <circleGeometry args={[0.15, 32]} />
+            <meshBasicMaterial color="#06090F" />
           </mesh>
-          <mesh position={[0.04, 0.04, 0.038]}>
-            <circleGeometry args={[0.04, 16]} />
-            <meshBasicMaterial color="rgba(242, 140, 69, 0.6)" />
+          <mesh position={[0.035, 0.035, 0.027]}>
+            <circleGeometry args={[0.045, 16]} />
+            <meshBasicMaterial color="rgba(242, 140, 69, 0.65)" />
+          </mesh>
+          <mesh position={[-0.035, -0.035, 0.027]}>
+            <circleGeometry args={[0.025, 16]} />
+            <meshBasicMaterial color="rgba(224, 197, 143, 0.45)" />
           </mesh>
         </group>
 
-        {/* Camera Lens 3 (Right Middle) */}
-        <group position={[0.32, 0.0, 0.05]}>
+        {/* Camera Lens 3: Right Center */}
+        <group position={[0.26, 0.0, 0.045]}>
           <mesh rotation={[Math.PI / 2, 0, 0]}>
-            <cylinderGeometry args={[0.22, 0.22, 0.06, 32]} />
-            <meshStandardMaterial color="#303030" metalness={0.95} roughness={0.15} />
+            <cylinderGeometry args={[0.18, 0.18, 0.045, 32]} />
+            <meshStandardMaterial color="#3C3C44" metalness={0.98} roughness={0.12} />
           </mesh>
-          <mesh position={[0, 0, 0.035]}>
-            <circleGeometry args={[0.18, 32]} />
-            <meshBasicMaterial color="#080e1a" />
+          <mesh position={[0, 0, 0.025]}>
+            <circleGeometry args={[0.15, 32]} />
+            <meshBasicMaterial color="#06090F" />
           </mesh>
-          <mesh position={[0.04, 0.04, 0.038]}>
-            <circleGeometry args={[0.04, 16]} />
-            <meshBasicMaterial color="rgba(242, 140, 69, 0.6)" />
+          <mesh position={[0.035, 0.035, 0.027]}>
+            <circleGeometry args={[0.045, 16]} />
+            <meshBasicMaterial color="rgba(242, 140, 69, 0.65)" />
+          </mesh>
+          <mesh position={[-0.035, -0.035, 0.027]}>
+            <circleGeometry args={[0.025, 16]} />
+            <meshBasicMaterial color="rgba(224, 197, 143, 0.45)" />
           </mesh>
         </group>
 
-        {/* Dual-Tone LED Flash Ring */}
-        <mesh position={[0.32, 0.42, 0.04]}>
-          <circleGeometry args={[0.08, 16]} />
-          <meshBasicMaterial color="#F5F0E9" />
+        {/* Dual-Tone LED True-Tone Flash */}
+        <mesh position={[0.26, 0.35, 0.035]}>
+          <circleGeometry args={[0.07, 24]} />
+          <meshBasicMaterial color="#FAF7F2" />
+        </mesh>
+        <mesh position={[0.26, 0.35, 0.036]}>
+          <ringGeometry args={[0.07, 0.085, 24]} />
+          <meshStandardMaterial color="#4A4A52" metalness={0.9} roughness={0.2} />
         </mesh>
 
-        {/* LiDAR Sensor Dot */}
-        <mesh position={[0.32, -0.42, 0.04]}>
-          <circleGeometry args={[0.06, 16]} />
-          <meshBasicMaterial color="#050505" />
+        {/* Dark LiDAR Scanner Sensor */}
+        <mesh position={[0.26, -0.35, 0.035]}>
+          <circleGeometry args={[0.055, 24]} />
+          <meshBasicMaterial color="#050508" />
+        </mesh>
+
+        {/* Microphone Pinhole */}
+        <mesh position={[0.36, -0.15, 0.035]}>
+          <circleGeometry args={[0.015, 12]} />
+          <meshBasicMaterial color="#000000" />
         </mesh>
       </group>
 
-      {/* 5. Physical Hardware Buttons */}
-      {/* Power Button (Right Side) */}
-      <mesh position={[1.42, 0.8, 0]}>
-        <boxGeometry args={[0.03, 0.65, 0.08]} />
-        <meshStandardMaterial color="#333333" metalness={0.9} roughness={0.2} />
+      {/* 7. Hardware Side Controls */}
+      {/* Right: Power / Lock Button */}
+      <mesh position={[1.11, 0.75, 0]}>
+        <boxGeometry args={[0.028, 0.58, 0.065]} />
+        <meshStandardMaterial color="#36363C" metalness={0.95} roughness={0.15} />
       </mesh>
 
-      {/* Volume Up (Left Side) */}
-      <mesh position={[-1.42, 1.1, 0]}>
-        <boxGeometry args={[0.03, 0.48, 0.08]} />
-        <meshStandardMaterial color="#333333" metalness={0.9} roughness={0.2} />
+      {/* Left: Burnt Orange Action Button */}
+      <mesh position={[-1.11, 1.40, 0]}>
+        <boxGeometry args={[0.028, 0.26, 0.065]} />
+        <meshStandardMaterial color={accentColor} metalness={0.88} roughness={0.22} />
       </mesh>
 
-      {/* Volume Down (Left Side) */}
-      <mesh position={[-1.42, 0.5, 0]}>
-        <boxGeometry args={[0.03, 0.48, 0.08]} />
-        <meshStandardMaterial color="#333333" metalness={0.9} roughness={0.2} />
+      {/* Left: Volume Up Button */}
+      <mesh position={[-1.11, 0.95, 0]}>
+        <boxGeometry args={[0.028, 0.42, 0.065]} />
+        <meshStandardMaterial color="#36363C" metalness={0.95} roughness={0.15} />
       </mesh>
 
-      {/* Action Button (Left Side Upper) */}
-      <mesh position={[-1.42, 1.6, 0]}>
-        <boxGeometry args={[0.03, 0.28, 0.08]} />
-        <meshStandardMaterial color={accentColor} metalness={0.8} roughness={0.3} />
+      {/* Left: Volume Down Button */}
+      <mesh position={[-1.11, 0.42, 0]}>
+        <boxGeometry args={[0.028, 0.42, 0.065]} />
+        <meshStandardMaterial color="#36363C" metalness={0.95} roughness={0.15} />
       </mesh>
 
-      {/* 6. Subtle Burnt-Orange Edge Chamfer Highlight Mesh */}
-      <mesh position={[0, 0, 0.184]}>
-        <ringGeometry args={[1.32, 1.34, 4]} />
-        <meshBasicMaterial color="#F28C45" transparent opacity={0.15} />
+      {/* Top: Ear Speaker Slit */}
+      <mesh position={[0, 2.31, 0.136]}>
+        <boxGeometry args={[0.42, 0.025, 0.015]} />
+        <meshBasicMaterial color="#0A0A0C" />
       </mesh>
+
+      {/* Bottom: USB-C Port Cutout */}
+      <mesh position={[0, -2.35, 0]}>
+        <boxGeometry args={[0.32, 0.02, 0.05]} />
+        <meshBasicMaterial color="#08080A" />
+      </mesh>
+
+      {/* Bottom: Dual Speaker Grilles */}
+      {[-0.6, -0.45, -0.3, 0.3, 0.45, 0.6].map((posX, idx) => (
+        <mesh key={idx} position={[posX, -2.35, 0]}>
+          <sphereGeometry args={[0.02, 8, 8]} />
+          <meshBasicMaterial color="#050508" />
+        </mesh>
+      ))}
     </group>
   );
 }
