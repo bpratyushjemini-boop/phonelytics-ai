@@ -126,7 +126,7 @@ export function InteractivePhone({
   const screenGeometry = useMemo(() => {
     const shape = createRoundedRectShape(screenW, screenH, CORNER_R - 0.03);
     return new THREE.ShapeGeometry(shape, 24);
-  }, []);
+  }, [screenW, screenH]);
 
   // Camera plateau
   const plateauGeometry = useMemo(() => {
