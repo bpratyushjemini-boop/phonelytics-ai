@@ -1,0 +1,49 @@
+{
+  "algorithm": "Gradient Boosting",
+  "r2_score": 0.9889,
+  "mae": 1991.17,
+  "feature_importances": {
+    "original_price": 0.8513,
+    "age_months": 0.0952,
+    "battery_health": 0.0174,
+    "condition_Like New": 0.0138,
+    "condition_Fair": 0.0062,
+    "condition_Excellent": 0.0061,
+    "condition_Poor": 0.0056,
+    "condition_Good": 0.0017,
+    "brand_Apple": 0.001,
+    "storage_gb": 0.0009,
+    "brand_Samsung": 0.0005,
+    "brand_OnePlus": 0.0001,
+    "ram_gb": 0.0001,
+    "brand_Google Pixel": 0.0,
+    "brand_Motorola": 0.0,
+    "brand_Oppo": 0.0,
+    "brand_Other": 0.0,
+    "brand_Realme": 0.0,
+    "brand_Redmi": 0.0,
+    "brand_Vivo": 0.0,
+    "brand_Xiaomi": 0.0
+  },
+  "brand_decay_rates": {
+    "Apple": 0.016,
+    "Samsung": 0.024,
+    "OnePlus": 0.023,
+    "Google Pixel": 0.025,
+    "Xiaomi": 0.027,
+    "Redmi": 0.028,
+    "Realme": 0.029,
+    "Vivo": 0.026,
+    "Oppo": 0.027,
+    "Motorola": 0.028,
+    "Other": 0.03
+  },
+  "condition_multipliers": {
+    "Like New": 1.0,
+    "Excellent": 0.92,
+    "Good": 0.82,
+    "Fair": 0.68,
+    "Poor": 0.5
+  },
+  "tradein_margin_ratio": 0.8
+}

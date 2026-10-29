@@ -1,0 +1,492 @@
+[
+  {
+    "brand": "Apple",
+    "model": "iPhone 11",
+    "ram_gb": 4,
+    "storage_gb": 256,
+    "original_price": 51800
+  },
+  {
+    "brand": "Apple",
+    "model": "iPhone 12",
+    "ram_gb": 4,
+    "storage_gb": 256,
+    "original_price": 58400
+  },
+  {
+    "brand": "Apple",
+    "model": "iPhone 13",
+    "ram_gb": 4,
+    "storage_gb": 256,
+    "original_price": 69300
+  },
+  {
+    "brand": "Apple",
+    "model": "iPhone 14",
+    "ram_gb": 6,
+    "storage_gb": 512,
+    "original_price": 83900
+  },
+  {
+    "brand": "Apple",
+    "model": "iPhone 14 Pro",
+    "ram_gb": 6,
+    "storage_gb": 256,
+    "original_price": 138300
+  },
+  {
+    "brand": "Apple",
+    "model": "iPhone 15",
+    "ram_gb": 6,
+    "storage_gb": 128,
+    "original_price": 81900
+  },
+  {
+    "brand": "Apple",
+    "model": "iPhone 15 Pro",
+    "ram_gb": 8,
+    "storage_gb": 128,
+    "original_price": 135200
+  },
+  {
+    "brand": "Apple",
+    "model": "iPhone 15 Pro Max",
+    "ram_gb": 8,
+    "storage_gb": 512,
+    "original_price": 158500
+  },
+  {
+    "brand": "Apple",
+    "model": "iPhone 16",
+    "ram_gb": 8,
+    "storage_gb": 256,
+    "original_price": 80000
+  },
+  {
+    "brand": "Apple",
+    "model": "iPhone 16 Pro",
+    "ram_gb": 8,
+    "storage_gb": 512,
+    "original_price": 136900
+  },
+  {
+    "brand": "Apple",
+    "model": "iPhone 16 Pro Max",
+    "ram_gb": 8,
+    "storage_gb": 1024,
+    "original_price": 155200
+  },
+  {
+    "brand": "Google Pixel",
+    "model": "Pixel 6a",
+    "ram_gb": 6,
+    "storage_gb": 128,
+    "original_price": 31400
+  },
+  {
+    "brand": "Google Pixel",
+    "model": "Pixel 7 Pro",
+    "ram_gb": 12,
+    "storage_gb": 256,
+    "original_price": 82200
+  },
+  {
+    "brand": "Google Pixel",
+    "model": "Pixel 7a",
+    "ram_gb": 8,
+    "storage_gb": 128,
+    "original_price": 42600
+  },
+  {
+    "brand": "Google Pixel",
+    "model": "Pixel 8",
+    "ram_gb": 8,
+    "storage_gb": 128,
+    "original_price": 68400
+  },
+  {
+    "brand": "Google Pixel",
+    "model": "Pixel 8 Pro",
+    "ram_gb": 12,
+    "storage_gb": 128,
+    "original_price": 104300
+  },
+  {
+    "brand": "Google Pixel",
+    "model": "Pixel 9",
+    "ram_gb": 12,
+    "storage_gb": 128,
+    "original_price": 79200
+  },
+  {
+    "brand": "Google Pixel",
+    "model": "Pixel 9 Pro XL",
+    "ram_gb": 16,
+    "storage_gb": 128,
+    "original_price": 133400
+  },
+  {
+    "brand": "Motorola",
+    "model": "Edge 40 Neo",
+    "ram_gb": 8,
+    "storage_gb": 256,
+    "original_price": 27500
+  },
+  {
+    "brand": "Motorola",
+    "model": "Edge 50 Pro",
+    "ram_gb": 8,
+    "storage_gb": 256,
+    "original_price": 31000
+  },
+  {
+    "brand": "Motorola",
+    "model": "Edge 50 Ultra",
+    "ram_gb": 12,
+    "storage_gb": 512,
+    "original_price": 58100
+  },
+  {
+    "brand": "Motorola",
+    "model": "Moto G54 5G",
+    "ram_gb": 12,
+    "storage_gb": 256,
+    "original_price": 23800
+  },
+  {
+    "brand": "Motorola",
+    "model": "Moto G84 5G",
+    "ram_gb": 12,
+    "storage_gb": 256,
+    "original_price": 18500
+  },
+  {
+    "brand": "OnePlus",
+    "model": "OnePlus 11",
+    "ram_gb": 8,
+    "storage_gb": 128,
+    "original_price": 58900
+  },
+  {
+    "brand": "OnePlus",
+    "model": "OnePlus 11R",
+    "ram_gb": 16,
+    "storage_gb": 256,
+    "original_price": 49400
+  },
+  {
+    "brand": "OnePlus",
+    "model": "OnePlus 12",
+    "ram_gb": 16,
+    "storage_gb": 512,
+    "original_price": 76800
+  },
+  {
+    "brand": "OnePlus",
+    "model": "OnePlus 12R",
+    "ram_gb": 8,
+    "storage_gb": 128,
+    "original_price": 40500
+  },
+  {
+    "brand": "OnePlus",
+    "model": "OnePlus Nord 4",
+    "ram_gb": 12,
+    "storage_gb": 256,
+    "original_price": 35500
+  },
+  {
+    "brand": "OnePlus",
+    "model": "OnePlus Nord CE 3 Lite",
+    "ram_gb": 8,
+    "storage_gb": 256,
+    "original_price": 22100
+  },
+  {
+    "brand": "OnePlus",
+    "model": "OnePlus Nord CE4",
+    "ram_gb": 8,
+    "storage_gb": 128,
+    "original_price": 25700
+  },
+  {
+    "brand": "Oppo",
+    "model": "Oppo A79 5G",
+    "ram_gb": 8,
+    "storage_gb": 128,
+    "original_price": 17100
+  },
+  {
+    "brand": "Oppo",
+    "model": "Oppo F25 Pro 5G",
+    "ram_gb": 8,
+    "storage_gb": 128,
+    "original_price": 23700
+  },
+  {
+    "brand": "Oppo",
+    "model": "Oppo Find X7 Ultra",
+    "ram_gb": 16,
+    "storage_gb": 256,
+    "original_price": 86300
+  },
+  {
+    "brand": "Oppo",
+    "model": "Oppo Reno 11 5G",
+    "ram_gb": 8,
+    "storage_gb": 256,
+    "original_price": 34800
+  },
+  {
+    "brand": "Oppo",
+    "model": "Oppo Reno 12 Pro 5G",
+    "ram_gb": 12,
+    "storage_gb": 512,
+    "original_price": 37300
+  },
+  {
+    "brand": "Other",
+    "model": "Nothing Phone (2)",
+    "ram_gb": 8,
+    "storage_gb": 512,
+    "original_price": 48700
+  },
+  {
+    "brand": "Other",
+    "model": "Nothing Phone (2a)",
+    "ram_gb": 8,
+    "storage_gb": 256,
+    "original_price": 26700
+  },
+  {
+    "brand": "Other",
+    "model": "Poco F6 5G",
+    "ram_gb": 8,
+    "storage_gb": 512,
+    "original_price": 32900
+  },
+  {
+    "brand": "Other",
+    "model": "Poco X6 Pro 5G",
+    "ram_gb": 12,
+    "storage_gb": 256,
+    "original_price": 30000
+  },
+  {
+    "brand": "Other",
+    "model": "iQOO 12 5G",
+    "ram_gb": 16,
+    "storage_gb": 512,
+    "original_price": 61900
+  },
+  {
+    "brand": "Other",
+    "model": "iQOO Neo 9 Pro",
+    "ram_gb": 8,
+    "storage_gb": 256,
+    "original_price": 36500
+  },
+  {
+    "brand": "Realme",
+    "model": "Realme 11 Pro 5G",
+    "ram_gb": 8,
+    "storage_gb": 128,
+    "original_price": 22500
+  },
+  {
+    "brand": "Realme",
+    "model": "Realme 12 Pro+ 5G",
+    "ram_gb": 12,
+    "storage_gb": 256,
+    "original_price": 35900
+  },
+  {
+    "brand": "Realme",
+    "model": "Realme C55",
+    "ram_gb": 4,
+    "storage_gb": 64,
+    "original_price": 11200
+  },
+  {
+    "brand": "Realme",
+    "model": "Realme GT 6",
+    "ram_gb": 16,
+    "storage_gb": 512,
+    "original_price": 55900
+  },
+  {
+    "brand": "Realme",
+    "model": "Realme Narzo 70 Pro",
+    "ram_gb": 8,
+    "storage_gb": 128,
+    "original_price": 19700
+  },
+  {
+    "brand": "Redmi",
+    "model": "Redmi 12 5G",
+    "ram_gb": 6,
+    "storage_gb": 256,
+    "original_price": 16800
+  },
+  {
+    "brand": "Redmi",
+    "model": "Redmi 13C 5G",
+    "ram_gb": 8,
+    "storage_gb": 128,
+    "original_price": 15800
+  },
+  {
+    "brand": "Redmi",
+    "model": "Redmi Note 12 Pro 5G",
+    "ram_gb": 8,
+    "storage_gb": 256,
+    "original_price": 27600
+  },
+  {
+    "brand": "Redmi",
+    "model": "Redmi Note 13 5G",
+    "ram_gb": 8,
+    "storage_gb": 256,
+    "original_price": 22000
+  },
+  {
+    "brand": "Redmi",
+    "model": "Redmi Note 13 Pro+ 5G",
+    "ram_gb": 8,
+    "storage_gb": 256,
+    "original_price": 28000
+  },
+  {
+    "brand": "Samsung",
+    "model": "Galaxy A35 5G",
+    "ram_gb": 6,
+    "storage_gb": 128,
+    "original_price": 27000
+  },
+  {
+    "brand": "Samsung",
+    "model": "Galaxy A55 5G",
+    "ram_gb": 8,
+    "storage_gb": 256,
+    "original_price": 44500
+  },
+  {
+    "brand": "Samsung",
+    "model": "Galaxy F14 5G",
+    "ram_gb": 6,
+    "storage_gb": 128,
+    "original_price": 17800
+  },
+  {
+    "brand": "Samsung",
+    "model": "Galaxy M34 5G",
+    "ram_gb": 6,
+    "storage_gb": 128,
+    "original_price": 18800
+  },
+  {
+    "brand": "Samsung",
+    "model": "Galaxy S21 FE",
+    "ram_gb": 8,
+    "storage_gb": 256,
+    "original_price": 41900
+  },
+  {
+    "brand": "Samsung",
+    "model": "Galaxy S22 Ultra",
+    "ram_gb": 12,
+    "storage_gb": 256,
+    "original_price": 86900
+  },
+  {
+    "brand": "Samsung",
+    "model": "Galaxy S23",
+    "ram_gb": 8,
+    "storage_gb": 256,
+    "original_price": 65600
+  },
+  {
+    "brand": "Samsung",
+    "model": "Galaxy S23 Ultra",
+    "ram_gb": 12,
+    "storage_gb": 512,
+    "original_price": 106700
+  },
+  {
+    "brand": "Samsung",
+    "model": "Galaxy S24",
+    "ram_gb": 8,
+    "storage_gb": 256,
+    "original_price": 80500
+  },
+  {
+    "brand": "Samsung",
+    "model": "Galaxy S24 Ultra",
+    "ram_gb": 12,
+    "storage_gb": 256,
+    "original_price": 130100
+  },
+  {
+    "brand": "Vivo",
+    "model": "Vivo T3 5G",
+    "ram_gb": 8,
+    "storage_gb": 256,
+    "original_price": 24000
+  },
+  {
+    "brand": "Vivo",
+    "model": "Vivo V29 5G",
+    "ram_gb": 12,
+    "storage_gb": 128,
+    "original_price": 34800
+  },
+  {
+    "brand": "Vivo",
+    "model": "Vivo V30 Pro",
+    "ram_gb": 8,
+    "storage_gb": 256,
+    "original_price": 42500
+  },
+  {
+    "brand": "Vivo",
+    "model": "Vivo X100 Pro",
+    "ram_gb": 16,
+    "storage_gb": 512,
+    "original_price": 86800
+  },
+  {
+    "brand": "Vivo",
+    "model": "Vivo Y200e 5G",
+    "ram_gb": 8,
+    "storage_gb": 128,
+    "original_price": 21300
+  },
+  {
+    "brand": "Xiaomi",
+    "model": "Xiaomi 12 Pro",
+    "ram_gb": 12,
+    "storage_gb": 256,
+    "original_price": 54900
+  },
+  {
+    "brand": "Xiaomi",
+    "model": "Xiaomi 13 Pro",
+    "ram_gb": 12,
+    "storage_gb": 256,
+    "original_price": 71600
+  },
+  {
+    "brand": "Xiaomi",
+    "model": "Xiaomi 14",
+    "ram_gb": 12,
+    "storage_gb": 512,
+    "original_price": 66100
+  },
+  {
+    "brand": "Xiaomi",
+    "model": "Xiaomi 14 Ultra",
+    "ram_gb": 16,
+    "storage_gb": 512,
+    "original_price": 97700
+  }
+]

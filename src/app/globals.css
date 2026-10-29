@@ -1,0 +1,88 @@
+@import url('https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&display=swap');
+
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+:root {
+  --color-charcoal-black: #111111;
+  --color-deep-charcoal: #191919;
+  --color-burnt-orange: #F28C45;
+  --color-warm-ivory: #F5F0E9;
+  --color-soft-beige: #E0C58F;
+  --color-muted-grey: #A6A6A6;
+  --color-border-subtle: rgba(245, 240, 233, 0.08);
+  --color-border-charcoal: #262626;
+}
+
+html {
+  scroll-behavior: smooth;
+  font-family: 'Inter', -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, sans-serif;
+  background-color: #111111;
+  color: #F5F0E9;
+}
+
+body {
+  background-color: #111111;
+  color: #F5F0E9;
+  overflow-x: hidden;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+}
+
+/* Custom Selection */
+::selection {
+  background-color: #F28C45;
+  color: #111111;
+}
+
+/* 3D Phone Perspective container */
+.phone-viewport {
+  perspective: 1200px;
+}
+
+.phone-3d-model {
+  transform-style: preserve-3d;
+  transition: transform 0.6s cubic-bezier(0.2, 0.8, 0.2, 1);
+}
+
+@keyframes gentleFloat {
+  0%, 100% {
+    transform: translateY(0px) rotateY(-18deg) rotateX(10deg);
+  }
+  50% {
+    transform: translateY(-12px) rotateY(-14deg) rotateX(7deg);
+  }
+}
+
+.animate-phone-float {
+  animation: gentleFloat 7s ease-in-out infinite;
+}
+
+@media (prefers-reduced-motion: reduce) {
+  .animate-phone-float {
+    animation: none;
+    transform: rotateY(-15deg) rotateX(8deg);
+  }
+  html {
+    scroll-behavior: auto;
+  }
+}
+
+/* Custom Scrollbar */
+::-webkit-scrollbar {
+  width: 8px;
+}
+
+::-webkit-scrollbar-track {
+  background: #111111;
+}
+
+::-webkit-scrollbar-thumb {
+  background: #262626;
+  border-radius: 4px;
+}
+
+::-webkit-scrollbar-thumb:hover {
+  background: #333333;
+}
