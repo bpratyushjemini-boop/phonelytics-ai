@@ -118,7 +118,7 @@ export function ResultsDashboard({
         {isResale && resaleResult ? (
           <div className="grid grid-cols-1 md:grid-cols-3 gap-6">
             {/* Card 1: Estimated Second-Hand Resale Value (Peer-to-Peer) */}
-            <div className="p-6 rounded-2xl bg-charcoal-800 border-2 border-brand-orange/60 shadow-subtle-card space-y-4">
+            <div className="p-6 rounded-2xl glass-card border-2 border-brand-orange/70 shadow-subtle-card space-y-4">
               <div className="flex items-center justify-between">
                 <span className="text-xs font-bold uppercase tracking-wider text-brand-orange">
                   Second-Hand Resale
@@ -156,7 +156,7 @@ export function ResultsDashboard({
             </div>
 
             {/* Card 2: Estimated Instant Trade-In Quote (e.g. Cashify) */}
-            <div className="p-6 rounded-2xl bg-charcoal-800 border border-charcoal-600 shadow-subtle-card space-y-4">
+            <div className="p-6 rounded-2xl glass-card border border-charcoal-600/50 shadow-subtle-card space-y-4">
               <div className="flex items-center justify-between">
                 <span className="text-xs font-bold uppercase tracking-wider text-brand-beige">
                   Instant Trade-In
@@ -192,7 +192,7 @@ export function ResultsDashboard({
             </div>
 
             {/* Card 3: Brand-New Market Price */}
-            <div className="p-6 rounded-2xl bg-charcoal-800 border border-charcoal-600 shadow-subtle-card space-y-4">
+            <div className="p-6 rounded-2xl glass-card border border-charcoal-600/50 shadow-subtle-card space-y-4">
               <div className="flex items-center justify-between">
                 <span className="text-xs font-bold uppercase tracking-wider text-brand-grey">
                   New Retail Shelf Value
@@ -234,7 +234,7 @@ export function ResultsDashboard({
         ) : newPhoneResult ? (
           /* Task A Card: New Phone Retail Prediction */
           <div className="grid grid-cols-1 md:grid-cols-2 gap-6">
-            <div className="p-6 rounded-2xl bg-charcoal-800 border-2 border-brand-orange/60 shadow-subtle-card space-y-4">
+            <div className="p-6 rounded-2xl glass-card border-2 border-brand-orange/70 shadow-subtle-card space-y-4">
               <div className="flex items-center justify-between">
                 <span className="text-xs font-bold uppercase tracking-wider text-brand-orange">
                   Estimated Brand-New Retail Price
@@ -271,7 +271,7 @@ export function ResultsDashboard({
               </p>
             </div>
 
-            <div className="p-6 rounded-2xl bg-charcoal-800 border border-charcoal-600 shadow-subtle-card space-y-4 flex flex-col justify-between">
+            <div className="p-6 rounded-2xl glass-card border border-charcoal-600/50 shadow-subtle-card space-y-4 flex flex-col justify-between">
               <div>
                 <span className="text-xs font-bold uppercase tracking-wider text-brand-beige">
                   Hardware Specification Matrix
@@ -309,7 +309,7 @@ export function ResultsDashboard({
         ) : null}
 
         {/* Explainability Section: "Why this estimate?" */}
-        <div className="p-6 sm:p-8 rounded-2xl bg-charcoal-800 border border-charcoal-600 space-y-6">
+        <div className="p-6 sm:p-8 rounded-2xl glass-card border border-charcoal-600/50 space-y-6">
           <div>
             <div className="text-xs font-semibold uppercase tracking-wider text-brand-beige">
               Model Factor Explainability
@@ -354,7 +354,7 @@ export function ResultsDashboard({
         </div>
 
         {/* External Market Comparison Links Section */}
-        <div id="market-links" className="p-6 sm:p-8 rounded-2xl bg-charcoal-800 border border-charcoal-600 space-y-6">
+        <div id="market-links" className="p-6 sm:p-8 rounded-2xl glass-card border border-charcoal-600/50 space-y-6">
           <div>
             <div className="flex items-center gap-2">
               <ShoppingBag className="w-4 h-4 text-brand-orange" />

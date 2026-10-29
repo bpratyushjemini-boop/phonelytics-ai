@@ -129,7 +129,7 @@ export default function PhoneCanvas({
       </div>
 
       {/* Three.js Canvas */}
-      <div className="w-full h-full relative cursor-grab active:cursor-grabbing">
+      <div className="w-full h-full relative cursor-grab active:cursor-grabbing touch-none">
         <Suspense fallback={<PhoneFallback deviceModel={deviceModel} priceText={priceText} tradeinText={tradeinText} />}>
           <Canvas
             shadows
@@ -140,29 +140,31 @@ export default function PhoneCanvas({
               alpha: true,
               powerPreference: "high-performance",
               toneMapping: THREE.ACESFilmicToneMapping,
-              toneMappingExposure: 1.1,
+              toneMappingExposure: 1.15,
             }}
             style={{ width: "100%", height: "100%" }}
           >
             {/* Studio Environment */}
             <Environment resolution={256}>
               <group rotation={[-Math.PI / 3, 0, 1]}>
-                {/* Large key softbox overhead */}
-                <Lightformer form="rect" intensity={3.0} position={[0, 5, -6]} scale={[14, 14, 1]} color="#FAF7F2" />
+                {/* Large key softbox overhead — bright, neutral */}
+                <Lightformer form="rect" intensity={3.5} position={[0, 5, -6]} scale={[14, 14, 1]} color="#FAF7F2" />
                 {/* Orange rim strip from left */}
-                <Lightformer form="ring" intensity={2.5} position={[-6, 2, -1]} scale={[12, 3, 1]} color="#F28C45" />
+                <Lightformer form="ring" intensity={2.0} position={[-6, 2, -1]} scale={[12, 3, 1]} color="#F28C45" />
                 {/* Gold accent from right */}
-                <Lightformer form="rect" intensity={1.5} position={[7, 1, 0]} scale={[12, 4, 1]} color="#E0C58F" />
+                <Lightformer form="rect" intensity={1.2} position={[7, 1, 0]} scale={[12, 4, 1]} color="#E0C58F" />
+                {/* Subtle cool fill from below-right to add depth */}
+                <Lightformer form="rect" intensity={0.8} position={[3, -4, 2]} scale={[8, 6, 1]} color="#C8D0E0" />
               </group>
             </Environment>
 
-            {/* Ambient fill - warm, not black */}
-            <ambientLight intensity={0.4} color="#F5F0E9" />
+            {/* Ambient fill — warm but not overwhelming */}
+            <ambientLight intensity={0.35} color="#F5F0E9" />
 
             {/* Key light: top-right warm ivory */}
             <directionalLight
               position={[3, 5, 4]}
-              intensity={2.5}
+              intensity={2.2}
               color="#FAF7F2"
               castShadow
               shadow-mapSize-width={1024}
@@ -173,21 +175,21 @@ export default function PhoneCanvas({
             {/* Fill light: soft left */}
             <directionalLight
               position={[-4, -1, 3]}
-              intensity={0.8}
+              intensity={0.6}
               color="#C8C4BE"
             />
 
-            {/* Signature burnt-orange rim (back-left) */}
+            {/* Signature burnt-orange rim (back-left) — reduced to avoid oversaturation */}
             <directionalLight
               position={[-3.5, 2, -4]}
-              intensity={4.0}
+              intensity={3.0}
               color="#F28C45"
             />
 
             {/* Muted gold edge accent */}
             <pointLight
               position={[3, -2, -2.5]}
-              intensity={2.0}
+              intensity={1.5}
               color="#E0C58F"
               distance={10}
             />
@@ -214,17 +216,17 @@ export default function PhoneCanvas({
         </Suspense>
       </div>
 
-      {/* View Switcher */}
-      <div className="absolute top-2 right-2 z-20 flex items-center gap-0.5 p-1 rounded-lg bg-charcoal-900/90 border border-charcoal-700/80 backdrop-blur-md text-[10px] font-medium text-brand-grey shadow-xl">
+      {/* View Switcher — liquid glass style */}
+      <div className="absolute top-2 right-2 z-20 flex items-center gap-0.5 p-1 rounded-xl bg-charcoal-950/70 border border-charcoal-600/40 backdrop-blur-xl text-[10px] font-medium text-brand-grey shadow-xl">
         {(["hero", "front", "back"] as const).map((mode) => (
           <button
             key={mode}
             type="button"
             onClick={() => { setViewMode(mode); setHasInteracted(true); }}
-            className={`px-2.5 py-1 rounded transition-all duration-150 cursor-pointer capitalize ${
+            className={`px-2.5 py-1 rounded-lg transition-all duration-200 cursor-pointer capitalize ${
               viewMode === mode
                 ? "bg-brand-orange text-charcoal-950 font-bold shadow-sm"
-                : "hover:text-brand-ivory hover:bg-charcoal-800"
+                : "hover:text-brand-ivory hover:bg-charcoal-800/60"
             }`}
             title={`${mode} view`}
           >
@@ -236,7 +238,7 @@ export default function PhoneCanvas({
       {/* Drag hint */}
       {!hasInteracted && (
         <div className="absolute bottom-4 z-20 pointer-events-none">
-          <div className="flex items-center gap-1.5 px-2.5 py-1 rounded-full bg-charcoal-900/90 border border-charcoal-700 text-[10px] text-brand-beige backdrop-blur-md shadow-lg">
+          <div className="flex items-center gap-1.5 px-2.5 py-1 rounded-full bg-charcoal-950/70 border border-charcoal-600/40 text-[10px] text-brand-beige backdrop-blur-xl shadow-lg">
             <RotateCw className="w-3 h-3 text-brand-orange animate-spin" style={{ animationDuration: "8s" }} />
             <span>Drag to rotate</span>
           </div>

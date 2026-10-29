@@ -7,7 +7,9 @@ export async function POST(req: NextRequest) {
     const body = await req.json();
     const task = body.valuation_task || "used_smartphone_resale";
 
-    const pythonBackendUrl = process.env.PYTHON_BACKEND_URL || "http://127.0.0.1:8008";
+    const pythonBackendUrl =
+      process.env.PYTHON_BACKEND_URL ||
+      (process.env.NODE_ENV !== "production" ? "http://127.0.0.1:8008" : undefined);
 
     // -------------------------------------------------------------------------
     // Task A: New Phone Retail Price Estimation (Specifications)
@@ -31,23 +33,25 @@ export async function POST(req: NextRequest) {
         is_5g: body.is_5g !== undefined ? Boolean(body.is_5g) : true,
       };
 
-      try {
-        const controller = new AbortController();
-        const timeoutId = setTimeout(() => controller.abort(), 1800);
-        const pythonRes = await fetch(`${pythonBackendUrl}/predict/new-phone`, {
-          method: "POST",
-          headers: { "Content-Type": "application/json" },
-          body: JSON.stringify(newPhoneReq),
-          signal: controller.signal,
-        });
-        clearTimeout(timeoutId);
+      if (pythonBackendUrl) {
+        try {
+          const controller = new AbortController();
+          const timeoutId = setTimeout(() => controller.abort(), 2000);
+          const pythonRes = await fetch(`${pythonBackendUrl}/predict/new-phone`, {
+            method: "POST",
+            headers: { "Content-Type": "application/json" },
+            body: JSON.stringify(newPhoneReq),
+            signal: controller.signal,
+          });
+          clearTimeout(timeoutId);
 
-        if (pythonRes.ok) {
-          const data = await pythonRes.json();
-          return NextResponse.json({ ...data, engine_source: "python_fastapi" });
+          if (pythonRes.ok) {
+            const data = await pythonRes.json();
+            return NextResponse.json({ ...data, engine_source: "python_fastapi" });
+          }
+        } catch {
+          // Fallback to serverless ML engine
         }
-      } catch {
-        // Fallback to serverless ML engine
       }
 
       const nativeResult = runNewPhonePrediction(newPhoneReq);
@@ -95,23 +99,25 @@ export async function POST(req: NextRequest) {
       verified_current_price: body.verified_current_price ? Number(body.verified_current_price) : null,
     };
 
-    try {
-      const controller = new AbortController();
-      const timeoutId = setTimeout(() => controller.abort(), 1800);
-      const pythonRes = await fetch(`${pythonBackendUrl}/predict/resale`, {
-        method: "POST",
-        headers: { "Content-Type": "application/json" },
-        body: JSON.stringify(resaleReq),
-        signal: controller.signal,
-      });
-      clearTimeout(timeoutId);
+    if (pythonBackendUrl) {
+      try {
+        const controller = new AbortController();
+        const timeoutId = setTimeout(() => controller.abort(), 2000);
+        const pythonRes = await fetch(`${pythonBackendUrl}/predict/resale`, {
+          method: "POST",
+          headers: { "Content-Type": "application/json" },
+          body: JSON.stringify(resaleReq),
+          signal: controller.signal,
+        });
+        clearTimeout(timeoutId);
 
-      if (pythonRes.ok) {
-        const data = await pythonRes.json();
-        return NextResponse.json({ ...data, engine_source: "python_fastapi" });
+        if (pythonRes.ok) {
+          const data = await pythonRes.json();
+          return NextResponse.json({ ...data, engine_source: "python_fastapi" });
+        }
+      } catch {
+        // Fallback to serverless ML engine
       }
-    } catch {
-      // Fallback to serverless ML engine
     }
 
     const nativeResult = runResalePrediction(resaleReq);

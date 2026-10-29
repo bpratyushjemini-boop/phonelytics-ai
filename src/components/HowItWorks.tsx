@@ -49,7 +49,7 @@ export function HowItWorks() {
             return (
               <div
                 key={step.number}
-                className="relative p-8 rounded-xl bg-charcoal-700/60 border border-charcoal-600 hover:border-brand-orange/40 transition-colors duration-200 space-y-4"
+                className="relative p-8 rounded-xl glass-card hover:border-brand-orange/30 transition-all duration-300 space-y-4"
               >
                 <div className="flex items-center justify-between">
                   <div className="w-12 h-12 rounded-lg bg-charcoal-800 border border-charcoal-500/80 flex items-center justify-center text-brand-orange">

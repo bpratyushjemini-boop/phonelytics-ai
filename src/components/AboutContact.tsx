@@ -36,7 +36,7 @@ export function AboutContact() {
           </div>
 
           {/* System Architecture Specs */}
-          <div className="lg:col-span-6 p-6 sm:p-8 rounded-2xl bg-charcoal-800 border border-charcoal-600 space-y-6">
+          <div className="lg:col-span-6 p-6 sm:p-8 rounded-2xl glass-card border border-charcoal-600/50 space-y-6">
             <div className="flex items-center gap-2">
               <Layers className="w-5 h-5 text-brand-orange" />
               <h3 className="text-lg font-bold text-brand-ivory">System Technical Stack</h3>
@@ -71,7 +71,7 @@ export function AboutContact() {
         </div>
 
         {/* Contact / Academic Project Inquiry Section */}
-        <div className="p-6 sm:p-10 rounded-2xl bg-charcoal-800 border border-charcoal-600 max-w-3xl mx-auto space-y-6">
+        <div className="p-6 sm:p-10 rounded-2xl glass-card border border-charcoal-600/50 max-w-3xl mx-auto space-y-6">
           <div className="text-left space-y-2">
             <div className="flex items-center gap-2">
               <Mail className="w-4 h-4 text-brand-orange" />

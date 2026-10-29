@@ -1,7 +1,7 @@
 "use client";
 
 import React, { useRef, useMemo, useState, useEffect } from "react";
-import { useFrame } from "@react-three/fiber";
+import { useFrame, useThree } from "@react-three/fiber";
 import * as THREE from "three";
 import { createPhoneScreenTexture } from "./PhoneDisplayTexture";
 
@@ -37,6 +37,32 @@ function createRoundedRectShape(w: number, h: number, r: number): THREE.Shape {
   return shape;
 }
 
+/**
+ * Create a ShapeGeometry with NORMALIZED UVs (0..1).
+ *
+ * THREE.ShapeGeometry uses raw shape-vertex coordinates as UVs,
+ * which for a centered shape produces negative and >1 values.
+ * This causes the canvas texture to clamp to edge pixels,
+ * producing the black rectangle artifacts seen on the deployed site.
+ */
+function createScreenGeometry(w: number, h: number, r: number): THREE.ShapeGeometry {
+  const shape = createRoundedRectShape(w, h, r);
+  const geom = new THREE.ShapeGeometry(shape, 24);
+
+  // Fix UVs: normalize from shape-space to 0..1
+  const uvAttr = geom.getAttribute("uv") as THREE.BufferAttribute;
+  const uvArray = uvAttr.array as Float32Array;
+  for (let i = 0; i < uvArray.length; i += 2) {
+    // Shape goes from -w/2..w/2 in X and -h/2..h/2 in Y
+    uvArray[i] = (uvArray[i] + w / 2) / w;       // u: 0..1
+    uvArray[i + 1] = (uvArray[i + 1] + h / 2) / h; // v: 0..1
+  }
+  uvAttr.needsUpdate = true;
+  geom.computeVertexNormals();
+
+  return geom;
+}
+
 export function InteractivePhone({
   deviceModel = "iPhone 15 Pro",
   priceText = "₹89,400",
@@ -44,6 +70,7 @@ export function InteractivePhone({
   accentColor = "#F28C45",
   viewMode = "hero",
 }: InteractivePhoneProps) {
+  const { gl } = useThree();
   const groupRef = useRef<THREE.Group>(null);
   const pointerRef = useRef({ x: 0, y: 0, targetX: 0, targetY: 0 });
   const isDraggingRef = useRef(false);
@@ -61,9 +88,20 @@ export function InteractivePhone({
     return () => mq.removeEventListener("change", handler);
   }, []);
 
-  // Pointer tracking
+  // Pointer tracking & 3D drag interaction
   useEffect(() => {
     if (typeof window === "undefined") return;
+    const dom = gl.domElement;
+
+    const onDown = (e: PointerEvent) => {
+      isDraggingRef.current = true;
+      dragStartRef.current = {
+        x: e.clientX,
+        y: e.clientY,
+        rotX: manualRotRef.current.x,
+        rotY: manualRotRef.current.y,
+      };
+    };
 
     const onMove = (e: PointerEvent) => {
       if (isDraggingRef.current) {
@@ -77,33 +115,34 @@ export function InteractivePhone({
       }
     };
 
-    const onDown = (e: PointerEvent) => {
-      isDraggingRef.current = true;
-      dragStartRef.current = {
-        x: e.clientX,
-        y: e.clientY,
-        rotX: manualRotRef.current.x,
-        rotY: manualRotRef.current.y,
-      };
+    const onUp = () => {
+      isDraggingRef.current = false;
     };
 
-    const onUp = () => { isDraggingRef.current = false; };
-
+    dom.addEventListener("pointerdown", onDown);
     window.addEventListener("pointermove", onMove);
-    window.addEventListener("pointerdown", onDown);
     window.addEventListener("pointerup", onUp);
-    return () => {
-      window.removeEventListener("pointermove", onMove);
-      window.removeEventListener("pointerdown", onDown);
-      window.removeEventListener("pointerup", onUp);
-    };
-  }, []);
+    window.addEventListener("pointercancel", onUp);
 
-  // Screen Texture
+    return () => {
+      dom.removeEventListener("pointerdown", onDown);
+      window.removeEventListener("pointermove", onMove);
+      window.removeEventListener("pointerup", onUp);
+      window.removeEventListener("pointercancel", onUp);
+    };
+  }, [gl]);
+
+  // Screen Texture with lifecycle disposal
   const screenTexture = useMemo(
     () => createPhoneScreenTexture(deviceModel, priceText, tradeinText),
     [deviceModel, priceText, tradeinText]
   );
+
+  useEffect(() => {
+    return () => {
+      screenTexture.dispose();
+    };
+  }, [screenTexture]);
 
   // Chassis (extruded rounded rect)
   const chassisGeometry = useMemo(() => {
@@ -120,13 +159,21 @@ export function InteractivePhone({
     return geom;
   }, []);
 
-  // Screen surface (slightly inset from chassis edge)
+  // Screen surface with FIXED UV mapping
   const screenW = PHONE_W - BEZEL * 2;
   const screenH = PHONE_H - BEZEL * 2;
-  const screenGeometry = useMemo(() => {
-    const shape = createRoundedRectShape(screenW, screenH, CORNER_R - 0.03);
-    return new THREE.ShapeGeometry(shape, 24);
-  }, [screenW, screenH]);
+  const screenGeometry = useMemo(
+    () => createScreenGeometry(screenW, screenH, CORNER_R - 0.04),
+    [screenW, screenH]
+  );
+
+  // Bezel backing geometry (same rounded rect, no UV needed)
+  const bezelGeometry = useMemo(() => {
+    const shape = createRoundedRectShape(PHONE_W - 0.015, PHONE_H - 0.015, CORNER_R - 0.01);
+    const geom = new THREE.ShapeGeometry(shape, 24);
+    geom.computeVertexNormals();
+    return geom;
+  }, []);
 
   // Camera plateau
   const plateauGeometry = useMemo(() => {
@@ -215,7 +262,8 @@ export function InteractivePhone({
     groupRef.current.position.z = THREE.MathUtils.damp(groupRef.current.position.z, tPosZ, lerpSpeed, delta);
   });
 
-  const halfDepth = PHONE_DEPTH / 2 + 0.02; // front face z offset (bevel accounted)
+  // Front face z offset — account for half depth + bevel
+  const halfDepth = PHONE_DEPTH / 2 + 0.02;
 
   return (
     <group ref={groupRef} dispose={null}>
@@ -229,41 +277,54 @@ export function InteractivePhone({
         />
       </mesh>
 
-      {/* 2. Dark Bezel Ring (just behind screen) */}
-      <mesh position={[0, 0, halfDepth - 0.005]}>
-        <planeGeometry args={[PHONE_W - 0.02, PHONE_H - 0.02]} />
-        <meshBasicMaterial color="#060606" />
+      {/* 2. Dark Bezel Ring (rounded rect, sits just proud of chassis) */}
+      <mesh geometry={bezelGeometry} position={[0, 0, halfDepth + 0.001]}>
+        <meshBasicMaterial
+          color="#050507"
+          polygonOffset
+          polygonOffsetFactor={1}
+          polygonOffsetUnits={1}
+        />
       </mesh>
 
-      {/* 3. OLED Screen with Valuation Texture */}
-      <mesh geometry={screenGeometry} position={[0, 0, halfDepth]}>
-        <meshBasicMaterial map={screenTexture} toneMapped={false} />
+      {/* 3. OLED Screen with Valuation Texture — normalized UVs & hardware polygonOffset */}
+      <mesh geometry={screenGeometry} position={[0, 0, halfDepth + 0.003]}>
+        <meshBasicMaterial
+          map={screenTexture}
+          toneMapped={false}
+          polygonOffset
+          polygonOffsetFactor={-1}
+          polygonOffsetUnits={-1}
+        />
       </mesh>
 
-      {/* 4. Subtle Glass Reflection Layer */}
-      <mesh geometry={screenGeometry} position={[0, 0, halfDepth + 0.002]}>
-        <meshStandardMaterial
+      {/* 4. Subtle Glass Reflection Layer — protective cover over full front glass */}
+      <mesh geometry={bezelGeometry} position={[0, 0, halfDepth + 0.005]}>
+        <meshPhysicalMaterial
           transparent
           opacity={0.06}
-          roughness={0.05}
-          metalness={0.8}
+          roughness={0.06}
+          metalness={0.06}
+          clearcoat={1.0}
+          clearcoatRoughness={0.04}
           color="#FFFFFF"
-          envMapIntensity={2.0}
+          envMapIntensity={1.0}
+          depthWrite={false}
         />
       </mesh>
 
       {/* 5. Rear Frosted Glass */}
-      <mesh geometry={screenGeometry} position={[0, 0, -halfDepth]} rotation={[0, Math.PI, 0]}>
+      <mesh geometry={bezelGeometry} position={[0, 0, -halfDepth - 0.001]} rotation={[0, Math.PI, 0]}>
         <meshStandardMaterial
-          color="#1A1A1E"
-          roughness={0.4}
-          metalness={0.2}
-          envMapIntensity={1.4}
+          color="#1C1C20"
+          roughness={0.42}
+          metalness={0.25}
+          envMapIntensity={1.2}
         />
       </mesh>
 
       {/* 6. Rear Camera Module */}
-      <group position={[-0.32, 1.0, -halfDepth - 0.015]} rotation={[0, Math.PI, 0]}>
+      <group position={[-0.32, 1.0, -halfDepth - 0.016]} rotation={[0, Math.PI, 0]}>
         {/* Plateau */}
         <mesh geometry={plateauGeometry}>
           <meshStandardMaterial
@@ -294,7 +355,7 @@ export function InteractivePhone({
             {/* Orange coating glint */}
             <mesh position={[0.025, 0.025, 0.018]}>
               <circleGeometry args={[0.028, 12]} />
-              <meshBasicMaterial color="rgba(242, 140, 69, 0.5)" />
+              <meshBasicMaterial color={accentColor} transparent opacity={0.5} />
             </mesh>
           </group>
         ))}
@@ -344,7 +405,7 @@ export function InteractivePhone({
       </mesh>
 
       {/* Speaker slit */}
-      <mesh position={[0, PHONE_H / 2 - 0.04, halfDepth]}>
+      <mesh position={[0, PHONE_H / 2 - 0.045, halfDepth + 0.007]}>
         <boxGeometry args={[0.28, 0.015, 0.008]} />
         <meshBasicMaterial color="#0A0A0C" />
       </mesh>

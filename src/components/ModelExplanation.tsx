@@ -52,7 +52,7 @@ export function ModelExplanation() {
         </div>
 
         {/* Task Tab Switcher for Metrics */}
-        <div className="flex gap-2 p-1.5 rounded-xl bg-charcoal-800 border border-charcoal-600 max-w-md">
+        <div className="flex gap-2 p-1.5 rounded-xl glass border border-charcoal-600/40 max-w-md">
           <button
             type="button"
             onClick={() => setActiveTaskTab("task_b")}
@@ -80,7 +80,7 @@ export function ModelExplanation() {
         {/* Metrics Grid for Active Task */}
         {activeTaskTab === "task_b" ? (
           <div className="grid grid-cols-2 md:grid-cols-4 gap-4">
-            <div className="p-6 rounded-xl bg-charcoal-800 border border-charcoal-600">
+            <div className="p-6 rounded-xl glass-card border border-charcoal-600/50">
               <div className="text-xs text-brand-grey font-semibold uppercase">Task B R² Score</div>
               <div className="text-3xl font-bold text-brand-orange mt-1">
                 {taskBMetrics.r2_score}
@@ -90,7 +90,7 @@ export function ModelExplanation() {
               </div>
             </div>
 
-            <div className="p-6 rounded-xl bg-charcoal-800 border border-charcoal-600">
+            <div className="p-6 rounded-xl glass-card border border-charcoal-600/50">
               <div className="text-xs text-brand-grey font-semibold uppercase">Mean Abs. Error (MAE)</div>
               <div className="text-3xl font-bold text-brand-ivory mt-1">
                 ₹{taskBMetrics.mae_inr.toLocaleString("en-IN")}
@@ -100,7 +100,7 @@ export function ModelExplanation() {
               </div>
             </div>
 
-            <div className="p-6 rounded-xl bg-charcoal-800 border border-charcoal-600">
+            <div className="p-6 rounded-xl glass-card border border-charcoal-600/50">
               <div className="text-xs text-brand-grey font-semibold uppercase">Median Abs. % Error</div>
               <div className="text-3xl font-bold text-brand-beige mt-1">
                 {taskBMetrics.mdape_percent}%
@@ -110,7 +110,7 @@ export function ModelExplanation() {
               </div>
             </div>
 
-            <div className="p-6 rounded-xl bg-charcoal-800 border border-charcoal-600">
+            <div className="p-6 rounded-xl glass-card border border-charcoal-600/50">
               <div className="text-xs text-brand-grey font-semibold uppercase">Dataset Size</div>
               <div className="text-3xl font-bold text-brand-ivory mt-1">
                 {taskBMetrics.dataset_size}
@@ -122,7 +122,7 @@ export function ModelExplanation() {
           </div>
         ) : (
           <div className="grid grid-cols-2 md:grid-cols-4 gap-4">
-            <div className="p-6 rounded-xl bg-charcoal-800 border border-charcoal-600">
+            <div className="p-6 rounded-xl glass-card border border-charcoal-600/50">
               <div className="text-xs text-brand-grey font-semibold uppercase">Task A R² Score</div>
               <div className="text-3xl font-bold text-brand-orange mt-1">
                 {taskAMetrics.r2_score}
@@ -132,7 +132,7 @@ export function ModelExplanation() {
               </div>
             </div>
 
-            <div className="p-6 rounded-xl bg-charcoal-800 border border-charcoal-600">
+            <div className="p-6 rounded-xl glass-card border border-charcoal-600/50">
               <div className="text-xs text-brand-grey font-semibold uppercase">Mean Abs. Error (MAE)</div>
               <div className="text-3xl font-bold text-brand-ivory mt-1">
                 ₹{taskAMetrics.mae_inr.toLocaleString("en-IN")}
@@ -142,7 +142,7 @@ export function ModelExplanation() {
               </div>
             </div>
 
-            <div className="p-6 rounded-xl bg-charcoal-800 border border-charcoal-600">
+            <div className="p-6 rounded-xl glass-card border border-charcoal-600/50">
               <div className="text-xs text-brand-grey font-semibold uppercase">Median Abs. % Error</div>
               <div className="text-3xl font-bold text-brand-beige mt-1">
                 {taskAMetrics.mdape_percent}%
@@ -152,7 +152,7 @@ export function ModelExplanation() {
               </div>
             </div>
 
-            <div className="p-6 rounded-xl bg-charcoal-800 border border-charcoal-600">
+            <div className="p-6 rounded-xl glass-card border border-charcoal-600/50">
               <div className="text-xs text-brand-grey font-semibold uppercase">Specification Dataset</div>
               <div className="text-3xl font-bold text-brand-ivory mt-1">
                 {taskAMetrics.dataset_size}
@@ -231,7 +231,7 @@ export function ModelExplanation() {
         {/* Feature Importance & Repository Research Notes */}
         <div className="grid grid-cols-1 lg:grid-cols-2 gap-8">
           {/* Feature Importances */}
-          <div className="p-6 sm:p-8 rounded-2xl bg-charcoal-800 border border-charcoal-600 space-y-4">
+          <div className="p-6 sm:p-8 rounded-2xl glass-card border border-charcoal-600/50 space-y-4">
             <div className="flex items-center gap-2">
               <BarChart3 className="w-4 h-4 text-brand-orange" />
               <h3 className="text-lg font-bold text-brand-ivory">
@@ -335,7 +335,7 @@ export function ModelExplanation() {
           </div>
 
           {/* Reference Repository Lessons Card */}
-          <div className="p-6 sm:p-8 rounded-2xl bg-charcoal-800 border border-charcoal-600 space-y-4">
+          <div className="p-6 sm:p-8 rounded-2xl glass-card border border-charcoal-600/50 space-y-4">
             <div className="flex items-center gap-2">
               <GitBranch className="w-4 h-4 text-brand-beige" />
               <h3 className="text-lg font-bold text-brand-ivory">Repository Research Attribution</h3>
@@ -386,7 +386,7 @@ export function ModelExplanation() {
               return (
                 <div
                   key={idx}
-                  className="rounded-xl bg-charcoal-800 border border-charcoal-600 overflow-hidden"
+                  className="rounded-xl glass-card border border-charcoal-600/50 overflow-hidden"
                 >
                   <button
                     type="button"

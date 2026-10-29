@@ -15,7 +15,7 @@ export function Navbar() {
   };
 
   return (
-    <nav className="sticky top-0 z-50 w-full bg-charcoal-900/90 backdrop-blur-md border-b border-charcoal-600">
+    <nav className="sticky top-0 z-50 w-full glass border-b border-charcoal-600/40">
       <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
         <div className="flex items-center justify-between h-16 sm:h-20">
           {/* Brand Wordmark */}

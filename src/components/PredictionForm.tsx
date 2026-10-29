@@ -294,7 +294,7 @@ export function PredictionForm({ onPredictionSuccess, initialValues }: Predictio
         </div>
 
         {/* Task Mode Selector Tabs */}
-        <div className="grid grid-cols-1 sm:grid-cols-2 p-1.5 rounded-xl bg-charcoal-800 border border-charcoal-600 gap-1.5">
+        <div className="grid grid-cols-1 sm:grid-cols-2 p-1.5 rounded-xl glass border border-charcoal-600/40 gap-1.5">
           <button
             type="button"
             onClick={() => setValuationMode("resale")}
@@ -322,7 +322,7 @@ export function PredictionForm({ onPredictionSuccess, initialValues }: Predictio
         </div>
 
         {/* Quick Test Presets */}
-        <div className="p-4 rounded-xl bg-charcoal-800 border border-charcoal-600 space-y-2">
+        <div className="p-4 rounded-xl glass-card border border-charcoal-600/40 space-y-2">
           <div className="text-xs font-semibold uppercase tracking-wider text-brand-grey flex items-center gap-1.5">
             <Sparkles className="w-3.5 h-3.5 text-brand-orange" />
             Quick Benchmark Presets (1-Click Fill)
@@ -408,7 +408,7 @@ export function PredictionForm({ onPredictionSuccess, initialValues }: Predictio
         {/* Prediction Form Container */}
         <form
           onSubmit={handleSubmit}
-          className="p-6 sm:p-8 rounded-2xl bg-charcoal-800 border border-charcoal-600 shadow-subtle-card space-y-8"
+          className="p-6 sm:p-8 rounded-2xl glass-card border border-charcoal-600/50 shadow-subtle-card space-y-8"
         >
           {formError && (
             <div className="p-4 rounded-lg bg-charcoal-900 border border-brand-orange/50 flex items-start gap-3 text-sm text-brand-orange">

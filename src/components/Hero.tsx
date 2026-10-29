@@ -34,7 +34,7 @@ export function Hero() {
           {/* Left Column: Editorial Headline & Copy */}
           <div className="lg:col-span-7 space-y-6 text-left">
             {/* Eyebrow badge */}
-            <div className="inline-flex items-center gap-2 px-3 py-1.5 rounded-full bg-charcoal-700 border border-charcoal-500/60 text-xs font-semibold tracking-wider uppercase text-brand-beige">
+            <div className="inline-flex items-center gap-2 px-3 py-1.5 rounded-full glass-subtle text-xs font-semibold tracking-wider uppercase text-brand-beige">
               <span className="w-1.5 h-1.5 rounded-full bg-brand-orange animate-pulse" />
               AI-Powered Smartphone Intelligence
             </div>
