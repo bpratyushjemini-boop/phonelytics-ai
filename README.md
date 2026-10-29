@@ -96,6 +96,12 @@ Both models were trained using scikit-learn on an 80/20 train/test holdout split
 ## 5. Technology Stack & Design System
 
 - **Frontend:** Next.js 15 (App Router), React 19, TypeScript, Tailwind CSS, Lucide React.
+- **Interactive 3D Engine (PeachWeb-Inspired Experience):**
+  - **Three.js, React Three Fiber & Drei:** Realistic procedural smartphone with an extruded rounded titanium band (`metalness: 0.92`, `roughness: 0.22`), frosted matte back glass, physical buttons, and a triple-lens rear camera bump with sapphire glass and AR coating.
+  - **Dynamic Canvas OLED Texture:** 1024×2048 high-DPI canvas texture rendering live Phonelytics market valuation data, Dynamic Island, and status indicators.
+  - **Cinematic Studio Lighting:** Warm ivory key light (`#FAF7F2`), fill light (`#2a303a`), secondary gold rim accent (`#E0C58F`), and signature burnt-orange rim light (`#F28C45`, intensity 5.2) creating striking edge chamfer glints.
+  - **Physically Coherent Interactions:** Natural cursor parallax and phone tilt via damped lerp, window scroll-coordinated camera rotation, interactive 360° click-and-drag inspection mode, and view presets ("Hero", "Display", "Optics").
+  - **Performance & Accessibility:** Lazy-loaded dynamic client component to eliminate SSR hydration mismatches, automatic WebGL capability detection with graceful high-fidelity CSS 3D fallback, and native `prefers-reduced-motion` support.
 - **Design System:** Restrained consumer technology aesthetic:
   - Charcoal Black (`#111111`) & Deep Charcoal (`#191919`)
   - Burnt Orange (`#F28C45`) for primary actions and metrics
