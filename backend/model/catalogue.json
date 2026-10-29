@@ -4,489 +4,699 @@
     "model": "iPhone 11",
     "ram_gb": 4,
     "storage_gb": 256,
-    "original_price": 51800
+    "battery_mah": 3110,
+    "processor_tier": "Upper-Midrange",
+    "is_5g": 0,
+    "original_price": 51500
   },
   {
     "brand": "Apple",
     "model": "iPhone 12",
     "ram_gb": 4,
-    "storage_gb": 256,
-    "original_price": 58400
+    "storage_gb": 128,
+    "battery_mah": 2815,
+    "processor_tier": "Flagship",
+    "is_5g": 1,
+    "original_price": 56500
   },
   {
     "brand": "Apple",
     "model": "iPhone 13",
     "ram_gb": 4,
-    "storage_gb": 256,
-    "original_price": 69300
+    "storage_gb": 128,
+    "battery_mah": 3227,
+    "processor_tier": "Flagship",
+    "is_5g": 1,
+    "original_price": 60200
   },
   {
     "brand": "Apple",
     "model": "iPhone 14",
     "ram_gb": 6,
-    "storage_gb": 512,
-    "original_price": 83900
+    "storage_gb": 256,
+    "battery_mah": 3279,
+    "processor_tier": "Flagship",
+    "is_5g": 1,
+    "original_price": 74000
   },
   {
     "brand": "Apple",
     "model": "iPhone 14 Pro",
     "ram_gb": 6,
-    "storage_gb": 256,
-    "original_price": 138300
+    "storage_gb": 512,
+    "battery_mah": 3200,
+    "processor_tier": "Flagship",
+    "is_5g": 1,
+    "original_price": 142900
   },
   {
     "brand": "Apple",
     "model": "iPhone 15",
     "ram_gb": 6,
     "storage_gb": 128,
-    "original_price": 81900
+    "battery_mah": 3349,
+    "processor_tier": "Flagship",
+    "is_5g": 1,
+    "original_price": 80800
   },
   {
     "brand": "Apple",
     "model": "iPhone 15 Pro",
     "ram_gb": 8,
-    "storage_gb": 128,
-    "original_price": 135200
+    "storage_gb": 256,
+    "battery_mah": 3274,
+    "processor_tier": "Flagship",
+    "is_5g": 1,
+    "original_price": 138400
   },
   {
     "brand": "Apple",
     "model": "iPhone 15 Pro Max",
     "ram_gb": 8,
     "storage_gb": 512,
-    "original_price": 158500
+    "battery_mah": 4422,
+    "processor_tier": "Flagship",
+    "is_5g": 1,
+    "original_price": 168800
   },
   {
     "brand": "Apple",
     "model": "iPhone 16",
     "ram_gb": 8,
-    "storage_gb": 256,
-    "original_price": 80000
+    "storage_gb": 128,
+    "battery_mah": 3561,
+    "processor_tier": "Flagship",
+    "is_5g": 1,
+    "original_price": 77800
   },
   {
     "brand": "Apple",
     "model": "iPhone 16 Pro",
     "ram_gb": 8,
-    "storage_gb": 512,
-    "original_price": 136900
+    "storage_gb": 128,
+    "battery_mah": 3582,
+    "processor_tier": "Flagship",
+    "is_5g": 1,
+    "original_price": 123000
   },
   {
     "brand": "Apple",
     "model": "iPhone 16 Pro Max",
     "ram_gb": 8,
-    "storage_gb": 1024,
-    "original_price": 155200
+    "storage_gb": 512,
+    "battery_mah": 4685,
+    "processor_tier": "Flagship",
+    "is_5g": 1,
+    "original_price": 148300
   },
   {
     "brand": "Google Pixel",
     "model": "Pixel 6a",
     "ram_gb": 6,
     "storage_gb": 128,
-    "original_price": 31400
+    "battery_mah": 4410,
+    "processor_tier": "Midrange",
+    "is_5g": 1,
+    "original_price": 29700
   },
   {
     "brand": "Google Pixel",
     "model": "Pixel 7 Pro",
     "ram_gb": 12,
-    "storage_gb": 256,
-    "original_price": 82200
+    "storage_gb": 128,
+    "battery_mah": 5000,
+    "processor_tier": "Flagship",
+    "is_5g": 1,
+    "original_price": 76900
   },
   {
     "brand": "Google Pixel",
     "model": "Pixel 7a",
     "ram_gb": 8,
     "storage_gb": 128,
-    "original_price": 42600
+    "battery_mah": 4385,
+    "processor_tier": "Midrange",
+    "is_5g": 1,
+    "original_price": 39300
   },
   {
     "brand": "Google Pixel",
     "model": "Pixel 8",
     "ram_gb": 8,
-    "storage_gb": 128,
-    "original_price": 68400
+    "storage_gb": 256,
+    "battery_mah": 4575,
+    "processor_tier": "Flagship",
+    "is_5g": 1,
+    "original_price": 72500
   },
   {
     "brand": "Google Pixel",
     "model": "Pixel 8 Pro",
     "ram_gb": 12,
     "storage_gb": 128,
-    "original_price": 104300
+    "battery_mah": 5050,
+    "processor_tier": "Flagship",
+    "is_5g": 1,
+    "original_price": 101100
   },
   {
     "brand": "Google Pixel",
     "model": "Pixel 9",
     "ram_gb": 12,
     "storage_gb": 128,
-    "original_price": 79200
+    "battery_mah": 4700,
+    "processor_tier": "Flagship",
+    "is_5g": 1,
+    "original_price": 81000
   },
   {
     "brand": "Google Pixel",
     "model": "Pixel 9 Pro XL",
     "ram_gb": 16,
     "storage_gb": 128,
-    "original_price": 133400
+    "battery_mah": 5060,
+    "processor_tier": "Flagship",
+    "is_5g": 1,
+    "original_price": 123300
   },
   {
     "brand": "Motorola",
     "model": "Edge 40 Neo",
-    "ram_gb": 8,
+    "ram_gb": 12,
     "storage_gb": 256,
-    "original_price": 27500
+    "battery_mah": 5000,
+    "processor_tier": "Midrange",
+    "is_5g": 1,
+    "original_price": 31700
   },
   {
     "brand": "Motorola",
     "model": "Edge 50 Pro",
-    "ram_gb": 8,
+    "ram_gb": 12,
     "storage_gb": 256,
-    "original_price": 31000
+    "battery_mah": 4500,
+    "processor_tier": "Midrange",
+    "is_5g": 1,
+    "original_price": 37600
   },
   {
     "brand": "Motorola",
     "model": "Edge 50 Ultra",
-    "ram_gb": 12,
+    "ram_gb": 16,
     "storage_gb": 512,
-    "original_price": 58100
+    "battery_mah": 4500,
+    "processor_tier": "Upper-Midrange",
+    "is_5g": 1,
+    "original_price": 61200
   },
   {
     "brand": "Motorola",
     "model": "Moto G54 5G",
     "ram_gb": 12,
     "storage_gb": 256,
-    "original_price": 23800
+    "battery_mah": 6000,
+    "processor_tier": "Budget",
+    "is_5g": 1,
+    "original_price": 22100
   },
   {
     "brand": "Motorola",
     "model": "Moto G84 5G",
     "ram_gb": 12,
     "storage_gb": 256,
-    "original_price": 18500
+    "battery_mah": 5000,
+    "processor_tier": "Budget",
+    "is_5g": 1,
+    "original_price": 19500
   },
   {
     "brand": "OnePlus",
     "model": "OnePlus 11",
     "ram_gb": 8,
     "storage_gb": 128,
-    "original_price": 58900
+    "battery_mah": 5000,
+    "processor_tier": "Flagship",
+    "is_5g": 1,
+    "original_price": 57600
   },
   {
     "brand": "OnePlus",
     "model": "OnePlus 11R",
-    "ram_gb": 16,
-    "storage_gb": 256,
-    "original_price": 49400
+    "ram_gb": 8,
+    "storage_gb": 128,
+    "battery_mah": 5000,
+    "processor_tier": "Upper-Midrange",
+    "is_5g": 1,
+    "original_price": 36300
   },
   {
     "brand": "OnePlus",
     "model": "OnePlus 12",
-    "ram_gb": 16,
+    "ram_gb": 12,
     "storage_gb": 512,
-    "original_price": 76800
+    "battery_mah": 5400,
+    "processor_tier": "Flagship",
+    "is_5g": 1,
+    "original_price": 68100
   },
   {
     "brand": "OnePlus",
     "model": "OnePlus 12R",
-    "ram_gb": 8,
+    "ram_gb": 12,
     "storage_gb": 128,
-    "original_price": 40500
+    "battery_mah": 5500,
+    "processor_tier": "Upper-Midrange",
+    "is_5g": 1,
+    "original_price": 43900
   },
   {
     "brand": "OnePlus",
     "model": "OnePlus Nord 4",
-    "ram_gb": 12,
+    "ram_gb": 8,
     "storage_gb": 256,
-    "original_price": 35500
+    "battery_mah": 5500,
+    "processor_tier": "Midrange",
+    "is_5g": 1,
+    "original_price": 33500
   },
   {
     "brand": "OnePlus",
     "model": "OnePlus Nord CE 3 Lite",
     "ram_gb": 8,
-    "storage_gb": 256,
-    "original_price": 22100
+    "storage_gb": 128,
+    "battery_mah": 5000,
+    "processor_tier": "Budget",
+    "is_5g": 1,
+    "original_price": 18200
   },
   {
     "brand": "OnePlus",
     "model": "OnePlus Nord CE4",
     "ram_gb": 8,
-    "storage_gb": 128,
-    "original_price": 25700
+    "storage_gb": 256,
+    "battery_mah": 5500,
+    "processor_tier": "Midrange",
+    "is_5g": 1,
+    "original_price": 28800
   },
   {
     "brand": "Oppo",
     "model": "Oppo A79 5G",
     "ram_gb": 8,
     "storage_gb": 128,
-    "original_price": 17100
+    "battery_mah": 5000,
+    "processor_tier": "Budget",
+    "is_5g": 1,
+    "original_price": 17700
   },
   {
     "brand": "Oppo",
     "model": "Oppo F25 Pro 5G",
     "ram_gb": 8,
     "storage_gb": 128,
-    "original_price": 23700
+    "battery_mah": 5000,
+    "processor_tier": "Midrange",
+    "is_5g": 1,
+    "original_price": 24300
   },
   {
     "brand": "Oppo",
     "model": "Oppo Find X7 Ultra",
     "ram_gb": 16,
-    "storage_gb": 256,
-    "original_price": 86300
+    "storage_gb": 512,
+    "battery_mah": 5000,
+    "processor_tier": "Flagship",
+    "is_5g": 1,
+    "original_price": 86500
   },
   {
     "brand": "Oppo",
     "model": "Oppo Reno 11 5G",
     "ram_gb": 8,
-    "storage_gb": 256,
-    "original_price": 34800
+    "storage_gb": 128,
+    "battery_mah": 5000,
+    "processor_tier": "Midrange",
+    "is_5g": 1,
+    "original_price": 29300
   },
   {
     "brand": "Oppo",
     "model": "Oppo Reno 12 Pro 5G",
     "ram_gb": 12,
-    "storage_gb": 512,
-    "original_price": 37300
+    "storage_gb": 256,
+    "battery_mah": 5000,
+    "processor_tier": "Upper-Midrange",
+    "is_5g": 1,
+    "original_price": 36700
   },
   {
     "brand": "Other",
     "model": "Nothing Phone (2)",
-    "ram_gb": 8,
-    "storage_gb": 512,
-    "original_price": 48700
+    "ram_gb": 12,
+    "storage_gb": 128,
+    "battery_mah": 4700,
+    "processor_tier": "Upper-Midrange",
+    "is_5g": 1,
+    "original_price": 44100
   },
   {
     "brand": "Other",
     "model": "Nothing Phone (2a)",
     "ram_gb": 8,
-    "storage_gb": 256,
-    "original_price": 26700
+    "storage_gb": 128,
+    "battery_mah": 5000,
+    "processor_tier": "Midrange",
+    "is_5g": 1,
+    "original_price": 24700
   },
   {
     "brand": "Other",
     "model": "Poco F6 5G",
     "ram_gb": 8,
     "storage_gb": 512,
-    "original_price": 32900
+    "battery_mah": 5000,
+    "processor_tier": "Midrange",
+    "is_5g": 1,
+    "original_price": 33900
   },
   {
     "brand": "Other",
     "model": "Poco X6 Pro 5G",
     "ram_gb": 12,
-    "storage_gb": 256,
-    "original_price": 30000
+    "storage_gb": 512,
+    "battery_mah": 5000,
+    "processor_tier": "Midrange",
+    "is_5g": 1,
+    "original_price": 32200
   },
   {
     "brand": "Other",
     "model": "iQOO 12 5G",
-    "ram_gb": 16,
+    "ram_gb": 12,
     "storage_gb": 512,
-    "original_price": 61900
+    "battery_mah": 5000,
+    "processor_tier": "Flagship",
+    "is_5g": 1,
+    "original_price": 56300
   },
   {
     "brand": "Other",
     "model": "iQOO Neo 9 Pro",
-    "ram_gb": 8,
-    "storage_gb": 256,
-    "original_price": 36500
+    "ram_gb": 12,
+    "storage_gb": 128,
+    "battery_mah": 5160,
+    "processor_tier": "Upper-Midrange",
+    "is_5g": 1,
+    "original_price": 40700
   },
   {
     "brand": "Realme",
     "model": "Realme 11 Pro 5G",
     "ram_gb": 8,
     "storage_gb": 128,
-    "original_price": 22500
+    "battery_mah": 5000,
+    "processor_tier": "Midrange",
+    "is_5g": 1,
+    "original_price": 23800
   },
   {
     "brand": "Realme",
     "model": "Realme 12 Pro+ 5G",
-    "ram_gb": 12,
+    "ram_gb": 8,
     "storage_gb": 256,
-    "original_price": 35900
+    "battery_mah": 5000,
+    "processor_tier": "Midrange",
+    "is_5g": 1,
+    "original_price": 32000
   },
   {
     "brand": "Realme",
     "model": "Realme C55",
     "ram_gb": 4,
-    "storage_gb": 64,
-    "original_price": 11200
+    "storage_gb": 128,
+    "battery_mah": 5000,
+    "processor_tier": "Budget",
+    "is_5g": 0,
+    "original_price": 15300
   },
   {
     "brand": "Realme",
     "model": "Realme GT 6",
     "ram_gb": 16,
     "storage_gb": 512,
-    "original_price": 55900
+    "battery_mah": 5500,
+    "processor_tier": "Upper-Midrange",
+    "is_5g": 1,
+    "original_price": 54000
   },
   {
     "brand": "Realme",
     "model": "Realme Narzo 70 Pro",
     "ram_gb": 8,
     "storage_gb": 128,
-    "original_price": 19700
+    "battery_mah": 5000,
+    "processor_tier": "Budget",
+    "is_5g": 1,
+    "original_price": 19300
   },
   {
     "brand": "Redmi",
     "model": "Redmi 12 5G",
-    "ram_gb": 6,
+    "ram_gb": 4,
     "storage_gb": 256,
-    "original_price": 16800
+    "battery_mah": 5000,
+    "processor_tier": "Budget",
+    "is_5g": 1,
+    "original_price": 14800
   },
   {
     "brand": "Redmi",
     "model": "Redmi 13C 5G",
-    "ram_gb": 8,
+    "ram_gb": 6,
     "storage_gb": 128,
-    "original_price": 15800
+    "battery_mah": 5000,
+    "processor_tier": "Budget",
+    "is_5g": 1,
+    "original_price": 13200
   },
   {
     "brand": "Redmi",
     "model": "Redmi Note 12 Pro 5G",
     "ram_gb": 8,
     "storage_gb": 256,
-    "original_price": 27600
+    "battery_mah": 5000,
+    "processor_tier": "Midrange",
+    "is_5g": 1,
+    "original_price": 27500
   },
   {
     "brand": "Redmi",
     "model": "Redmi Note 13 5G",
     "ram_gb": 8,
     "storage_gb": 256,
-    "original_price": 22000
+    "battery_mah": 5000,
+    "processor_tier": "Budget",
+    "is_5g": 1,
+    "original_price": 23900
   },
   {
     "brand": "Redmi",
     "model": "Redmi Note 13 Pro+ 5G",
     "ram_gb": 8,
     "storage_gb": 256,
-    "original_price": 28000
+    "battery_mah": 5000,
+    "processor_tier": "Midrange",
+    "is_5g": 1,
+    "original_price": 29500
   },
   {
     "brand": "Samsung",
     "model": "Galaxy A35 5G",
     "ram_gb": 6,
     "storage_gb": 128,
-    "original_price": 27000
+    "battery_mah": 5000,
+    "processor_tier": "Midrange",
+    "is_5g": 1,
+    "original_price": 27400
   },
   {
     "brand": "Samsung",
     "model": "Galaxy A55 5G",
     "ram_gb": 8,
     "storage_gb": 256,
-    "original_price": 44500
+    "battery_mah": 5000,
+    "processor_tier": "Midrange",
+    "is_5g": 1,
+    "original_price": 41800
   },
   {
     "brand": "Samsung",
     "model": "Galaxy F14 5G",
     "ram_gb": 6,
-    "storage_gb": 128,
-    "original_price": 17800
+    "storage_gb": 64,
+    "battery_mah": 6000,
+    "processor_tier": "Budget",
+    "is_5g": 1,
+    "original_price": 15800
   },
   {
     "brand": "Samsung",
     "model": "Galaxy M34 5G",
-    "ram_gb": 6,
+    "ram_gb": 8,
     "storage_gb": 128,
-    "original_price": 18800
+    "battery_mah": 6000,
+    "processor_tier": "Budget",
+    "is_5g": 1,
+    "original_price": 20900
   },
   {
     "brand": "Samsung",
     "model": "Galaxy S21 FE",
     "ram_gb": 8,
-    "storage_gb": 256,
-    "original_price": 41900
+    "storage_gb": 128,
+    "battery_mah": 4500,
+    "processor_tier": "Upper-Midrange",
+    "is_5g": 1,
+    "original_price": 40900
   },
   {
     "brand": "Samsung",
     "model": "Galaxy S22 Ultra",
     "ram_gb": 12,
-    "storage_gb": 256,
-    "original_price": 86900
+    "storage_gb": 512,
+    "battery_mah": 5000,
+    "processor_tier": "Flagship",
+    "is_5g": 1,
+    "original_price": 90300
   },
   {
     "brand": "Samsung",
     "model": "Galaxy S23",
     "ram_gb": 8,
     "storage_gb": 256,
-    "original_price": 65600
+    "battery_mah": 3900,
+    "processor_tier": "Flagship",
+    "is_5g": 1,
+    "original_price": 67000
   },
   {
     "brand": "Samsung",
     "model": "Galaxy S23 Ultra",
     "ram_gb": 12,
-    "storage_gb": 512,
-    "original_price": 106700
+    "storage_gb": 256,
+    "battery_mah": 5000,
+    "processor_tier": "Flagship",
+    "is_5g": 1,
+    "original_price": 103000
   },
   {
     "brand": "Samsung",
     "model": "Galaxy S24",
     "ram_gb": 8,
-    "storage_gb": 256,
-    "original_price": 80500
+    "storage_gb": 512,
+    "battery_mah": 4000,
+    "processor_tier": "Flagship",
+    "is_5g": 1,
+    "original_price": 83400
   },
   {
     "brand": "Samsung",
     "model": "Galaxy S24 Ultra",
     "ram_gb": 12,
-    "storage_gb": 256,
-    "original_price": 130100
+    "storage_gb": 512,
+    "battery_mah": 5000,
+    "processor_tier": "Flagship",
+    "is_5g": 1,
+    "original_price": 132200
   },
   {
     "brand": "Vivo",
     "model": "Vivo T3 5G",
     "ram_gb": 8,
-    "storage_gb": 256,
-    "original_price": 24000
+    "storage_gb": 128,
+    "battery_mah": 5000,
+    "processor_tier": "Budget",
+    "is_5g": 1,
+    "original_price": 20000
   },
   {
     "brand": "Vivo",
     "model": "Vivo V29 5G",
-    "ram_gb": 12,
-    "storage_gb": 128,
-    "original_price": 34800
+    "ram_gb": 8,
+    "storage_gb": 256,
+    "battery_mah": 4600,
+    "processor_tier": "Midrange",
+    "is_5g": 1,
+    "original_price": 34100
   },
   {
     "brand": "Vivo",
     "model": "Vivo V30 Pro",
-    "ram_gb": 8,
+    "ram_gb": 12,
     "storage_gb": 256,
-    "original_price": 42500
+    "battery_mah": 5000,
+    "processor_tier": "Upper-Midrange",
+    "is_5g": 1,
+    "original_price": 47600
   },
   {
     "brand": "Vivo",
     "model": "Vivo X100 Pro",
     "ram_gb": 16,
     "storage_gb": 512,
-    "original_price": 86800
+    "battery_mah": 5400,
+    "processor_tier": "Flagship",
+    "is_5g": 1,
+    "original_price": 90200
   },
   {
     "brand": "Vivo",
     "model": "Vivo Y200e 5G",
     "ram_gb": 8,
     "storage_gb": 128,
-    "original_price": 21300
+    "battery_mah": 5000,
+    "processor_tier": "Budget",
+    "is_5g": 1,
+    "original_price": 20000
   },
   {
     "brand": "Xiaomi",
     "model": "Xiaomi 12 Pro",
     "ram_gb": 12,
     "storage_gb": 256,
-    "original_price": 54900
+    "battery_mah": 4600,
+    "processor_tier": "Upper-Midrange",
+    "is_5g": 1,
+    "original_price": 57600
   },
   {
     "brand": "Xiaomi",
     "model": "Xiaomi 13 Pro",
     "ram_gb": 12,
     "storage_gb": 256,
-    "original_price": 71600
+    "battery_mah": 4820,
+    "processor_tier": "Flagship",
+    "is_5g": 1,
+    "original_price": 75400
   },
   {
     "brand": "Xiaomi",
     "model": "Xiaomi 14",
     "ram_gb": 12,
     "storage_gb": 512,
-    "original_price": 66100
+    "battery_mah": 4610,
+    "processor_tier": "Flagship",
+    "is_5g": 1,
+    "original_price": 68800
   },
   {
     "brand": "Xiaomi",
     "model": "Xiaomi 14 Ultra",
     "ram_gb": 16,
     "storage_gb": 512,
-    "original_price": 97700
+    "battery_mah": 5000,
+    "processor_tier": "Flagship",
+    "is_5g": 1,
+    "original_price": 100800
   }
 ]

@@ -1,67 +1,166 @@
 {
+  "task_a_new_phone": {
+    "model_name": "Gradient Boosting",
+    "algorithm": "GradientBoostingRegressor",
+    "dataset_size": 1600,
+    "train_samples": 1280,
+    "test_samples": 320,
+    "r2_score": 0.9819,
+    "mae_inr": 2748.89,
+    "rmse_inr": 5124.44,
+    "mdape_percent": 3.3,
+    "model_comparison": {
+      "Gradient Boosting": {
+        "MAE": 2748.89,
+        "RMSE": 5124.44,
+        "R2": 0.9819,
+        "MdAPE": 3.3
+      },
+      "Random Forest": {
+        "MAE": 3682.97,
+        "RMSE": 6334.4,
+        "R2": 0.9723,
+        "MdAPE": 4.39
+      },
+      "Ridge Baseline": {
+        "MAE": 10079.98,
+        "RMSE": 14118.17,
+        "R2": 0.8622,
+        "MdAPE": 16.16
+      }
+    },
+    "feature_importances": {
+      "processor_tier_Flagship": 0.6831,
+      "battery_mah": 0.0874,
+      "storage_gb": 0.0608,
+      "ram_gb": 0.0396,
+      "brand_Apple": 0.0365,
+      "processor_tier_Budget": 0.0316,
+      "brand_Google Pixel": 0.0121,
+      "brand_Samsung": 0.0116,
+      "brand_Other": 0.0098,
+      "brand_OnePlus": 0.0096,
+      "processor_tier_Upper-Midrange": 0.0093,
+      "processor_tier_Midrange": 0.0055,
+      "brand_Xiaomi": 0.0018,
+      "brand_Motorola": 0.0008,
+      "brand_Oppo": 0.0003,
+      "brand_Vivo": 0.0002,
+      "brand_Realme": 0.0,
+      "brand_Redmi": 0.0,
+      "is_5g": 0.0
+    }
+  },
+  "task_b_resale": {
+    "model_name": "Gradient Boosting",
+    "algorithm": "GradientBoostingRegressor",
+    "dataset_size": 1600,
+    "train_samples": 1280,
+    "test_samples": 320,
+    "r2_score": 0.9887,
+    "mae_inr": 2099.1,
+    "rmse_inr": 3155.38,
+    "mdape_percent": 4.94,
+    "model_comparison": {
+      "Gradient Boosting": {
+        "MAE": 2099.1,
+        "RMSE": 3155.38,
+        "R2": 0.9887,
+        "MdAPE": 4.94
+      },
+      "Random Forest": {
+        "MAE": 3156.73,
+        "RMSE": 4973.1,
+        "R2": 0.9718,
+        "MdAPE": 6.51
+      },
+      "Ridge Baseline": {
+        "MAE": 4877.88,
+        "RMSE": 6975.48,
+        "R2": 0.9445,
+        "MdAPE": 10.53
+      }
+    },
+    "feature_importances": {
+      "original_price": 0.7916,
+      "age_months": 0.1096,
+      "battery_health": 0.0477,
+      "condition_Like New": 0.0211,
+      "condition_Excellent": 0.0081,
+      "condition_Fair": 0.0067,
+      "condition_Poor": 0.0052,
+      "warranty_months": 0.005,
+      "brand_Apple": 0.0019,
+      "condition_Good": 0.0018,
+      "ram_gb": 0.0004,
+      "storage_gb": 0.0003,
+      "has_box_bill": 0.0002,
+      "brand_Google Pixel": 0.0,
+      "brand_Motorola": 0.0,
+      "brand_OnePlus": 0.0,
+      "brand_Oppo": 0.0,
+      "brand_Other": 0.0,
+      "brand_Realme": 0.0,
+      "brand_Redmi": 0.0,
+      "brand_Samsung": 0.0,
+      "brand_Vivo": 0.0,
+      "brand_Xiaomi": 0.0
+    }
+  },
+  "training_date": "2026-10-29",
+  "random_state": 42,
   "model_name": "Gradient Boosting",
   "algorithm": "GradientBoostingRegressor",
-  "dataset_size": 1400,
-  "train_samples": 1120,
-  "test_samples": 280,
-  "r2_score": 0.9889,
-  "mae_inr": 1991.17,
-  "rmse_inr": 3209.76,
-  "mape_percent": 5.56,
+  "dataset_size": 1600,
+  "train_samples": 1280,
+  "test_samples": 320,
+  "r2_score": 0.9887,
+  "mae_inr": 2099.1,
+  "rmse_inr": 3155.38,
+  "mape_percent": 4.94,
   "model_comparison": {
     "Gradient Boosting": {
-      "MAE": 1991.17,
-      "RMSE": 3209.76,
-      "R2": 0.9889,
-      "MAPE": 5.56
+      "MAE": 2099.1,
+      "RMSE": 3155.38,
+      "R2": 0.9887,
+      "MdAPE": 4.94
     },
     "Random Forest": {
-      "MAE": 3299.59,
-      "RMSE": 5231.29,
-      "R2": 0.9704,
-      "MAPE": 10.24
+      "MAE": 3156.73,
+      "RMSE": 4973.1,
+      "R2": 0.9718,
+      "MdAPE": 6.51
     },
     "Ridge Baseline": {
-      "MAE": 5210.39,
-      "RMSE": 7593.34,
-      "R2": 0.9376,
-      "MAPE": 22.3
+      "MAE": 4877.88,
+      "RMSE": 6975.48,
+      "R2": 0.9445,
+      "MdAPE": 10.53
     }
   },
   "feature_importances": {
-    "original_price": 0.8513,
-    "age_months": 0.0952,
-    "battery_health": 0.0174,
-    "condition_Like New": 0.0138,
-    "condition_Fair": 0.0062,
-    "condition_Excellent": 0.0061,
-    "condition_Poor": 0.0056,
-    "condition_Good": 0.0017,
-    "brand_Apple": 0.001,
-    "storage_gb": 0.0009,
-    "brand_Samsung": 0.0005,
-    "brand_OnePlus": 0.0001,
-    "ram_gb": 0.0001,
+    "original_price": 0.7916,
+    "age_months": 0.1096,
+    "battery_health": 0.0477,
+    "condition_Like New": 0.0211,
+    "condition_Excellent": 0.0081,
+    "condition_Fair": 0.0067,
+    "condition_Poor": 0.0052,
+    "warranty_months": 0.005,
+    "brand_Apple": 0.0019,
+    "condition_Good": 0.0018,
+    "ram_gb": 0.0004,
+    "storage_gb": 0.0003,
+    "has_box_bill": 0.0002,
     "brand_Google Pixel": 0.0,
     "brand_Motorola": 0.0,
+    "brand_OnePlus": 0.0,
     "brand_Oppo": 0.0,
     "brand_Other": 0.0,
     "brand_Realme": 0.0,
     "brand_Redmi": 0.0,
+    "brand_Samsung": 0.0,
     "brand_Vivo": 0.0,
     "brand_Xiaomi": 0.0
-  },
-  "features": {
-    "categorical": [
-      "brand",
-      "condition"
-    ],
-    "numerical": [
-      "ram_gb",
-      "storage_gb",
-      "age_months",
-      "battery_health",
-      "original_price"
-    ]
   }
 }

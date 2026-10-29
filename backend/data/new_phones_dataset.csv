@@ -1,0 +1,1601 @@
+brand,model,ram_gb,storage_gb,battery_mah,processor_tier,is_5g,retail_price_inr
+Samsung,Galaxy S23,8,256,3900,Flagship,1,67000
+Google Pixel,Pixel 9,12,128,4700,Flagship,1,81000
+Redmi,Redmi 13C 5G,6,128,5000,Budget,1,13200
+Realme,Realme C55,4,128,5000,Budget,0,15300
+Google Pixel,Pixel 9,12,256,4700,Flagship,1,81900
+Google Pixel,Pixel 8,8,256,4575,Flagship,1,72500
+OnePlus,OnePlus Nord CE 3 Lite,8,128,5000,Budget,1,18200
+Oppo,Oppo Find X7 Ultra,16,512,5000,Flagship,1,86500
+Vivo,Vivo X100 Pro,16,512,5400,Flagship,1,90200
+Samsung,Galaxy F14 5G,6,64,6000,Budget,1,15800
+OnePlus,OnePlus Nord 4,8,256,5500,Midrange,1,33500
+Redmi,Redmi Note 13 Pro+ 5G,8,256,5000,Midrange,1,29500
+Google Pixel,Pixel 7 Pro,12,128,5000,Flagship,1,76900
+Apple,iPhone 13,4,128,3227,Flagship,1,60200
+Apple,iPhone 12,4,128,2815,Flagship,1,56500
+OnePlus,OnePlus 11R,8,128,5000,Upper-Midrange,1,36300
+Redmi,Redmi 13C 5G,4,128,5000,Budget,1,10800
+Samsung,Galaxy S24,8,512,4000,Flagship,1,83400
+Realme,Realme C55,4,128,5000,Budget,0,14800
+Xiaomi,Xiaomi 13 Pro,12,256,4820,Flagship,1,75400
+OnePlus,OnePlus 11,8,128,5000,Flagship,1,57600
+Other,Poco X6 Pro 5G,12,512,5000,Midrange,1,32200
+Samsung,Galaxy S24,8,512,4000,Flagship,1,79600
+Other,Poco F6 5G,8,512,5000,Midrange,1,33900
+Google Pixel,Pixel 7 Pro,12,256,5000,Flagship,1,79900
+Oppo,Oppo Reno 11 5G,8,128,5000,Midrange,1,29300
+Apple,iPhone 15,6,128,3349,Flagship,1,80800
+OnePlus,OnePlus 12R,12,128,5500,Upper-Midrange,1,43900
+Apple,iPhone 15 Pro,8,256,3274,Flagship,1,138400
+Apple,iPhone 13,4,256,3227,Flagship,1,66500
+Google Pixel,Pixel 7 Pro,12,128,5000,Flagship,1,75400
+Oppo,Oppo Reno 12 Pro 5G,12,256,5000,Upper-Midrange,1,36700
+Redmi,Redmi Note 12 Pro 5G,8,256,5000,Midrange,1,27500
+Apple,iPhone 16 Pro Max,8,512,4685,Flagship,1,148300
+OnePlus,OnePlus 12,12,512,5400,Flagship,1,68100
+Apple,iPhone 12,4,128,2815,Flagship,1,57200
+Samsung,Galaxy S23 Ultra,12,256,5000,Flagship,1,103000
+Redmi,Redmi Note 13 5G,8,256,5000,Budget,1,23900
+Other,Poco X6 Pro 5G,12,256,5000,Midrange,1,29400
+Apple,iPhone 13,4,256,3227,Flagship,1,65200
+Realme,Realme C55,6,64,5000,Budget,0,14800
+Google Pixel,Pixel 9 Pro XL,16,128,5060,Flagship,1,123300
+Other,iQOO 12 5G,12,512,5000,Flagship,1,56300
+Realme,Realme C55,6,128,5000,Budget,0,17100
+Apple,iPhone 15,6,128,3349,Flagship,1,78500
+Realme,Realme Narzo 70 Pro,8,128,5000,Budget,1,19300
+Apple,iPhone 12,4,64,2815,Flagship,1,50500
+Realme,Realme Narzo 70 Pro,8,256,5000,Budget,1,21400
+Other,Poco X6 Pro 5G,12,512,5000,Midrange,1,32700
+Realme,Realme C55,6,64,5000,Budget,0,14400
+Other,Poco X6 Pro 5G,8,256,5000,Midrange,1,24600
+Xiaomi,Xiaomi 13 Pro,12,256,4820,Flagship,1,75900
+Oppo,Oppo A79 5G,8,128,5000,Budget,1,17700
+Motorola,Edge 40 Neo,12,256,5000,Midrange,1,31700
+Samsung,Galaxy S21 FE,8,128,4500,Upper-Midrange,1,40900
+Apple,iPhone 13,4,256,3227,Flagship,1,64200
+Google Pixel,Pixel 9 Pro XL,16,256,5060,Flagship,1,131100
+OnePlus,OnePlus Nord CE 3 Lite,8,128,5000,Budget,1,17600
+Oppo,Oppo A79 5G,8,128,5000,Budget,1,18500
+OnePlus,OnePlus 12,16,512,5400,Flagship,1,72500
+Google Pixel,Pixel 7a,8,128,4385,Midrange,1,39300
+Xiaomi,Xiaomi 14 Ultra,16,512,5000,Flagship,1,100800
+Vivo,Vivo V29 5G,8,256,4600,Midrange,1,34100
+Apple,iPhone 14 Pro,6,512,3200,Flagship,1,142900
+Motorola,Moto G84 5G,12,256,5000,Budget,1,19500
+Samsung,Galaxy S22 Ultra,12,512,5000,Flagship,1,90300
+OnePlus,OnePlus 11R,16,128,5000,Upper-Midrange,1,46600
+Xiaomi,Xiaomi 12 Pro,12,256,4600,Upper-Midrange,1,57600
+Google Pixel,Pixel 8 Pro,12,128,5050,Flagship,1,101100
+Samsung,Galaxy M34 5G,8,128,6000,Budget,1,20900
+Vivo,Vivo T3 5G,8,128,5000,Budget,1,20000
+Motorola,Moto G84 5G,12,256,5000,Budget,1,18700
+Apple,iPhone 15 Pro Max,8,512,4422,Flagship,1,168800
+Google Pixel,Pixel 8 Pro,12,512,5050,Flagship,1,102800
+Realme,Realme GT 6,16,512,5500,Upper-Midrange,1,54000
+Xiaomi,Xiaomi 13 Pro,12,256,4820,Flagship,1,77100
+Xiaomi,Xiaomi 14,12,512,4610,Flagship,1,68800
+Redmi,Redmi Note 13 Pro+ 5G,12,256,5000,Midrange,1,35000
+Other,Nothing Phone (2),12,128,4700,Upper-Midrange,1,44100
+Vivo,Vivo V30 Pro,12,256,5000,Upper-Midrange,1,47600
+Samsung,Galaxy S23 Ultra,12,512,5000,Flagship,1,104900
+Vivo,Vivo T3 5G,8,128,5000,Budget,1,19500
+Other,iQOO Neo 9 Pro,12,128,5160,Upper-Midrange,1,40700
+Google Pixel,Pixel 8 Pro,12,128,5050,Flagship,1,101900
+Oppo,Oppo A79 5G,8,128,5000,Budget,1,18200
+OnePlus,OnePlus Nord CE 3 Lite,8,256,5000,Budget,1,21300
+Realme,Realme 12 Pro+ 5G,8,256,5000,Midrange,1,32000
+Oppo,Oppo F25 Pro 5G,8,128,5000,Midrange,1,24300
+Oppo,Oppo Reno 11 5G,8,128,5000,Midrange,1,29700
+Other,Nothing Phone (2),12,128,4700,Upper-Midrange,1,45600
+Redmi,Redmi 13C 5G,6,256,5000,Budget,1,16300
+Samsung,Galaxy S24,8,128,4000,Flagship,1,75300
+Apple,iPhone 14 Pro,6,512,3200,Flagship,1,140600
+Xiaomi,Xiaomi 14 Ultra,16,512,5000,Flagship,1,102100
+Google Pixel,Pixel 6a,6,128,4410,Midrange,1,29700
+Vivo,Vivo Y200e 5G,8,128,5000,Budget,1,20000
+Google Pixel,Pixel 6a,6,128,4410,Midrange,1,30000
+Motorola,Moto G84 5G,12,256,5000,Budget,1,18700
+Oppo,Oppo Reno 12 Pro 5G,12,256,5000,Upper-Midrange,1,36700
+Vivo,Vivo V29 5G,12,256,4600,Midrange,1,38900
+Oppo,Oppo Reno 12 Pro 5G,12,256,5000,Upper-Midrange,1,36800
+Samsung,Galaxy A35 5G,6,128,5000,Midrange,1,27400
+Oppo,Oppo F25 Pro 5G,8,256,5000,Midrange,1,26400
+Apple,iPhone 14,6,256,3279,Flagship,1,74000
+OnePlus,OnePlus 11R,12,256,5000,Upper-Midrange,1,43800
+Google Pixel,Pixel 8,8,256,4575,Flagship,1,73100
+Redmi,Redmi 12 5G,4,256,5000,Budget,1,14800
+Apple,iPhone 11,4,256,3110,Upper-Midrange,0,51500
+Oppo,Oppo Find X7 Ultra,16,256,5000,Flagship,1,84300
+Other,iQOO Neo 9 Pro,8,256,5160,Upper-Midrange,1,38900
+Apple,iPhone 15,6,256,3349,Flagship,1,86800
+OnePlus,OnePlus 11R,12,256,5000,Upper-Midrange,1,43700
+Google Pixel,Pixel 7a,8,128,4385,Midrange,1,40900
+Oppo,Oppo Reno 12 Pro 5G,12,256,5000,Upper-Midrange,1,37700
+Redmi,Redmi 12 5G,4,128,5000,Budget,1,11700
+Other,Poco F6 5G,12,256,5000,Midrange,1,35400
+Other,iQOO 12 5G,12,256,5000,Flagship,1,53700
+Realme,Realme 11 Pro 5G,8,128,5000,Midrange,1,23800
+Samsung,Galaxy S23 Ultra,12,256,5000,Flagship,1,102100
+Samsung,Galaxy A55 5G,8,256,5000,Midrange,1,41800
+Apple,iPhone 15 Pro,8,512,3274,Flagship,1,145600
+Vivo,Vivo X100 Pro,16,512,5400,Flagship,1,90000
+Other,iQOO Neo 9 Pro,12,256,5160,Upper-Midrange,1,41800
+Oppo,Oppo Reno 12 Pro 5G,12,256,5000,Upper-Midrange,1,36100
+Samsung,Galaxy S21 FE,8,128,4500,Upper-Midrange,1,40700
+Apple,iPhone 12,4,256,2815,Flagship,1,61400
+Samsung,Galaxy S22 Ultra,12,512,5000,Flagship,1,89100
+Oppo,Oppo Reno 11 5G,8,256,5000,Midrange,1,33300
+Other,Nothing Phone (2a),8,128,5000,Midrange,1,24700
+Samsung,Galaxy S24 Ultra,12,512,5000,Flagship,1,132200
+Motorola,Edge 50 Ultra,16,512,4500,Upper-Midrange,1,61200
+Other,Poco X6 Pro 5G,8,512,5000,Midrange,1,27400
+Samsung,Galaxy S21 FE,8,128,4500,Upper-Midrange,1,40000
+Apple,iPhone 15,6,128,3349,Flagship,1,77700
+Xiaomi,Xiaomi 13 Pro,12,256,4820,Flagship,1,73900
+Redmi,Redmi Note 13 5G,8,256,5000,Budget,1,22900
+Vivo,Vivo X100 Pro,16,512,5400,Flagship,1,92500
+Motorola,Moto G54 5G,12,256,6000,Budget,1,22100
+Motorola,Edge 50 Pro,12,256,4500,Midrange,1,37600
+Xiaomi,Xiaomi 14,12,512,4610,Flagship,1,70000
+Realme,Realme 11 Pro 5G,8,128,5000,Midrange,1,24100
+Other,Nothing Phone (2a),8,256,5000,Midrange,1,27700
+Xiaomi,Xiaomi 12 Pro,12,256,4600,Upper-Midrange,1,57300
+Google Pixel,Pixel 9,12,256,4700,Flagship,1,81400
+Samsung,Galaxy M34 5G,8,128,6000,Budget,1,21300
+Motorola,Edge 40 Neo,12,256,5000,Midrange,1,31600
+Motorola,Edge 40 Neo,8,128,5000,Midrange,1,22700
+Xiaomi,Xiaomi 14 Ultra,16,512,5000,Flagship,1,100400
+Apple,iPhone 11,4,128,3110,Upper-Midrange,0,46300
+Google Pixel,Pixel 8,8,128,4575,Flagship,1,70600
+Vivo,Vivo T3 5G,8,256,5000,Budget,1,23200
+Apple,iPhone 15 Pro,8,1024,3274,Flagship,1,156400
+Apple,iPhone 16 Pro,8,128,3582,Flagship,1,123000
+Samsung,Galaxy S23,8,128,3900,Flagship,1,65900
+Vivo,Vivo V29 5G,12,256,4600,Midrange,1,38800
+Redmi,Redmi 12 5G,6,128,5000,Budget,1,14200
+Redmi,Redmi Note 13 Pro+ 5G,8,512,5000,Midrange,1,32700
+Other,iQOO 12 5G,12,256,5000,Flagship,1,53600
+OnePlus,OnePlus Nord 4,8,128,5500,Midrange,1,29700
+Oppo,Oppo A79 5G,8,128,5000,Budget,1,18000
+Apple,iPhone 12,4,128,2815,Flagship,1,55400
+Samsung,Galaxy A55 5G,12,256,5000,Midrange,1,49200
+Realme,Realme GT 6,8,256,5500,Upper-Midrange,1,42200
+Other,iQOO Neo 9 Pro,12,256,5160,Upper-Midrange,1,43600
+Apple,iPhone 16,8,128,3561,Flagship,1,77800
+Apple,iPhone 14,6,512,3279,Flagship,1,84300
+Other,Poco X6 Pro 5G,8,512,5000,Midrange,1,27700
+Realme,Realme C55,8,128,5000,Budget,0,20000
+Motorola,Edge 50 Ultra,12,512,4500,Upper-Midrange,1,56500
+Samsung,Galaxy S24 Ultra,12,256,5000,Flagship,1,128200
+OnePlus,OnePlus Nord CE4,8,256,5500,Midrange,1,28800
+Google Pixel,Pixel 8 Pro,12,256,5050,Flagship,1,101300
+Redmi,Redmi Note 13 5G,6,256,5000,Budget,1,20800
+OnePlus,OnePlus Nord 4,12,128,5500,Midrange,1,34500
+Motorola,Moto G84 5G,12,256,5000,Budget,1,19300
+Apple,iPhone 12,4,64,2815,Flagship,1,49600
+Motorola,Edge 40 Neo,12,128,5000,Midrange,1,27000
+Oppo,Oppo Reno 12 Pro 5G,12,256,5000,Upper-Midrange,1,37900
+Google Pixel,Pixel 8,8,256,4575,Flagship,1,73800
+Apple,iPhone 16 Pro,8,128,3582,Flagship,1,119900
+Motorola,Edge 50 Pro,12,256,4500,Midrange,1,37700
+Apple,iPhone 12,4,64,2815,Flagship,1,50100
+Apple,iPhone 11,4,64,3110,Upper-Midrange,0,38900
+Google Pixel,Pixel 6a,6,128,4410,Midrange,1,29500
+Apple,iPhone 12,4,128,2815,Flagship,1,54700
+Samsung,Galaxy S23 Ultra,12,256,5000,Flagship,1,103000
+Apple,iPhone 16 Pro,8,1024,3582,Flagship,1,137000
+Xiaomi,Xiaomi 12 Pro,12,256,4600,Upper-Midrange,1,56600
+Motorola,Moto G54 5G,8,256,6000,Budget,1,17600
+Samsung,Galaxy A55 5G,12,256,5000,Midrange,1,48100
+Google Pixel,Pixel 8,8,256,4575,Flagship,1,72000
+Motorola,Edge 50 Ultra,12,512,4500,Upper-Midrange,1,56000
+Samsung,Galaxy M34 5G,8,256,6000,Budget,1,23800
+Realme,Realme 11 Pro 5G,8,128,5000,Midrange,1,24400
+Oppo,Oppo Reno 12 Pro 5G,12,256,5000,Upper-Midrange,1,36100
+Samsung,Galaxy S23 Ultra,12,512,5000,Flagship,1,110700
+Samsung,Galaxy S24,8,512,4000,Flagship,1,82000
+Google Pixel,Pixel 8,8,128,4575,Flagship,1,69300
+OnePlus,OnePlus Nord 4,12,256,5500,Midrange,1,37500
+OnePlus,OnePlus Nord 4,12,128,5500,Midrange,1,34300
+OnePlus,OnePlus 12R,16,256,5500,Upper-Midrange,1,53900
+Vivo,Vivo X100 Pro,16,512,5400,Flagship,1,89900
+Apple,iPhone 14 Pro,6,128,3200,Flagship,1,129800
+Motorola,Moto G84 5G,12,256,5000,Budget,1,19100
+Other,Nothing Phone (2a),8,128,5000,Midrange,1,23700
+Google Pixel,Pixel 8,8,128,4575,Flagship,1,69800
+Realme,Realme GT 6,16,512,5500,Upper-Midrange,1,52500
+Xiaomi,Xiaomi 13 Pro,12,256,4820,Flagship,1,77000
+Samsung,Galaxy S21 FE,8,128,4500,Upper-Midrange,1,40500
+Samsung,Galaxy S24 Ultra,12,1024,5000,Flagship,1,138000
+Oppo,Oppo A79 5G,8,128,5000,Budget,1,18300
+Motorola,Moto G84 5G,12,256,5000,Budget,1,18500
+Xiaomi,Xiaomi 12 Pro,8,256,4600,Upper-Midrange,1,51700
+Google Pixel,Pixel 9,12,128,4700,Flagship,1,81000
+Oppo,Oppo Find X7 Ultra,16,512,5000,Flagship,1,85700
+Samsung,Galaxy A55 5G,8,128,5000,Midrange,1,40100
+OnePlus,OnePlus Nord CE 3 Lite,8,128,5000,Budget,1,17600
+Google Pixel,Pixel 8,8,128,4575,Flagship,1,71500
+Motorola,Moto G54 5G,12,128,6000,Budget,1,19500
+Realme,Realme 11 Pro 5G,8,256,5000,Midrange,1,27700
+Other,Nothing Phone (2),12,256,4700,Upper-Midrange,1,48400
+Samsung,Galaxy M34 5G,8,256,6000,Budget,1,24500
+Apple,iPhone 14,6,512,3279,Flagship,1,83100
+Google Pixel,Pixel 7 Pro,12,256,5000,Flagship,1,76300
+Apple,iPhone 12,4,128,2815,Flagship,1,55900
+Samsung,Galaxy S23,8,128,3900,Flagship,1,63200
+Vivo,Vivo Y200e 5G,6,128,5000,Budget,1,17700
+Vivo,Vivo V29 5G,8,256,4600,Midrange,1,35800
+Realme,Realme Narzo 70 Pro,8,128,5000,Budget,1,19300
+Redmi,Redmi 12 5G,4,256,5000,Budget,1,15300
+Google Pixel,Pixel 9,12,256,4700,Flagship,1,82800
+Google Pixel,Pixel 8 Pro,12,256,5050,Flagship,1,104100
+Samsung,Galaxy S23 Ultra,12,256,5000,Flagship,1,102900
+Samsung,Galaxy S22 Ultra,12,256,5000,Flagship,1,86600
+Other,Nothing Phone (2a),8,256,5000,Midrange,1,26600
+Apple,iPhone 14,6,128,3279,Flagship,1,68600
+Apple,iPhone 13,4,512,3227,Flagship,1,71700
+Vivo,Vivo V30 Pro,12,256,5000,Upper-Midrange,1,46500
+Xiaomi,Xiaomi 13 Pro,12,256,4820,Flagship,1,76700
+Apple,iPhone 16,8,512,3561,Flagship,1,91100
+Xiaomi,Xiaomi 14 Ultra,16,512,5000,Flagship,1,100200
+Google Pixel,Pixel 9 Pro XL,16,256,5060,Flagship,1,131300
+Samsung,Galaxy A35 5G,6,256,5000,Midrange,1,31100
+Samsung,Galaxy S21 FE,8,128,4500,Upper-Midrange,1,41000
+Realme,Realme Narzo 70 Pro,8,128,5000,Budget,1,18800
+Realme,Realme 12 Pro+ 5G,8,128,5000,Midrange,1,29800
+OnePlus,OnePlus 11,16,256,5000,Flagship,1,71400
+Samsung,Galaxy S24 Ultra,12,512,5000,Flagship,1,129100
+OnePlus,OnePlus 12,16,512,5400,Flagship,1,74500
+Oppo,Oppo F25 Pro 5G,8,128,5000,Midrange,1,23700
+Samsung,Galaxy S24 Ultra,12,1024,5000,Flagship,1,140000
+Vivo,Vivo T3 5G,8,256,5000,Budget,1,22700
+Motorola,Edge 40 Neo,8,128,5000,Midrange,1,22300
+Google Pixel,Pixel 7 Pro,12,256,5000,Flagship,1,76500
+Samsung,Galaxy M34 5G,6,128,6000,Budget,1,19200
+Other,iQOO 12 5G,16,256,5000,Flagship,1,57700
+Samsung,Galaxy A35 5G,6,256,5000,Midrange,1,30400
+Google Pixel,Pixel 7 Pro,12,128,5000,Flagship,1,73100
+Other,Poco X6 Pro 5G,12,256,5000,Midrange,1,29600
+Realme,Realme GT 6,12,512,5500,Upper-Midrange,1,48500
+Apple,iPhone 15 Pro,8,512,3274,Flagship,1,148600
+Motorola,Moto G84 5G,12,256,5000,Budget,1,18600
+Motorola,Moto G84 5G,12,256,5000,Budget,1,19000
+Apple,iPhone 14,6,128,3279,Flagship,1,69700
+Oppo,Oppo F25 Pro 5G,8,256,5000,Midrange,1,27100
+OnePlus,OnePlus Nord CE 3 Lite,8,128,5000,Budget,1,18200
+OnePlus,OnePlus 12R,16,128,5500,Upper-Midrange,1,48800
+Xiaomi,Xiaomi 12 Pro,12,256,4600,Upper-Midrange,1,56100
+Redmi,Redmi Note 12 Pro 5G,8,256,5000,Midrange,1,27700
+Samsung,Galaxy A55 5G,8,256,5000,Midrange,1,44300
+Google Pixel,Pixel 9 Pro XL,16,512,5060,Flagship,1,129900
+OnePlus,OnePlus 11,16,256,5000,Flagship,1,70200
+Samsung,Galaxy S22 Ultra,12,256,5000,Flagship,1,86900
+Xiaomi,Xiaomi 12 Pro,12,256,4600,Upper-Midrange,1,59100
+Apple,iPhone 11,4,128,3110,Upper-Midrange,0,46300
+Motorola,Moto G84 5G,12,256,5000,Budget,1,19100
+Redmi,Redmi Note 12 Pro 5G,6,128,5000,Midrange,1,22200
+Xiaomi,Xiaomi 13 Pro,12,256,4820,Flagship,1,74700
+Google Pixel,Pixel 9 Pro XL,16,128,5060,Flagship,1,126800
+Other,iQOO 12 5G,12,256,5000,Flagship,1,53500
+Xiaomi,Xiaomi 12 Pro,12,256,4600,Upper-Midrange,1,58400
+Samsung,Galaxy S23,8,256,3900,Flagship,1,66800
+Motorola,Moto G54 5G,8,256,6000,Budget,1,17800
+Samsung,Galaxy S24,8,512,4000,Flagship,1,79700
+Samsung,Galaxy S23,8,128,3900,Flagship,1,63100
+Realme,Realme Narzo 70 Pro,8,128,5000,Budget,1,18600
+Samsung,Galaxy S23,8,128,3900,Flagship,1,66900
+Apple,iPhone 15 Pro Max,8,512,4422,Flagship,1,170100
+Google Pixel,Pixel 9 Pro XL,16,512,5060,Flagship,1,131200
+Apple,iPhone 14 Pro,6,256,3200,Flagship,1,135900
+Google Pixel,Pixel 9 Pro XL,16,256,5060,Flagship,1,130400
+Apple,iPhone 16,8,256,3561,Flagship,1,85400
+OnePlus,OnePlus Nord CE4,8,256,5500,Midrange,1,27800
+Samsung,Galaxy S24,8,128,4000,Flagship,1,74300
+Vivo,Vivo T3 5G,8,256,5000,Budget,1,23200
+Samsung,Galaxy S22 Ultra,12,512,5000,Flagship,1,88800
+OnePlus,OnePlus 12R,16,128,5500,Upper-Midrange,1,50300
+Google Pixel,Pixel 8,8,256,4575,Flagship,1,75000
+Redmi,Redmi Note 13 5G,6,128,5000,Budget,1,17700
+Samsung,Galaxy S23,8,256,3900,Flagship,1,68300
+Apple,iPhone 15 Pro Max,8,256,4422,Flagship,1,155600
+Other,iQOO Neo 9 Pro,8,256,5160,Upper-Midrange,1,38700
+Xiaomi,Xiaomi 14,12,512,4610,Flagship,1,69500
+Google Pixel,Pixel 9 Pro XL,16,512,5060,Flagship,1,131400
+Realme,Realme C55,4,128,5000,Budget,0,14800
+Xiaomi,Xiaomi 12 Pro,12,256,4600,Upper-Midrange,1,56300
+Samsung,Galaxy S24 Ultra,12,256,5000,Flagship,1,133000
+Apple,iPhone 16 Pro,8,512,3582,Flagship,1,131500
+Google Pixel,Pixel 7a,8,128,4385,Midrange,1,41000
+OnePlus,OnePlus 12,12,256,5400,Flagship,1,63900
+Apple,iPhone 12,4,64,2815,Flagship,1,49800
+Vivo,Vivo V29 5G,12,256,4600,Midrange,1,38600
+Other,Nothing Phone (2),8,256,4700,Upper-Midrange,1,43700
+Other,iQOO 12 5G,12,256,5000,Flagship,1,53800
+Realme,Realme Narzo 70 Pro,8,128,5000,Budget,1,18600
+Vivo,Vivo T3 5G,8,128,5000,Budget,1,19600
+Motorola,Edge 50 Ultra,12,512,4500,Upper-Midrange,1,55600
+OnePlus,OnePlus 11R,12,256,5000,Upper-Midrange,1,43700
+Redmi,Redmi Note 13 5G,6,128,5000,Budget,1,18200
+Samsung,Galaxy S23 Ultra,12,1024,5000,Flagship,1,111700
+Apple,iPhone 16,8,512,3561,Flagship,1,92300
+Google Pixel,Pixel 9 Pro XL,16,128,5060,Flagship,1,124700
+Other,Nothing Phone (2a),8,256,5000,Midrange,1,26400
+Motorola,Moto G84 5G,12,256,5000,Budget,1,18700
+Redmi,Redmi Note 12 Pro 5G,6,256,5000,Midrange,1,25500
+Other,Poco X6 Pro 5G,12,512,5000,Midrange,1,33700
+Samsung,Galaxy A55 5G,12,128,5000,Midrange,1,44100
+Vivo,Vivo Y200e 5G,8,128,5000,Budget,1,20400
+Other,Nothing Phone (2a),8,128,5000,Midrange,1,23400
+Apple,iPhone 11,4,128,3110,Upper-Midrange,0,46200
+Other,Nothing Phone (2a),12,128,5000,Midrange,1,29200
+Vivo,Vivo Y200e 5G,6,128,5000,Budget,1,17700
+Other,iQOO Neo 9 Pro,8,256,5160,Upper-Midrange,1,38000
+Samsung,Galaxy S24,8,128,4000,Flagship,1,73900
+Samsung,Galaxy S22 Ultra,12,512,5000,Flagship,1,88800
+Realme,Realme 11 Pro 5G,12,256,5000,Midrange,1,32300
+Vivo,Vivo V30 Pro,8,256,5000,Upper-Midrange,1,42600
+Vivo,Vivo X100 Pro,16,512,5400,Flagship,1,91700
+Vivo,Vivo V29 5G,12,128,4600,Midrange,1,37800
+Other,Nothing Phone (2a),8,128,5000,Midrange,1,24200
+OnePlus,OnePlus Nord 4,8,128,5500,Midrange,1,30800
+Vivo,Vivo V29 5G,8,256,4600,Midrange,1,34300
+Google Pixel,Pixel 7a,8,128,4385,Midrange,1,40200
+Google Pixel,Pixel 7 Pro,12,256,5000,Flagship,1,78600
+Xiaomi,Xiaomi 14,12,512,4610,Flagship,1,70700
+OnePlus,OnePlus 11R,12,128,5000,Upper-Midrange,1,40100
+Samsung,Galaxy S22 Ultra,12,512,5000,Flagship,1,88600
+OnePlus,OnePlus 11,16,256,5000,Flagship,1,69200
+OnePlus,OnePlus 12R,12,128,5500,Upper-Midrange,1,45300
+Google Pixel,Pixel 7 Pro,12,256,5000,Flagship,1,77900
+Xiaomi,Xiaomi 14 Ultra,16,512,5000,Flagship,1,100400
+Samsung,Galaxy A35 5G,6,256,5000,Midrange,1,31600
+Apple,iPhone 14 Pro,6,128,3200,Flagship,1,131400
+Google Pixel,Pixel 7a,8,128,4385,Midrange,1,39800
+Xiaomi,Xiaomi 14,12,512,4610,Flagship,1,70700
+Redmi,Redmi 13C 5G,6,256,5000,Budget,1,16700
+Oppo,Oppo Reno 11 5G,8,256,5000,Midrange,1,32800
+OnePlus,OnePlus 12,16,256,5400,Flagship,1,68100
+Vivo,Vivo X100 Pro,16,512,5400,Flagship,1,88600
+Redmi,Redmi Note 12 Pro 5G,8,256,5000,Midrange,1,28200
+Oppo,Oppo Reno 12 Pro 5G,12,512,5000,Upper-Midrange,1,40000
+Realme,Realme GT 6,12,512,5500,Upper-Midrange,1,48900
+OnePlus,OnePlus 11R,12,256,5000,Upper-Midrange,1,43500
+Google Pixel,Pixel 6a,6,128,4410,Midrange,1,29800
+Samsung,Galaxy M34 5G,6,128,6000,Budget,1,18600
+Redmi,Redmi Note 13 Pro+ 5G,12,512,5000,Midrange,1,37700
+Google Pixel,Pixel 7a,8,128,4385,Midrange,1,39100
+Other,Poco X6 Pro 5G,8,512,5000,Midrange,1,27800
+Realme,Realme 11 Pro 5G,8,128,5000,Midrange,1,24700
+Apple,iPhone 15,6,512,3349,Flagship,1,92400
+Apple,iPhone 14,6,256,3279,Flagship,1,76600
+OnePlus,OnePlus 11R,8,256,5000,Upper-Midrange,1,38700
+Motorola,Edge 50 Ultra,16,512,4500,Upper-Midrange,1,58300
+Apple,iPhone 16,8,512,3561,Flagship,1,90500
+Redmi,Redmi Note 12 Pro 5G,6,128,5000,Midrange,1,22000
+Motorola,Moto G84 5G,12,256,5000,Budget,1,18800
+Realme,Realme 11 Pro 5G,12,256,5000,Midrange,1,32400
+Samsung,Galaxy S24,8,512,4000,Flagship,1,79700
+Realme,Realme 12 Pro+ 5G,12,256,5000,Midrange,1,38700
+Realme,Realme 12 Pro+ 5G,12,256,5000,Midrange,1,38600
+Google Pixel,Pixel 7a,8,128,4385,Midrange,1,39900
+Google Pixel,Pixel 9 Pro XL,16,256,5060,Flagship,1,124300
+Realme,Realme 11 Pro 5G,8,128,5000,Midrange,1,23600
+Samsung,Galaxy S24,8,128,4000,Flagship,1,76000
+Samsung,Galaxy S22 Ultra,12,256,5000,Flagship,1,85700
+Vivo,Vivo V30 Pro,12,256,5000,Upper-Midrange,1,46000
+Vivo,Vivo V29 5G,12,128,4600,Midrange,1,37400
+Apple,iPhone 12,4,128,2815,Flagship,1,55300
+OnePlus,OnePlus 12,16,512,5400,Flagship,1,73300
+Samsung,Galaxy A35 5G,8,128,5000,Midrange,1,30100
+Motorola,Edge 40 Neo,8,128,5000,Midrange,1,22800
+Apple,iPhone 13,4,512,3227,Flagship,1,70900
+Redmi,Redmi Note 13 5G,8,128,5000,Budget,1,20000
+Samsung,Galaxy F14 5G,4,128,6000,Budget,1,16200
+Vivo,Vivo X100 Pro,16,512,5400,Flagship,1,88500
+Google Pixel,Pixel 9,12,128,4700,Flagship,1,80300
+Samsung,Galaxy A55 5G,12,128,5000,Midrange,1,44600
+Apple,iPhone 15 Pro Max,8,512,4422,Flagship,1,170500
+Apple,iPhone 15 Pro Max,8,1024,4422,Flagship,1,172600
+Motorola,Edge 50 Pro,12,256,4500,Midrange,1,37600
+OnePlus,OnePlus Nord 4,8,128,5500,Midrange,1,29400
+Realme,Realme C55,8,128,5000,Budget,0,19700
+Google Pixel,Pixel 8,8,128,4575,Flagship,1,70200
+Other,Poco X6 Pro 5G,8,512,5000,Midrange,1,28600
+OnePlus,OnePlus 12R,12,128,5500,Upper-Midrange,1,45800
+Apple,iPhone 11,4,256,3110,Upper-Midrange,0,52800
+Samsung,Galaxy M34 5G,6,128,6000,Budget,1,18600
+Apple,iPhone 16 Pro Max,8,256,4685,Flagship,1,144500
+Oppo,Oppo Reno 11 5G,8,128,5000,Midrange,1,29500
+Apple,iPhone 15 Pro,8,512,3274,Flagship,1,150600
+OnePlus,OnePlus 12R,12,256,5500,Upper-Midrange,1,49000
+Xiaomi,Xiaomi 13 Pro,12,256,4820,Flagship,1,73300
+Samsung,Galaxy S24 Ultra,12,1024,5000,Flagship,1,137500
+Motorola,Moto G54 5G,12,256,6000,Budget,1,23200
+OnePlus,OnePlus Nord CE4,8,256,5500,Midrange,1,27200
+Redmi,Redmi Note 12 Pro 5G,6,128,5000,Midrange,1,22200
+Motorola,Edge 40 Neo,12,128,5000,Midrange,1,28000
+Other,Poco X6 Pro 5G,12,512,5000,Midrange,1,32900
+Realme,Realme C55,8,64,5000,Budget,0,16900
+Google Pixel,Pixel 8 Pro,12,256,5050,Flagship,1,104000
+Other,Nothing Phone (2),8,128,4700,Upper-Midrange,1,39600
+Samsung,Galaxy S21 FE,8,128,4500,Upper-Midrange,1,39900
+Other,Poco X6 Pro 5G,12,256,5000,Midrange,1,29900
+Apple,iPhone 16 Pro,8,256,3582,Flagship,1,126200
+Other,iQOO Neo 9 Pro,12,128,5160,Upper-Midrange,1,38900
+Oppo,Oppo F25 Pro 5G,8,256,5000,Midrange,1,26700
+Oppo,Oppo A79 5G,8,128,5000,Budget,1,18000
+Redmi,Redmi Note 12 Pro 5G,8,256,5000,Midrange,1,26600
+Samsung,Galaxy S23 Ultra,12,1024,5000,Flagship,1,112000
+OnePlus,OnePlus Nord CE4,8,256,5500,Midrange,1,28100
+Samsung,Galaxy S23,8,256,3900,Flagship,1,68200
+Apple,iPhone 14,6,128,3279,Flagship,1,71200
+Oppo,Oppo F25 Pro 5G,8,128,5000,Midrange,1,24300
+Samsung,Galaxy S24 Ultra,12,1024,5000,Flagship,1,140000
+Samsung,Galaxy S23,8,128,3900,Flagship,1,64000
+Samsung,Galaxy A55 5G,8,256,5000,Midrange,1,43900
+Motorola,Moto G84 5G,12,256,5000,Budget,1,18500
+Oppo,Oppo F25 Pro 5G,8,256,5000,Midrange,1,26600
+Apple,iPhone 15 Pro,8,512,3274,Flagship,1,143500
+Samsung,Galaxy S24 Ultra,12,512,5000,Flagship,1,134000
+Other,Nothing Phone (2a),12,256,5000,Midrange,1,31600
+Apple,iPhone 14 Pro,6,128,3200,Flagship,1,128200
+Samsung,Galaxy S23,8,128,3900,Flagship,1,65600
+Apple,iPhone 11,4,256,3110,Upper-Midrange,0,53300
+OnePlus,OnePlus Nord CE4,8,128,5500,Midrange,1,25200
+Vivo,Vivo X100 Pro,16,512,5400,Flagship,1,88100
+Other,iQOO 12 5G,16,512,5000,Flagship,1,61200
+OnePlus,OnePlus 11R,16,256,5000,Upper-Midrange,1,49100
+Xiaomi,Xiaomi 14,12,512,4610,Flagship,1,68000
+Samsung,Galaxy S21 FE,8,128,4500,Upper-Midrange,1,40900
+Redmi,Redmi Note 12 Pro 5G,8,128,5000,Midrange,1,24800
+Apple,iPhone 13,4,128,3227,Flagship,1,60300
+Google Pixel,Pixel 7 Pro,12,128,5000,Flagship,1,73100
+Samsung,Galaxy M34 5G,8,256,6000,Budget,1,24500
+Vivo,Vivo X100 Pro,16,512,5400,Flagship,1,90400
+Apple,iPhone 11,4,128,3110,Upper-Midrange,0,46300
+Realme,Realme 12 Pro+ 5G,12,128,5000,Midrange,1,35600
+Other,iQOO 12 5G,16,256,5000,Flagship,1,56200
+Other,iQOO 12 5G,12,256,5000,Flagship,1,54300
+Samsung,Galaxy S21 FE,8,128,4500,Upper-Midrange,1,40300
+Google Pixel,Pixel 9 Pro XL,16,128,5060,Flagship,1,124400
+Apple,iPhone 13,4,256,3227,Flagship,1,64500
+Samsung,Galaxy F14 5G,4,128,6000,Budget,1,15600
+Samsung,Galaxy S21 FE,8,128,4500,Upper-Midrange,1,40300
+Samsung,Galaxy S24 Ultra,12,512,5000,Flagship,1,132400
+Motorola,Edge 50 Ultra,12,512,4500,Upper-Midrange,1,53500
+Realme,Realme 11 Pro 5G,12,128,5000,Midrange,1,28700
+Apple,iPhone 15 Pro Max,8,1024,4422,Flagship,1,167900
+Samsung,Galaxy S23,8,128,3900,Flagship,1,63400
+OnePlus,OnePlus Nord CE 3 Lite,8,128,5000,Budget,1,17900
+Samsung,Galaxy A55 5G,8,256,5000,Midrange,1,42900
+OnePlus,OnePlus 12,12,256,5400,Flagship,1,64700
+Google Pixel,Pixel 8,8,256,4575,Flagship,1,73300
+Oppo,Oppo Find X7 Ultra,16,512,5000,Flagship,1,89600
+Samsung,Galaxy S24 Ultra,12,512,5000,Flagship,1,134300
+Realme,Realme Narzo 70 Pro,8,128,5000,Budget,1,19400
+OnePlus,OnePlus Nord CE4,8,256,5500,Midrange,1,28400
+OnePlus,OnePlus 12R,16,128,5500,Upper-Midrange,1,49800
+OnePlus,OnePlus Nord CE4,8,256,5500,Midrange,1,27800
+Samsung,Galaxy S22 Ultra,12,512,5000,Flagship,1,87700
+OnePlus,OnePlus 12,16,256,5400,Flagship,1,70600
+Realme,Realme GT 6,12,512,5500,Upper-Midrange,1,49500
+Redmi,Redmi Note 12 Pro 5G,8,256,5000,Midrange,1,27300
+Xiaomi,Xiaomi 14,12,512,4610,Flagship,1,70500
+Samsung,Galaxy S23,8,256,3900,Flagship,1,68300
+Oppo,Oppo F25 Pro 5G,8,256,5000,Midrange,1,26400
+Other,Nothing Phone (2),12,512,4700,Upper-Midrange,1,51400
+Oppo,Oppo Reno 11 5G,8,128,5000,Midrange,1,30400
+OnePlus,OnePlus 11R,16,128,5000,Upper-Midrange,1,46400
+Redmi,Redmi Note 13 5G,6,256,5000,Budget,1,20900
+Oppo,Oppo Reno 11 5G,8,256,5000,Midrange,1,32600
+Redmi,Redmi 12 5G,4,256,5000,Budget,1,14600
+OnePlus,OnePlus 11,12,256,5000,Flagship,1,65000
+Motorola,Edge 50 Pro,8,256,4500,Midrange,1,31800
+Oppo,Oppo Reno 12 Pro 5G,12,512,5000,Upper-Midrange,1,41100
+Samsung,Galaxy A55 5G,12,128,5000,Midrange,1,43600
+OnePlus,OnePlus 11R,16,128,5000,Upper-Midrange,1,46300
+Samsung,Galaxy S24,8,128,4000,Flagship,1,72800
+Other,Poco F6 5G,8,512,5000,Midrange,1,32900
+Other,Poco X6 Pro 5G,12,256,5000,Midrange,1,30200
+Samsung,Galaxy S23,8,128,3900,Flagship,1,66100
+Xiaomi,Xiaomi 12 Pro,8,256,4600,Upper-Midrange,1,53900
+Realme,Realme GT 6,12,256,5500,Upper-Midrange,1,46800
+OnePlus,OnePlus 12,12,256,5400,Flagship,1,66700
+OnePlus,OnePlus Nord CE 3 Lite,8,256,5000,Budget,1,20500
+Motorola,Moto G54 5G,8,256,6000,Budget,1,17800
+Apple,iPhone 13,4,512,3227,Flagship,1,71300
+Vivo,Vivo V29 5G,8,128,4600,Midrange,1,31200
+Google Pixel,Pixel 6a,6,128,4410,Midrange,1,30000
+Google Pixel,Pixel 9,12,128,4700,Flagship,1,78100
+Apple,iPhone 12,4,128,2815,Flagship,1,54900
+Oppo,Oppo Reno 12 Pro 5G,12,512,5000,Upper-Midrange,1,39900
+Motorola,Moto G84 5G,12,256,5000,Budget,1,18800
+Samsung,Galaxy F14 5G,4,128,6000,Budget,1,15800
+Realme,Realme 11 Pro 5G,12,128,5000,Midrange,1,29300
+Redmi,Redmi Note 13 Pro+ 5G,8,256,5000,Midrange,1,30700
+Apple,iPhone 16,8,512,3561,Flagship,1,89300
+Motorola,Moto G54 5G,12,128,6000,Budget,1,19900
+Google Pixel,Pixel 7 Pro,12,256,5000,Flagship,1,80300
+Other,Poco F6 5G,12,512,5000,Midrange,1,37100
+Other,Nothing Phone (2a),12,128,5000,Midrange,1,29500
+Oppo,Oppo Reno 12 Pro 5G,12,256,5000,Upper-Midrange,1,36700
+OnePlus,OnePlus Nord CE4,8,256,5500,Midrange,1,28500
+Motorola,Moto G84 5G,12,256,5000,Budget,1,19200
+Motorola,Moto G84 5G,12,256,5000,Budget,1,19400
+Samsung,Galaxy A55 5G,8,128,5000,Midrange,1,40200
+Samsung,Galaxy S22 Ultra,12,512,5000,Flagship,1,89800
+Apple,iPhone 14,6,512,3279,Flagship,1,81300
+Motorola,Edge 50 Pro,12,256,4500,Midrange,1,35700
+Realme,Realme 11 Pro 5G,8,128,5000,Midrange,1,24500
+OnePlus,OnePlus Nord CE4,8,256,5500,Midrange,1,28200
+Oppo,Oppo Find X7 Ultra,16,256,5000,Flagship,1,86000
+Oppo,Oppo Reno 11 5G,8,128,5000,Midrange,1,29800
+Vivo,Vivo T3 5G,8,256,5000,Budget,1,23000
+Realme,Realme C55,8,64,5000,Budget,0,16300
+Vivo,Vivo V29 5G,12,256,4600,Midrange,1,39000
+Samsung,Galaxy S22 Ultra,12,256,5000,Flagship,1,83400
+OnePlus,OnePlus 11R,12,128,5000,Upper-Midrange,1,40600
+Apple,iPhone 16 Pro,8,256,3582,Flagship,1,128700
+Realme,Realme 12 Pro+ 5G,8,128,5000,Midrange,1,29600
+Google Pixel,Pixel 7 Pro,12,256,5000,Flagship,1,80000
+Xiaomi,Xiaomi 14 Ultra,16,512,5000,Flagship,1,98700
+Oppo,Oppo Reno 11 5G,8,128,5000,Midrange,1,29400
+Realme,Realme 12 Pro+ 5G,12,256,5000,Midrange,1,37800
+OnePlus,OnePlus Nord CE 3 Lite,8,128,5000,Budget,1,17900
+Samsung,Galaxy S23 Ultra,12,256,5000,Flagship,1,102000
+Oppo,Oppo F25 Pro 5G,8,128,5000,Midrange,1,23600
+Vivo,Vivo V29 5G,12,128,4600,Midrange,1,36200
+Xiaomi,Xiaomi 12 Pro,12,256,4600,Upper-Midrange,1,58600
+Motorola,Edge 50 Pro,12,256,4500,Midrange,1,35900
+Samsung,Galaxy M34 5G,8,128,6000,Budget,1,21100
+Xiaomi,Xiaomi 13 Pro,12,256,4820,Flagship,1,76900
+Other,Nothing Phone (2),8,128,4700,Upper-Midrange,1,40600
+Oppo,Oppo F25 Pro 5G,8,256,5000,Midrange,1,27800
+Samsung,Galaxy S23,8,128,3900,Flagship,1,65600
+Realme,Realme 11 Pro 5G,12,256,5000,Midrange,1,31000
+Google Pixel,Pixel 8 Pro,12,512,5050,Flagship,1,107300
+Oppo,Oppo Reno 11 5G,8,256,5000,Midrange,1,32000
+Oppo,Oppo Reno 12 Pro 5G,12,512,5000,Upper-Midrange,1,40600
+Motorola,Moto G84 5G,12,256,5000,Budget,1,19000
+Realme,Realme GT 6,12,512,5500,Upper-Midrange,1,47400
+Motorola,Edge 50 Ultra,12,512,4500,Upper-Midrange,1,55700
+OnePlus,OnePlus Nord CE4,8,128,5500,Midrange,1,25200
+Apple,iPhone 14 Pro,6,512,3200,Flagship,1,145100
+Motorola,Moto G84 5G,12,256,5000,Budget,1,19300
+Apple,iPhone 14 Pro,6,1024,3200,Flagship,1,152000
+Samsung,Galaxy S22 Ultra,12,512,5000,Flagship,1,86200
+Samsung,Galaxy S22 Ultra,12,512,5000,Flagship,1,90500
+Google Pixel,Pixel 8,8,256,4575,Flagship,1,74300
+Apple,iPhone 15 Pro Max,8,256,4422,Flagship,1,162500
+Samsung,Galaxy M34 5G,6,256,6000,Budget,1,21900
+Samsung,Galaxy A35 5G,8,256,5000,Midrange,1,33700
+OnePlus,OnePlus Nord 4,12,128,5500,Midrange,1,33800
+Other,Poco X6 Pro 5G,12,256,5000,Midrange,1,28900
+Realme,Realme Narzo 70 Pro,8,256,5000,Budget,1,21500
+Other,iQOO 12 5G,12,512,5000,Flagship,1,55300
+Samsung,Galaxy S24,8,512,4000,Flagship,1,80600
+Other,Poco X6 Pro 5G,12,512,5000,Midrange,1,33000
+Oppo,Oppo A79 5G,8,128,5000,Budget,1,18200
+Samsung,Galaxy S23,8,256,3900,Flagship,1,68300
+Samsung,Galaxy A35 5G,8,128,5000,Midrange,1,31200
+Redmi,Redmi Note 13 Pro+ 5G,12,512,5000,Midrange,1,38400
+Redmi,Redmi Note 12 Pro 5G,6,256,5000,Midrange,1,24800
+Redmi,Redmi Note 13 Pro+ 5G,8,256,5000,Midrange,1,29400
+Samsung,Galaxy S22 Ultra,12,256,5000,Flagship,1,83900
+Apple,iPhone 15,6,128,3349,Flagship,1,79100
+Xiaomi,Xiaomi 14,12,512,4610,Flagship,1,69000
+Redmi,Redmi Note 13 5G,6,256,5000,Budget,1,21500
+Other,Nothing Phone (2a),12,128,5000,Midrange,1,28400
+Samsung,Galaxy S24,8,512,4000,Flagship,1,81700
+Google Pixel,Pixel 8,8,256,4575,Flagship,1,71000
+Realme,Realme C55,6,64,5000,Budget,0,14500
+Samsung,Galaxy A55 5G,12,256,5000,Midrange,1,47000
+OnePlus,OnePlus Nord CE4,8,256,5500,Midrange,1,27200
+Motorola,Moto G84 5G,12,256,5000,Budget,1,19300
+Realme,Realme 12 Pro+ 5G,12,128,5000,Midrange,1,35500
+Samsung,Galaxy S24 Ultra,12,1024,5000,Flagship,1,133700
+Samsung,Galaxy S23,8,256,3900,Flagship,1,66700
+Samsung,Galaxy S21 FE,8,128,4500,Upper-Midrange,1,40900
+Oppo,Oppo A79 5G,8,128,5000,Budget,1,18200
+Google Pixel,Pixel 9 Pro XL,16,256,5060,Flagship,1,131200
+Google Pixel,Pixel 9 Pro XL,16,128,5060,Flagship,1,128100
+Google Pixel,Pixel 7a,8,128,4385,Midrange,1,39900
+Samsung,Galaxy S24,8,512,4000,Flagship,1,79200
+Oppo,Oppo Reno 12 Pro 5G,12,256,5000,Upper-Midrange,1,37400
+Apple,iPhone 16 Pro,8,1024,3582,Flagship,1,137600
+Apple,iPhone 13,4,512,3227,Flagship,1,70300
+Oppo,Oppo Reno 12 Pro 5G,12,512,5000,Upper-Midrange,1,40200
+Apple,iPhone 14,6,512,3279,Flagship,1,83500
+Motorola,Edge 50 Ultra,16,512,4500,Upper-Midrange,1,60200
+OnePlus,OnePlus Nord CE 3 Lite,8,256,5000,Budget,1,21300
+Apple,iPhone 15 Pro Max,8,256,4422,Flagship,1,157900
+Google Pixel,Pixel 7 Pro,12,256,5000,Flagship,1,79600
+Redmi,Redmi 13C 5G,4,256,5000,Budget,1,14000
+Apple,iPhone 13,4,128,3227,Flagship,1,61300
+Apple,iPhone 15,6,512,3349,Flagship,1,90800
+Apple,iPhone 11,4,256,3110,Upper-Midrange,0,52300
+Realme,Realme Narzo 70 Pro,8,256,5000,Budget,1,22000
+Google Pixel,Pixel 8 Pro,12,128,5050,Flagship,1,97800
+Other,Poco X6 Pro 5G,12,256,5000,Midrange,1,29900
+Realme,Realme C55,4,64,5000,Budget,0,12000
+Xiaomi,Xiaomi 14 Ultra,16,512,5000,Flagship,1,97700
+OnePlus,OnePlus 11R,16,128,5000,Upper-Midrange,1,47000
+Apple,iPhone 16 Pro,8,256,3582,Flagship,1,128700
+Redmi,Redmi 13C 5G,4,256,5000,Budget,1,14300
+Samsung,Galaxy S21 FE,8,128,4500,Upper-Midrange,1,40000
+Apple,iPhone 16,8,128,3561,Flagship,1,78200
+Oppo,Oppo F25 Pro 5G,8,128,5000,Midrange,1,23500
+Google Pixel,Pixel 9,12,128,4700,Flagship,1,79800
+Vivo,Vivo Y200e 5G,8,128,5000,Budget,1,20300
+OnePlus,OnePlus Nord 4,12,256,5500,Midrange,1,37100
+Apple,iPhone 15,6,256,3349,Flagship,1,86700
+Google Pixel,Pixel 8,8,256,4575,Flagship,1,72800
+Other,iQOO 12 5G,16,256,5000,Flagship,1,58500
+Redmi,Redmi Note 12 Pro 5G,8,256,5000,Midrange,1,26800
+Vivo,Vivo V29 5G,8,256,4600,Midrange,1,34000
+Oppo,Oppo Reno 11 5G,8,256,5000,Midrange,1,33600
+Google Pixel,Pixel 6a,6,128,4410,Midrange,1,29700
+Samsung,Galaxy S23 Ultra,12,1024,5000,Flagship,1,109700
+Samsung,Galaxy S24 Ultra,12,512,5000,Flagship,1,129200
+OnePlus,OnePlus 12,12,512,5400,Flagship,1,68000
+OnePlus,OnePlus 12R,8,256,5500,Upper-Midrange,1,43400
+Motorola,Moto G54 5G,8,128,6000,Budget,1,14800
+OnePlus,OnePlus 12R,16,256,5500,Upper-Midrange,1,54100
+Google Pixel,Pixel 9,12,128,4700,Flagship,1,79100
+Oppo,Oppo Reno 11 5G,8,128,5000,Midrange,1,29600
+OnePlus,OnePlus Nord CE4,8,128,5500,Midrange,1,25500
+Apple,iPhone 14 Pro,6,256,3200,Flagship,1,132800
+OnePlus,OnePlus 12,12,256,5400,Flagship,1,64700
+Realme,Realme 11 Pro 5G,12,256,5000,Midrange,1,31200
+Realme,Realme C55,6,64,5000,Budget,0,14600
+Motorola,Edge 40 Neo,8,256,5000,Midrange,1,25400
+Vivo,Vivo Y200e 5G,8,128,5000,Budget,1,20300
+Realme,Realme GT 6,16,512,5500,Upper-Midrange,1,54000
+Apple,iPhone 15 Pro Max,8,512,4422,Flagship,1,166900
+Apple,iPhone 11,4,128,3110,Upper-Midrange,0,45000
+Samsung,Galaxy S24 Ultra,12,1024,5000,Flagship,1,136600
+Vivo,Vivo Y200e 5G,8,128,5000,Budget,1,20700
+OnePlus,OnePlus 11,8,128,5000,Flagship,1,57900
+Apple,iPhone 11,4,64,3110,Upper-Midrange,0,39400
+Apple,iPhone 15,6,128,3349,Flagship,1,80000
+Oppo,Oppo Find X7 Ultra,16,512,5000,Flagship,1,89000
+Samsung,Galaxy S24,8,256,4000,Flagship,1,79700
+Motorola,Edge 50 Pro,12,256,4500,Midrange,1,35700
+Apple,iPhone 11,4,128,3110,Upper-Midrange,0,47100
+Other,Poco X6 Pro 5G,8,256,5000,Midrange,1,25000
+Other,iQOO Neo 9 Pro,8,128,5160,Upper-Midrange,1,34400
+Google Pixel,Pixel 7a,8,128,4385,Midrange,1,40400
+Redmi,Redmi 13C 5G,6,256,5000,Budget,1,16600
+OnePlus,OnePlus 11R,16,128,5000,Upper-Midrange,1,45800
+Redmi,Redmi Note 13 5G,8,128,5000,Budget,1,20400
+Google Pixel,Pixel 9 Pro XL,16,512,5060,Flagship,1,130700
+Samsung,Galaxy S22 Ultra,12,512,5000,Flagship,1,88700
+Google Pixel,Pixel 9 Pro XL,16,128,5060,Flagship,1,127700
+Realme,Realme GT 6,12,512,5500,Upper-Midrange,1,47500
+Apple,iPhone 14 Pro,6,1024,3200,Flagship,1,149300
+Samsung,Galaxy S23 Ultra,12,512,5000,Flagship,1,110900
+Other,Nothing Phone (2a),12,256,5000,Midrange,1,32700
+Samsung,Galaxy S24 Ultra,12,1024,5000,Flagship,1,135000
+Motorola,Edge 40 Neo,12,128,5000,Midrange,1,28300
+Other,iQOO 12 5G,12,512,5000,Flagship,1,57100
+Samsung,Galaxy S22 Ultra,12,256,5000,Flagship,1,83400
+Samsung,Galaxy F14 5G,4,128,6000,Budget,1,16300
+Xiaomi,Xiaomi 12 Pro,8,256,4600,Upper-Midrange,1,53500
+Samsung,Galaxy S24,8,128,4000,Flagship,1,72900
+Google Pixel,Pixel 7a,8,128,4385,Midrange,1,40400
+Google Pixel,Pixel 6a,6,128,4410,Midrange,1,30100
+Google Pixel,Pixel 8,8,256,4575,Flagship,1,71400
+Google Pixel,Pixel 9 Pro XL,16,128,5060,Flagship,1,122000
+Motorola,Moto G84 5G,12,256,5000,Budget,1,19200
+Other,iQOO 12 5G,16,512,5000,Flagship,1,61100
+Realme,Realme Narzo 70 Pro,8,256,5000,Budget,1,22300
+Google Pixel,Pixel 9,12,128,4700,Flagship,1,82100
+Xiaomi,Xiaomi 14,12,512,4610,Flagship,1,71900
+Samsung,Galaxy S22 Ultra,12,256,5000,Flagship,1,85600
+Other,Poco F6 5G,8,512,5000,Midrange,1,33900
+Samsung,Galaxy S23,8,128,3900,Flagship,1,66300
+Other,Nothing Phone (2a),8,256,5000,Midrange,1,27600
+Realme,Realme 12 Pro+ 5G,8,128,5000,Midrange,1,29900
+Motorola,Edge 50 Pro,12,256,4500,Midrange,1,36400
+OnePlus,OnePlus Nord 4,8,128,5500,Midrange,1,29600
+Samsung,Galaxy S22 Ultra,12,512,5000,Flagship,1,88300
+Samsung,Galaxy S21 FE,8,128,4500,Upper-Midrange,1,40700
+Apple,iPhone 16 Pro,8,1024,3582,Flagship,1,136200
+Google Pixel,Pixel 8,8,128,4575,Flagship,1,69900
+Samsung,Galaxy S22 Ultra,12,512,5000,Flagship,1,85600
+Google Pixel,Pixel 9,12,256,4700,Flagship,1,82600
+Apple,iPhone 14 Pro,6,128,3200,Flagship,1,126000
+Samsung,Galaxy S23,8,128,3900,Flagship,1,65700
+Samsung,Galaxy S24 Ultra,12,256,5000,Flagship,1,131000
+Other,iQOO Neo 9 Pro,12,256,5160,Upper-Midrange,1,43400
+Realme,Realme GT 6,12,512,5500,Upper-Midrange,1,49200
+Samsung,Galaxy S21 FE,8,128,4500,Upper-Midrange,1,41100
+Other,Nothing Phone (2a),12,256,5000,Midrange,1,31600
+Other,Poco F6 5G,12,512,5000,Midrange,1,38600
+Google Pixel,Pixel 6a,6,128,4410,Midrange,1,30900
+Google Pixel,Pixel 7 Pro,12,256,5000,Flagship,1,79900
+Google Pixel,Pixel 7a,8,128,4385,Midrange,1,40500
+Google Pixel,Pixel 6a,6,128,4410,Midrange,1,29400
+OnePlus,OnePlus 11R,16,256,5000,Upper-Midrange,1,49900
+Samsung,Galaxy A35 5G,6,256,5000,Midrange,1,30500
+Apple,iPhone 16 Pro,8,256,3582,Flagship,1,124000
+Apple,iPhone 11,4,64,3110,Upper-Midrange,0,39900
+Other,iQOO Neo 9 Pro,8,128,5160,Upper-Midrange,1,35700
+Xiaomi,Xiaomi 14,12,512,4610,Flagship,1,70800
+Apple,iPhone 11,4,256,3110,Upper-Midrange,0,50800
+Xiaomi,Xiaomi 14,12,512,4610,Flagship,1,69000
+Samsung,Galaxy A35 5G,8,128,5000,Midrange,1,30200
+Motorola,Moto G54 5G,12,256,6000,Budget,1,23100
+Motorola,Moto G54 5G,12,128,6000,Budget,1,19700
+OnePlus,OnePlus Nord CE4,8,256,5500,Midrange,1,28100
+Oppo,Oppo A79 5G,8,128,5000,Budget,1,17700
+Apple,iPhone 14 Pro,6,128,3200,Flagship,1,129700
+OnePlus,OnePlus 11,12,128,5000,Flagship,1,62700
+Apple,iPhone 15 Pro,8,256,3274,Flagship,1,136800
+Google Pixel,Pixel 9,12,128,4700,Flagship,1,78900
+Apple,iPhone 12,4,128,2815,Flagship,1,55300
+Realme,Realme 11 Pro 5G,12,128,5000,Midrange,1,28300
+Google Pixel,Pixel 8 Pro,12,128,5050,Flagship,1,101800
+Vivo,Vivo V30 Pro,8,512,5000,Upper-Midrange,1,45700
+Realme,Realme C55,6,64,5000,Budget,0,14200
+Samsung,Galaxy A35 5G,6,256,5000,Midrange,1,30900
+Apple,iPhone 12,4,256,2815,Flagship,1,62400
+Samsung,Galaxy S24,8,256,4000,Flagship,1,76500
+Google Pixel,Pixel 7a,8,128,4385,Midrange,1,41100
+Realme,Realme 11 Pro 5G,12,256,5000,Midrange,1,31000
+Google Pixel,Pixel 8,8,128,4575,Flagship,1,71500
+Motorola,Edge 50 Ultra,16,512,4500,Upper-Midrange,1,58400
+OnePlus,OnePlus Nord CE 3 Lite,8,128,5000,Budget,1,17800
+Realme,Realme 11 Pro 5G,12,256,5000,Midrange,1,31300
+Xiaomi,Xiaomi 14 Ultra,16,512,5000,Flagship,1,98800
+Xiaomi,Xiaomi 12 Pro,8,256,4600,Upper-Midrange,1,52500
+Vivo,Vivo X100 Pro,16,512,5400,Flagship,1,87700
+Apple,iPhone 16 Pro,8,1024,3582,Flagship,1,141500
+Samsung,Galaxy S21 FE,8,128,4500,Upper-Midrange,1,38900
+Apple,iPhone 16 Pro,8,512,3582,Flagship,1,128100
+Other,iQOO Neo 9 Pro,12,256,5160,Upper-Midrange,1,41800
+Oppo,Oppo Reno 12 Pro 5G,12,256,5000,Upper-Midrange,1,38100
+Oppo,Oppo Reno 11 5G,8,256,5000,Midrange,1,33700
+Motorola,Edge 50 Ultra,16,512,4500,Upper-Midrange,1,58000
+Apple,iPhone 16 Pro Max,8,256,4685,Flagship,1,140700
+Oppo,Oppo Reno 12 Pro 5G,12,512,5000,Upper-Midrange,1,39300
+Oppo,Oppo Reno 12 Pro 5G,12,256,5000,Upper-Midrange,1,37500
+Redmi,Redmi Note 12 Pro 5G,6,128,5000,Midrange,1,21500
+Samsung,Galaxy S21 FE,8,256,4500,Upper-Midrange,1,42200
+Apple,iPhone 14 Pro,6,128,3200,Flagship,1,133300
+OnePlus,OnePlus Nord CE4,8,128,5500,Midrange,1,25000
+Samsung,Galaxy F14 5G,4,128,6000,Budget,1,15500
+Other,iQOO Neo 9 Pro,8,128,5160,Upper-Midrange,1,35000
+OnePlus,OnePlus Nord CE 3 Lite,8,256,5000,Budget,1,20500
+Xiaomi,Xiaomi 13 Pro,12,256,4820,Flagship,1,74700
+Redmi,Redmi Note 13 Pro+ 5G,8,256,5000,Midrange,1,30800
+Oppo,Oppo Find X7 Ultra,16,512,5000,Flagship,1,87300
+Other,Poco F6 5G,12,512,5000,Midrange,1,36700
+Redmi,Redmi Note 13 5G,6,128,5000,Budget,1,17800
+Other,Poco F6 5G,8,256,5000,Midrange,1,30100
+OnePlus,OnePlus Nord 4,8,256,5500,Midrange,1,33000
+Apple,iPhone 16 Pro Max,8,512,4685,Flagship,1,147600
+Xiaomi,Xiaomi 14 Ultra,16,512,5000,Flagship,1,99400
+Realme,Realme Narzo 70 Pro,8,128,5000,Budget,1,18700
+Other,iQOO 12 5G,12,256,5000,Flagship,1,52200
+Samsung,Galaxy A55 5G,12,128,5000,Midrange,1,43800
+Google Pixel,Pixel 8 Pro,12,512,5050,Flagship,1,104900
+Google Pixel,Pixel 8,8,128,4575,Flagship,1,68200
+Other,Poco F6 5G,12,512,5000,Midrange,1,38300
+Other,Nothing Phone (2a),8,256,5000,Midrange,1,26500
+Google Pixel,Pixel 8 Pro,12,256,5050,Flagship,1,100100
+Other,Nothing Phone (2),12,512,4700,Upper-Midrange,1,50300
+Xiaomi,Xiaomi 14 Ultra,16,512,5000,Flagship,1,97700
+Vivo,Vivo V29 5G,12,256,4600,Midrange,1,38800
+Samsung,Galaxy S24,8,512,4000,Flagship,1,83000
+Redmi,Redmi 12 5G,6,128,5000,Budget,1,14800
+Realme,Realme 12 Pro+ 5G,12,128,5000,Midrange,1,34800
+OnePlus,OnePlus 12,12,256,5400,Flagship,1,63400
+Xiaomi,Xiaomi 12 Pro,12,256,4600,Upper-Midrange,1,56500
+Google Pixel,Pixel 8,8,256,4575,Flagship,1,71700
+Other,Poco F6 5G,8,512,5000,Midrange,1,33800
+Samsung,Galaxy S22 Ultra,12,512,5000,Flagship,1,88400
+Xiaomi,Xiaomi 13 Pro,12,256,4820,Flagship,1,74900
+Apple,iPhone 16 Pro Max,8,512,4685,Flagship,1,152400
+Samsung,Galaxy S24 Ultra,12,256,5000,Flagship,1,133900
+Vivo,Vivo X100 Pro,16,512,5400,Flagship,1,92500
+OnePlus,OnePlus Nord 4,12,128,5500,Midrange,1,34600
+Samsung,Galaxy S24,8,512,4000,Flagship,1,80700
+Apple,iPhone 15 Pro Max,8,512,4422,Flagship,1,161800
+Xiaomi,Xiaomi 13 Pro,12,256,4820,Flagship,1,73300
+Redmi,Redmi 12 5G,8,128,5000,Budget,1,17100
+OnePlus,OnePlus Nord CE4,8,256,5500,Midrange,1,27400
+Samsung,Galaxy S22 Ultra,12,256,5000,Flagship,1,83500
+Other,iQOO Neo 9 Pro,12,256,5160,Upper-Midrange,1,43700
+Motorola,Edge 50 Pro,12,256,4500,Midrange,1,36300
+Apple,iPhone 15 Pro Max,8,512,4422,Flagship,1,162100
+Samsung,Galaxy A55 5G,12,256,5000,Midrange,1,47200
+Samsung,Galaxy M34 5G,8,256,6000,Budget,1,24300
+OnePlus,OnePlus 11,16,256,5000,Flagship,1,68100
+Samsung,Galaxy F14 5G,4,64,6000,Budget,1,13100
+OnePlus,OnePlus 12R,16,256,5500,Upper-Midrange,1,53400
+Apple,iPhone 15 Pro Max,8,512,4422,Flagship,1,162000
+Google Pixel,Pixel 9 Pro XL,16,512,5060,Flagship,1,128300
+Other,iQOO Neo 9 Pro,8,256,5160,Upper-Midrange,1,37300
+Samsung,Galaxy A55 5G,8,256,5000,Midrange,1,42800
+Xiaomi,Xiaomi 13 Pro,12,256,4820,Flagship,1,75900
+Apple,iPhone 14,6,512,3279,Flagship,1,81800
+Apple,iPhone 14,6,256,3279,Flagship,1,74000
+Apple,iPhone 11,4,64,3110,Upper-Midrange,0,39400
+Apple,iPhone 16,8,128,3561,Flagship,1,81200
+Oppo,Oppo Reno 12 Pro 5G,12,256,5000,Upper-Midrange,1,36100
+Other,iQOO 12 5G,12,256,5000,Flagship,1,54200
+Google Pixel,Pixel 8,8,128,4575,Flagship,1,70400
+Google Pixel,Pixel 9 Pro XL,16,512,5060,Flagship,1,129400
+Apple,iPhone 14 Pro,6,1024,3200,Flagship,1,149700
+OnePlus,OnePlus Nord CE4,8,256,5500,Midrange,1,28400
+Xiaomi,Xiaomi 14 Ultra,16,512,5000,Flagship,1,102000
+Oppo,Oppo Reno 12 Pro 5G,12,512,5000,Upper-Midrange,1,38900
+Apple,iPhone 15 Pro Max,8,1024,4422,Flagship,1,175300
+Xiaomi,Xiaomi 14,12,512,4610,Flagship,1,70300
+Xiaomi,Xiaomi 14 Ultra,16,512,5000,Flagship,1,101600
+Apple,iPhone 16 Pro,8,512,3582,Flagship,1,132400
+OnePlus,OnePlus Nord CE 3 Lite,8,128,5000,Budget,1,18100
+Motorola,Moto G54 5G,8,128,6000,Budget,1,15100
+Redmi,Redmi Note 13 5G,6,128,5000,Budget,1,17500
+Samsung,Galaxy S23,8,128,3900,Flagship,1,63800
+Realme,Realme 11 Pro 5G,12,256,5000,Midrange,1,32600
+Samsung,Galaxy S23 Ultra,12,512,5000,Flagship,1,108100
+Apple,iPhone 11,4,64,3110,Upper-Midrange,0,40100
+Motorola,Edge 50 Pro,12,256,4500,Midrange,1,36300
+Google Pixel,Pixel 8 Pro,12,512,5050,Flagship,1,107900
+Samsung,Galaxy S21 FE,8,256,4500,Upper-Midrange,1,43400
+Motorola,Moto G54 5G,8,128,6000,Budget,1,15300
+OnePlus,OnePlus 12,12,256,5400,Flagship,1,65100
+Redmi,Redmi 13C 5G,8,128,5000,Budget,1,16300
+Motorola,Edge 40 Neo,8,128,5000,Midrange,1,23300
+Oppo,Oppo Reno 11 5G,8,256,5000,Midrange,1,33900
+Redmi,Redmi Note 12 Pro 5G,8,256,5000,Midrange,1,27800
+Samsung,Galaxy S24,8,256,4000,Flagship,1,76400
+Google Pixel,Pixel 9,12,128,4700,Flagship,1,78100
+Apple,iPhone 16 Pro Max,8,256,4685,Flagship,1,143800
+Oppo,Oppo Reno 11 5G,8,256,5000,Midrange,1,32500
+Other,Nothing Phone (2),12,256,4700,Upper-Midrange,1,47700
+Apple,iPhone 15 Pro,8,256,3274,Flagship,1,137800
+Xiaomi,Xiaomi 14,12,512,4610,Flagship,1,70600
+Google Pixel,Pixel 7 Pro,12,128,5000,Flagship,1,75600
+Vivo,Vivo V30 Pro,12,512,5000,Upper-Midrange,1,49200
+Redmi,Redmi Note 13 5G,6,256,5000,Budget,1,21200
+Google Pixel,Pixel 6a,6,128,4410,Midrange,1,29200
+Google Pixel,Pixel 9 Pro XL,16,512,5060,Flagship,1,133500
+Redmi,Redmi 12 5G,4,128,5000,Budget,1,12300
+Other,Poco X6 Pro 5G,8,512,5000,Midrange,1,28100
+OnePlus,OnePlus Nord CE 3 Lite,8,128,5000,Budget,1,17500
+Google Pixel,Pixel 9,12,128,4700,Flagship,1,78900
+Vivo,Vivo Y200e 5G,6,128,5000,Budget,1,18300
+Redmi,Redmi Note 12 Pro 5G,8,128,5000,Midrange,1,24100
+Vivo,Vivo T3 5G,8,256,5000,Budget,1,22700
+Samsung,Galaxy S23 Ultra,12,256,5000,Flagship,1,105500
+Apple,iPhone 11,4,256,3110,Upper-Midrange,0,50900
+Google Pixel,Pixel 9,12,256,4700,Flagship,1,81800
+Motorola,Moto G84 5G,12,256,5000,Budget,1,19500
+Apple,iPhone 12,4,64,2815,Flagship,1,50700
+OnePlus,OnePlus 12,16,256,5400,Flagship,1,70800
+Other,Poco X6 Pro 5G,12,512,5000,Midrange,1,32900
+OnePlus,OnePlus Nord CE4,8,128,5500,Midrange,1,24500
+Samsung,Galaxy S24,8,256,4000,Flagship,1,76100
+OnePlus,OnePlus 11R,12,256,5000,Upper-Midrange,1,44600
+OnePlus,OnePlus Nord 4,8,128,5500,Midrange,1,29300
+Xiaomi,Xiaomi 14 Ultra,16,512,5000,Flagship,1,98000
+Apple,iPhone 14 Pro,6,1024,3200,Flagship,1,147200
+Realme,Realme 12 Pro+ 5G,12,256,5000,Midrange,1,37900
+Google Pixel,Pixel 7a,8,128,4385,Midrange,1,40400
+OnePlus,OnePlus 11R,12,256,5000,Upper-Midrange,1,43000
+Apple,iPhone 16 Pro,8,128,3582,Flagship,1,121000
+Motorola,Edge 50 Pro,12,256,4500,Midrange,1,36100
+Vivo,Vivo Y200e 5G,6,128,5000,Budget,1,17900
+Redmi,Redmi Note 13 5G,6,256,5000,Budget,1,21000
+Apple,iPhone 11,4,128,3110,Upper-Midrange,0,44600
+Realme,Realme GT 6,8,512,5500,Upper-Midrange,1,43900
+Apple,iPhone 16,8,128,3561,Flagship,1,78500
+OnePlus,OnePlus 11R,16,128,5000,Upper-Midrange,1,45100
+OnePlus,OnePlus Nord 4,8,256,5500,Midrange,1,32500
+OnePlus,OnePlus 12,12,512,5400,Flagship,1,66600
+Google Pixel,Pixel 6a,6,128,4410,Midrange,1,29600
+Realme,Realme C55,8,64,5000,Budget,0,16600
+OnePlus,OnePlus 11,12,256,5000,Flagship,1,63500
+Google Pixel,Pixel 8,8,256,4575,Flagship,1,73400
+Vivo,Vivo Y200e 5G,8,128,5000,Budget,1,21000
+OnePlus,OnePlus Nord 4,8,128,5500,Midrange,1,30300
+Xiaomi,Xiaomi 12 Pro,12,256,4600,Upper-Midrange,1,56700
+Realme,Realme GT 6,8,512,5500,Upper-Midrange,1,44100
+Samsung,Galaxy A55 5G,12,256,5000,Midrange,1,48900
+Google Pixel,Pixel 8 Pro,12,256,5050,Flagship,1,101000
+Xiaomi,Xiaomi 12 Pro,12,256,4600,Upper-Midrange,1,57200
+OnePlus,OnePlus 12R,8,256,5500,Upper-Midrange,1,43500
+Samsung,Galaxy S21 FE,8,256,4500,Upper-Midrange,1,41700
+Oppo,Oppo F25 Pro 5G,8,256,5000,Midrange,1,27300
+Google Pixel,Pixel 7 Pro,12,256,5000,Flagship,1,77700
+Oppo,Oppo Find X7 Ultra,16,512,5000,Flagship,1,89400
+Other,iQOO 12 5G,16,256,5000,Flagship,1,56700
+Other,Poco F6 5G,12,256,5000,Midrange,1,33900
+Xiaomi,Xiaomi 12 Pro,12,256,4600,Upper-Midrange,1,56100
+Google Pixel,Pixel 8,8,256,4575,Flagship,1,73300
+Vivo,Vivo V29 5G,8,256,4600,Midrange,1,34500
+Google Pixel,Pixel 9 Pro XL,16,128,5060,Flagship,1,126600
+Motorola,Edge 50 Pro,8,256,4500,Midrange,1,31700
+Apple,iPhone 11,4,256,3110,Upper-Midrange,0,53400
+Samsung,Galaxy M34 5G,6,256,6000,Budget,1,22100
+Samsung,Galaxy S21 FE,8,128,4500,Upper-Midrange,1,39000
+Vivo,Vivo V29 5G,12,256,4600,Midrange,1,40400
+Redmi,Redmi Note 13 5G,8,128,5000,Budget,1,20800
+Redmi,Redmi 12 5G,6,128,5000,Budget,1,14600
+Other,Nothing Phone (2),8,512,4700,Upper-Midrange,1,46200
+Apple,iPhone 16,8,512,3561,Flagship,1,92000
+Apple,iPhone 15 Pro Max,8,1024,4422,Flagship,1,171500
+Redmi,Redmi 12 5G,4,128,5000,Budget,1,12000
+Google Pixel,Pixel 7 Pro,12,128,5000,Flagship,1,74700
+Oppo,Oppo Reno 11 5G,8,128,5000,Midrange,1,29300
+Redmi,Redmi 12 5G,8,128,5000,Budget,1,16800
+Xiaomi,Xiaomi 14 Ultra,16,512,5000,Flagship,1,97900
+Oppo,Oppo Reno 11 5G,8,128,5000,Midrange,1,30400
+Apple,iPhone 16 Pro,8,512,3582,Flagship,1,133700
+Other,Poco X6 Pro 5G,12,512,5000,Midrange,1,33500
+Samsung,Galaxy M34 5G,8,128,6000,Budget,1,21600
+Other,Poco F6 5G,8,256,5000,Midrange,1,29800
+Apple,iPhone 11,4,128,3110,Upper-Midrange,0,46100
+Apple,iPhone 15,6,512,3349,Flagship,1,90700
+Motorola,Edge 40 Neo,12,128,5000,Midrange,1,27900
+Xiaomi,Xiaomi 12 Pro,8,256,4600,Upper-Midrange,1,54100
+Vivo,Vivo T3 5G,8,256,5000,Budget,1,23200
+Other,Nothing Phone (2),12,512,4700,Upper-Midrange,1,50600
+Samsung,Galaxy S24,8,256,4000,Flagship,1,78600
+Xiaomi,Xiaomi 12 Pro,8,256,4600,Upper-Midrange,1,52400
+Vivo,Vivo Y200e 5G,8,128,5000,Budget,1,20900
+Vivo,Vivo Y200e 5G,6,128,5000,Budget,1,17500
+Realme,Realme Narzo 70 Pro,8,256,5000,Budget,1,21900
+Motorola,Edge 40 Neo,12,128,5000,Midrange,1,28300
+Apple,iPhone 14,6,256,3279,Flagship,1,76100
+Samsung,Galaxy M34 5G,6,256,6000,Budget,1,22100
+Samsung,Galaxy A55 5G,8,256,5000,Midrange,1,44200
+Google Pixel,Pixel 7 Pro,12,128,5000,Flagship,1,73400
+Apple,iPhone 16,8,128,3561,Flagship,1,82100
+Samsung,Galaxy S23,8,128,3900,Flagship,1,65300
+Samsung,Galaxy M34 5G,8,128,6000,Budget,1,21000
+Xiaomi,Xiaomi 13 Pro,12,256,4820,Flagship,1,72800
+Realme,Realme 12 Pro+ 5G,8,128,5000,Midrange,1,30500
+Redmi,Redmi Note 12 Pro 5G,8,128,5000,Midrange,1,24600
+Samsung,Galaxy S22 Ultra,12,256,5000,Flagship,1,84700
+OnePlus,OnePlus 12R,16,128,5500,Upper-Midrange,1,48600
+Motorola,Edge 40 Neo,12,128,5000,Midrange,1,28500
+Xiaomi,Xiaomi 12 Pro,8,256,4600,Upper-Midrange,1,53500
+OnePlus,OnePlus 12R,16,128,5500,Upper-Midrange,1,48500
+Vivo,Vivo Y200e 5G,6,128,5000,Budget,1,17600
+Realme,Realme Narzo 70 Pro,8,256,5000,Budget,1,21400
+Other,Poco F6 5G,8,256,5000,Midrange,1,29300
+Samsung,Galaxy A55 5G,8,256,5000,Midrange,1,42900
+OnePlus,OnePlus Nord 4,8,128,5500,Midrange,1,30000
+Xiaomi,Xiaomi 12 Pro,12,256,4600,Upper-Midrange,1,58400
+Apple,iPhone 15 Pro,8,128,3274,Flagship,1,137300
+Realme,Realme GT 6,8,512,5500,Upper-Midrange,1,43900
+Redmi,Redmi 13C 5G,4,256,5000,Budget,1,13900
+Apple,iPhone 15 Pro Max,8,256,4422,Flagship,1,157300
+Other,Nothing Phone (2),8,256,4700,Upper-Midrange,1,43800
+Samsung,Galaxy M34 5G,6,256,6000,Budget,1,22100
+Samsung,Galaxy M34 5G,8,128,6000,Budget,1,21100
+Apple,iPhone 12,4,256,2815,Flagship,1,62100
+Samsung,Galaxy F14 5G,4,128,6000,Budget,1,16300
+Vivo,Vivo V29 5G,8,128,4600,Midrange,1,31400
+Motorola,Edge 50 Pro,8,256,4500,Midrange,1,31600
+Apple,iPhone 15,6,256,3349,Flagship,1,83900
+Samsung,Galaxy S23 Ultra,12,1024,5000,Flagship,1,111700
+Samsung,Galaxy S23 Ultra,12,1024,5000,Flagship,1,112500
+Motorola,Moto G84 5G,12,256,5000,Budget,1,18700
+Other,Poco X6 Pro 5G,12,256,5000,Midrange,1,30000
+Vivo,Vivo Y200e 5G,8,128,5000,Budget,1,20200
+Apple,iPhone 15 Pro Max,8,1024,4422,Flagship,1,168600
+Realme,Realme 12 Pro+ 5G,8,256,5000,Midrange,1,32900
+Redmi,Redmi Note 12 Pro 5G,8,256,5000,Midrange,1,27900
+Redmi,Redmi Note 13 Pro+ 5G,8,256,5000,Midrange,1,30300
+Oppo,Oppo Reno 11 5G,8,128,5000,Midrange,1,30800
+Vivo,Vivo V30 Pro,8,256,5000,Upper-Midrange,1,41000
+Samsung,Galaxy S23 Ultra,12,1024,5000,Flagship,1,111500
+Google Pixel,Pixel 9 Pro XL,16,128,5060,Flagship,1,124600
+OnePlus,OnePlus 11R,12,128,5000,Upper-Midrange,1,41700
+Google Pixel,Pixel 7 Pro,12,256,5000,Flagship,1,77400
+Other,iQOO 12 5G,12,256,5000,Flagship,1,54500
+Google Pixel,Pixel 9 Pro XL,16,256,5060,Flagship,1,128600
+Apple,iPhone 14,6,256,3279,Flagship,1,77600
+Motorola,Moto G84 5G,12,256,5000,Budget,1,19600
+Vivo,Vivo T3 5G,8,256,5000,Budget,1,23500
+OnePlus,OnePlus 11R,8,128,5000,Upper-Midrange,1,36700
+Vivo,Vivo X100 Pro,16,512,5400,Flagship,1,91100
+OnePlus,OnePlus 11,12,256,5000,Flagship,1,63600
+Apple,iPhone 14,6,128,3279,Flagship,1,68500
+OnePlus,OnePlus 11R,16,256,5000,Upper-Midrange,1,47700
+OnePlus,OnePlus 12R,16,128,5500,Upper-Midrange,1,50500
+Samsung,Galaxy S23 Ultra,12,1024,5000,Flagship,1,108900
+Vivo,Vivo X100 Pro,16,512,5400,Flagship,1,90900
+Motorola,Edge 40 Neo,8,128,5000,Midrange,1,23200
+Redmi,Redmi Note 12 Pro 5G,6,256,5000,Midrange,1,25400
+Vivo,Vivo X100 Pro,16,512,5400,Flagship,1,92700
+Redmi,Redmi Note 13 5G,6,128,5000,Budget,1,17500
+Other,Poco F6 5G,8,512,5000,Midrange,1,33400
+Apple,iPhone 16 Pro,8,1024,3582,Flagship,1,135500
+Realme,Realme Narzo 70 Pro,8,128,5000,Budget,1,18600
+Google Pixel,Pixel 6a,6,128,4410,Midrange,1,29800
+Vivo,Vivo V30 Pro,8,512,5000,Upper-Midrange,1,44000
+Google Pixel,Pixel 7a,8,128,4385,Midrange,1,40100
+Motorola,Moto G54 5G,8,128,6000,Budget,1,15000
+Oppo,Oppo Reno 12 Pro 5G,12,512,5000,Upper-Midrange,1,40600
+Apple,iPhone 15,6,128,3349,Flagship,1,79100
+OnePlus,OnePlus 11R,12,256,5000,Upper-Midrange,1,42600
+Apple,iPhone 13,4,512,3227,Flagship,1,72000
+Realme,Realme C55,4,64,5000,Budget,0,12200
+Vivo,Vivo X100 Pro,16,512,5400,Flagship,1,89700
+Other,iQOO 12 5G,16,256,5000,Flagship,1,56600
+Oppo,Oppo A79 5G,8,128,5000,Budget,1,18500
+Vivo,Vivo X100 Pro,16,512,5400,Flagship,1,89100
+Realme,Realme 11 Pro 5G,12,256,5000,Midrange,1,31600
+Vivo,Vivo T3 5G,8,128,5000,Budget,1,19700
+Samsung,Galaxy M34 5G,8,128,6000,Budget,1,21000
+Other,Poco F6 5G,8,256,5000,Midrange,1,30500
+Samsung,Galaxy M34 5G,6,256,6000,Budget,1,22400
+Samsung,Galaxy S24,8,128,4000,Flagship,1,73500
+Samsung,Galaxy S23,8,256,3900,Flagship,1,66400
+Oppo,Oppo Reno 11 5G,8,256,5000,Midrange,1,33800
+Vivo,Vivo V30 Pro,8,256,5000,Upper-Midrange,1,43200
+Vivo,Vivo Y200e 5G,6,128,5000,Budget,1,18400
+Google Pixel,Pixel 7 Pro,12,256,5000,Flagship,1,77200
+Apple,iPhone 16,8,256,3561,Flagship,1,84400
+Oppo,Oppo Find X7 Ultra,16,512,5000,Flagship,1,86100
+Other,Nothing Phone (2a),8,128,5000,Midrange,1,24400
+Apple,iPhone 16 Pro,8,128,3582,Flagship,1,117400
+Samsung,Galaxy S24 Ultra,12,256,5000,Flagship,1,129500
+OnePlus,OnePlus 11,12,256,5000,Flagship,1,65700
+OnePlus,OnePlus 11R,16,128,5000,Upper-Midrange,1,46200
+Other,Nothing Phone (2),12,128,4700,Upper-Midrange,1,44600
+Apple,iPhone 14,6,256,3279,Flagship,1,75200
+Realme,Realme 11 Pro 5G,8,256,5000,Midrange,1,27400
+OnePlus,OnePlus 11R,8,128,5000,Upper-Midrange,1,35000
+Motorola,Edge 50 Ultra,16,512,4500,Upper-Midrange,1,58500
+Realme,Realme 11 Pro 5G,8,256,5000,Midrange,1,27500
+Vivo,Vivo V30 Pro,8,512,5000,Upper-Midrange,1,45900
+Samsung,Galaxy S23 Ultra,12,512,5000,Flagship,1,109300
+Samsung,Galaxy F14 5G,6,128,6000,Budget,1,18600
+Realme,Realme Narzo 70 Pro,8,128,5000,Budget,1,18400
+Motorola,Edge 50 Pro,12,256,4500,Midrange,1,37000
+Google Pixel,Pixel 8,8,256,4575,Flagship,1,74700
+Google Pixel,Pixel 6a,6,128,4410,Midrange,1,29800
+Motorola,Edge 40 Neo,8,256,5000,Midrange,1,26700
+Samsung,Galaxy S22 Ultra,12,256,5000,Flagship,1,86200
+Google Pixel,Pixel 7 Pro,12,128,5000,Flagship,1,74100
+Oppo,Oppo Reno 11 5G,8,128,5000,Midrange,1,30800
+Motorola,Edge 40 Neo,12,128,5000,Midrange,1,27500
+Xiaomi,Xiaomi 14,12,512,4610,Flagship,1,71600
+Google Pixel,Pixel 8 Pro,12,256,5050,Flagship,1,104900
+Samsung,Galaxy M34 5G,6,128,6000,Budget,1,18900
+Google Pixel,Pixel 9 Pro XL,16,128,5060,Flagship,1,121600
+Xiaomi,Xiaomi 13 Pro,12,256,4820,Flagship,1,75800
+Apple,iPhone 11,4,256,3110,Upper-Midrange,0,53100
+Other,Nothing Phone (2a),12,128,5000,Midrange,1,29400
+Other,Nothing Phone (2a),12,128,5000,Midrange,1,28300
+OnePlus,OnePlus Nord CE 3 Lite,8,256,5000,Budget,1,21000
+Redmi,Redmi 12 5G,4,256,5000,Budget,1,15400
+Xiaomi,Xiaomi 14,12,512,4610,Flagship,1,70500
+Samsung,Galaxy F14 5G,4,64,6000,Budget,1,12900
+Samsung,Galaxy A35 5G,8,256,5000,Midrange,1,34300
+Samsung,Galaxy S24 Ultra,12,512,5000,Flagship,1,135900
+Vivo,Vivo V30 Pro,12,256,5000,Upper-Midrange,1,45500
+Xiaomi,Xiaomi 14,12,512,4610,Flagship,1,71300
+Oppo,Oppo Reno 12 Pro 5G,12,256,5000,Upper-Midrange,1,37500
+Other,iQOO Neo 9 Pro,8,256,5160,Upper-Midrange,1,38500
+Motorola,Moto G54 5G,12,256,6000,Budget,1,23400
+OnePlus,OnePlus 12,12,512,5400,Flagship,1,68000
+Vivo,Vivo V30 Pro,8,512,5000,Upper-Midrange,1,46000
+Google Pixel,Pixel 9,12,256,4700,Flagship,1,81100
+Samsung,Galaxy S23 Ultra,12,1024,5000,Flagship,1,112000
+Motorola,Moto G54 5G,8,128,6000,Budget,1,15200
+OnePlus,OnePlus Nord CE4,8,128,5500,Midrange,1,24300
+Oppo,Oppo Find X7 Ultra,16,256,5000,Flagship,1,85900
+Realme,Realme GT 6,16,512,5500,Upper-Midrange,1,55200
+Samsung,Galaxy S24,8,256,4000,Flagship,1,79200
+Samsung,Galaxy S21 FE,8,256,4500,Upper-Midrange,1,41900
+Samsung,Galaxy S22 Ultra,12,256,5000,Flagship,1,87100
+Vivo,Vivo X100 Pro,16,512,5400,Flagship,1,87500
+Samsung,Galaxy S24,8,128,4000,Flagship,1,73300
+Realme,Realme Narzo 70 Pro,8,256,5000,Budget,1,22000
+Vivo,Vivo V29 5G,8,128,4600,Midrange,1,31300
+OnePlus,OnePlus 11,16,256,5000,Flagship,1,68000
+Other,Poco F6 5G,12,256,5000,Midrange,1,34400
+Vivo,Vivo X100 Pro,16,512,5400,Flagship,1,90900
+Realme,Realme 11 Pro 5G,8,256,5000,Midrange,1,26800
+Google Pixel,Pixel 9 Pro XL,16,256,5060,Flagship,1,128900
+Apple,iPhone 15 Pro Max,8,256,4422,Flagship,1,160500
+Xiaomi,Xiaomi 12 Pro,12,256,4600,Upper-Midrange,1,59000
+Samsung,Galaxy A55 5G,12,256,5000,Midrange,1,46600
+Google Pixel,Pixel 9,12,256,4700,Flagship,1,85000
+Samsung,Galaxy A55 5G,12,128,5000,Midrange,1,45300
+Google Pixel,Pixel 8,8,256,4575,Flagship,1,71600
+Apple,iPhone 12,4,64,2815,Flagship,1,51300
+Xiaomi,Xiaomi 14 Ultra,16,512,5000,Flagship,1,98600
+Apple,iPhone 14 Pro,6,128,3200,Flagship,1,128200
+Apple,iPhone 14,6,128,3279,Flagship,1,69200
+Realme,Realme 12 Pro+ 5G,8,128,5000,Midrange,1,29100
+Google Pixel,Pixel 6a,6,128,4410,Midrange,1,29300
+Oppo,Oppo Reno 12 Pro 5G,12,512,5000,Upper-Midrange,1,39300
+Realme,Realme C55,4,128,5000,Budget,0,14700
+OnePlus,OnePlus Nord CE4,8,128,5500,Midrange,1,25300
+Xiaomi,Xiaomi 13 Pro,12,256,4820,Flagship,1,75500
+Apple,iPhone 16,8,256,3561,Flagship,1,87100
+Other,Poco X6 Pro 5G,8,256,5000,Midrange,1,25700
+Oppo,Oppo F25 Pro 5G,8,256,5000,Midrange,1,26400
+OnePlus,OnePlus 12R,12,256,5500,Upper-Midrange,1,49100
+Motorola,Edge 50 Ultra,16,512,4500,Upper-Midrange,1,58600
+Vivo,Vivo V30 Pro,8,256,5000,Upper-Midrange,1,40900
+Samsung,Galaxy S23,8,128,3900,Flagship,1,65500
+Vivo,Vivo V29 5G,12,256,4600,Midrange,1,40500
+OnePlus,OnePlus Nord CE4,8,256,5500,Midrange,1,28600
+Samsung,Galaxy A35 5G,8,128,5000,Midrange,1,30700
+Motorola,Edge 50 Ultra,16,512,4500,Upper-Midrange,1,59700
+Oppo,Oppo Reno 12 Pro 5G,12,512,5000,Upper-Midrange,1,39700
+Other,Nothing Phone (2),8,128,4700,Upper-Midrange,1,41200
+Vivo,Vivo V29 5G,12,256,4600,Midrange,1,39400
+Other,Nothing Phone (2),8,128,4700,Upper-Midrange,1,41000
+Vivo,Vivo X100 Pro,16,512,5400,Flagship,1,88500
+Google Pixel,Pixel 7a,8,128,4385,Midrange,1,41200
+Apple,iPhone 11,4,128,3110,Upper-Midrange,0,46200
+Redmi,Redmi Note 12 Pro 5G,6,256,5000,Midrange,1,25500
+Apple,iPhone 14 Pro,6,512,3200,Flagship,1,138500
+Other,iQOO Neo 9 Pro,12,256,5160,Upper-Midrange,1,43400
+Redmi,Redmi Note 13 5G,6,256,5000,Budget,1,20900
+Vivo,Vivo V30 Pro,8,512,5000,Upper-Midrange,1,44800
+Apple,iPhone 11,4,64,3110,Upper-Midrange,0,40000
+OnePlus,OnePlus 12R,8,128,5500,Upper-Midrange,1,39500
+Apple,iPhone 15,6,128,3349,Flagship,1,81300
+Xiaomi,Xiaomi 14,12,512,4610,Flagship,1,69800
+Motorola,Edge 50 Pro,12,256,4500,Midrange,1,37800
+OnePlus,OnePlus Nord CE4,8,256,5500,Midrange,1,27400
+Redmi,Redmi Note 13 5G,6,256,5000,Budget,1,20900
+Realme,Realme 11 Pro 5G,8,256,5000,Midrange,1,26500
+Redmi,Redmi Note 12 Pro 5G,8,128,5000,Midrange,1,24900
+Google Pixel,Pixel 7a,8,128,4385,Midrange,1,40000
+Apple,iPhone 16 Pro,8,512,3582,Flagship,1,134300
+Other,Nothing Phone (2),12,512,4700,Upper-Midrange,1,50500
+Other,iQOO 12 5G,16,256,5000,Flagship,1,57100
+Google Pixel,Pixel 9,12,128,4700,Flagship,1,79800
+Google Pixel,Pixel 8 Pro,12,128,5050,Flagship,1,98600
+Redmi,Redmi Note 13 Pro+ 5G,8,512,5000,Midrange,1,34000
+Oppo,Oppo Find X7 Ultra,16,512,5000,Flagship,1,88800
+Samsung,Galaxy F14 5G,6,64,6000,Budget,1,15600
+Apple,iPhone 13,4,128,3227,Flagship,1,58500
+Xiaomi,Xiaomi 14 Ultra,16,512,5000,Flagship,1,101700
+Samsung,Galaxy S24 Ultra,12,256,5000,Flagship,1,127200
+Oppo,Oppo Reno 12 Pro 5G,12,512,5000,Upper-Midrange,1,39300
+Motorola,Moto G54 5G,12,256,6000,Budget,1,22600
+Redmi,Redmi 13C 5G,6,128,5000,Budget,1,13800
+Redmi,Redmi 13C 5G,4,128,5000,Budget,1,11200
+Samsung,Galaxy A55 5G,12,256,5000,Midrange,1,49200
+Apple,iPhone 15 Pro Max,8,512,4422,Flagship,1,162800
+OnePlus,OnePlus 11,16,128,5000,Flagship,1,66900
+Other,iQOO Neo 9 Pro,12,256,5160,Upper-Midrange,1,41800
+Apple,iPhone 16 Pro Max,8,512,4685,Flagship,1,146800
+OnePlus,OnePlus 12,12,256,5400,Flagship,1,65500
+Apple,iPhone 16 Pro Max,8,1024,4685,Flagship,1,159700
+Vivo,Vivo V29 5G,12,256,4600,Midrange,1,39200
+Samsung,Galaxy S21 FE,8,128,4500,Upper-Midrange,1,41100
+Xiaomi,Xiaomi 14 Ultra,16,512,5000,Flagship,1,100900
+Realme,Realme Narzo 70 Pro,8,256,5000,Budget,1,21800
+Google Pixel,Pixel 8,8,256,4575,Flagship,1,75000
+OnePlus,OnePlus Nord CE4,8,128,5500,Midrange,1,25600
+Google Pixel,Pixel 9 Pro XL,16,128,5060,Flagship,1,126400
+Vivo,Vivo X100 Pro,16,512,5400,Flagship,1,87900
+Apple,iPhone 13,4,128,3227,Flagship,1,61300
+OnePlus,OnePlus 11,16,256,5000,Flagship,1,71600
+Redmi,Redmi Note 13 Pro+ 5G,12,512,5000,Midrange,1,38200
+Google Pixel,Pixel 8,8,128,4575,Flagship,1,71500
+Samsung,Galaxy S23 Ultra,12,256,5000,Flagship,1,104400
+Google Pixel,Pixel 9 Pro XL,16,128,5060,Flagship,1,124000
+Redmi,Redmi 13C 5G,4,128,5000,Budget,1,10700
+OnePlus,OnePlus 12,12,512,5400,Flagship,1,69300
+Realme,Realme GT 6,12,512,5500,Upper-Midrange,1,49000
+Apple,iPhone 15,6,128,3349,Flagship,1,81500
+Realme,Realme 11 Pro 5G,12,256,5000,Midrange,1,31100
+Samsung,Galaxy F14 5G,4,64,6000,Budget,1,12700
+Redmi,Redmi 12 5G,6,128,5000,Budget,1,14700
+Apple,iPhone 16,8,256,3561,Flagship,1,84800
+Other,iQOO 12 5G,12,512,5000,Flagship,1,55600
+Apple,iPhone 12,4,256,2815,Flagship,1,62100
+OnePlus,OnePlus Nord CE4,8,128,5500,Midrange,1,25300
+Xiaomi,Xiaomi 14 Ultra,16,512,5000,Flagship,1,97200
+Apple,iPhone 11,4,256,3110,Upper-Midrange,0,50900
+Samsung,Galaxy M34 5G,8,256,6000,Budget,1,24200
+Other,iQOO Neo 9 Pro,12,256,5160,Upper-Midrange,1,42800
+Motorola,Edge 50 Ultra,12,512,4500,Upper-Midrange,1,55300
+Vivo,Vivo V29 5G,12,128,4600,Midrange,1,36200
+Realme,Realme C55,8,64,5000,Budget,0,16900
+Realme,Realme 12 Pro+ 5G,8,128,5000,Midrange,1,29300
+Apple,iPhone 16 Pro Max,8,1024,4685,Flagship,1,159100
+Apple,iPhone 13,4,256,3227,Flagship,1,64900
+Vivo,Vivo T3 5G,8,128,5000,Budget,1,19400
+Apple,iPhone 15,6,256,3349,Flagship,1,88200
+Realme,Realme Narzo 70 Pro,8,128,5000,Budget,1,18800
+Other,Nothing Phone (2),8,128,4700,Upper-Midrange,1,40600
+Apple,iPhone 14,6,128,3279,Flagship,1,69000
+Google Pixel,Pixel 7a,8,128,4385,Midrange,1,39700
+Samsung,Galaxy S22 Ultra,12,256,5000,Flagship,1,83700
+Apple,iPhone 12,4,256,2815,Flagship,1,62900
+Other,Poco F6 5G,8,256,5000,Midrange,1,30700
+Google Pixel,Pixel 8,8,256,4575,Flagship,1,72900
+OnePlus,OnePlus Nord CE 3 Lite,8,256,5000,Budget,1,21100
+Samsung,Galaxy S23 Ultra,12,256,5000,Flagship,1,103300
+Samsung,Galaxy F14 5G,4,64,6000,Budget,1,12700
+Xiaomi,Xiaomi 13 Pro,12,256,4820,Flagship,1,77000
+Apple,iPhone 15,6,128,3349,Flagship,1,81100
+Realme,Realme 11 Pro 5G,12,256,5000,Midrange,1,32500
+OnePlus,OnePlus 12R,8,256,5500,Upper-Midrange,1,44000
+Samsung,Galaxy A35 5G,6,256,5000,Midrange,1,30600
+Other,Poco F6 5G,8,512,5000,Midrange,1,32100
+Apple,iPhone 13,4,256,3227,Flagship,1,66200
+Vivo,Vivo Y200e 5G,8,128,5000,Budget,1,20800
+Samsung,Galaxy A35 5G,8,256,5000,Midrange,1,33700
+OnePlus,OnePlus 11R,8,128,5000,Upper-Midrange,1,35200
+Motorola,Edge 50 Pro,8,256,4500,Midrange,1,32300
+Google Pixel,Pixel 9,12,256,4700,Flagship,1,83800
+Apple,iPhone 16 Pro Max,8,512,4685,Flagship,1,154400
+Realme,Realme 12 Pro+ 5G,8,256,5000,Midrange,1,33300
+Motorola,Edge 40 Neo,12,128,5000,Midrange,1,28100
+OnePlus,OnePlus 11R,12,256,5000,Upper-Midrange,1,43900
+OnePlus,OnePlus 12,16,256,5400,Flagship,1,67700
+OnePlus,OnePlus Nord 4,8,128,5500,Midrange,1,30300
+Apple,iPhone 12,4,64,2815,Flagship,1,49800
+Realme,Realme Narzo 70 Pro,8,256,5000,Budget,1,21700
+Vivo,Vivo V29 5G,12,128,4600,Midrange,1,37000
+Samsung,Galaxy F14 5G,4,128,6000,Budget,1,15500
+Redmi,Redmi Note 13 5G,8,128,5000,Budget,1,20000
+Apple,iPhone 11,4,64,3110,Upper-Midrange,0,39600
+Realme,Realme GT 6,12,256,5500,Upper-Midrange,1,44900
+Vivo,Vivo V30 Pro,12,256,5000,Upper-Midrange,1,48100
+Samsung,Galaxy A35 5G,8,256,5000,Midrange,1,33700
+Other,iQOO 12 5G,12,256,5000,Flagship,1,53400
+Oppo,Oppo Reno 11 5G,8,256,5000,Midrange,1,33700
+Apple,iPhone 16,8,512,3561,Flagship,1,92400
+Google Pixel,Pixel 8 Pro,12,512,5050,Flagship,1,106800
+Google Pixel,Pixel 9 Pro XL,16,256,5060,Flagship,1,129300
+Vivo,Vivo V29 5G,8,128,4600,Midrange,1,32000
+Other,iQOO 12 5G,16,256,5000,Flagship,1,57600
+Apple,iPhone 15 Pro,8,1024,3274,Flagship,1,157300
+Other,Nothing Phone (2a),8,128,5000,Midrange,1,23700
+OnePlus,OnePlus 12R,8,256,5500,Upper-Midrange,1,42900
+Apple,iPhone 13,4,256,3227,Flagship,1,66300
+Samsung,Galaxy S21 FE,8,128,4500,Upper-Midrange,1,40000
+Apple,iPhone 14 Pro,6,128,3200,Flagship,1,131200
+Xiaomi,Xiaomi 14 Ultra,16,512,5000,Flagship,1,102100
+OnePlus,OnePlus 11,16,128,5000,Flagship,1,67100
+OnePlus,OnePlus 11R,16,128,5000,Upper-Midrange,1,45200
+Redmi,Redmi 13C 5G,6,128,5000,Budget,1,13800
+Samsung,Galaxy S23 Ultra,12,1024,5000,Flagship,1,108400
+Redmi,Redmi Note 12 Pro 5G,8,256,5000,Midrange,1,27900
+Samsung,Galaxy S23,8,256,3900,Flagship,1,66600
+Samsung,Galaxy S24 Ultra,12,512,5000,Flagship,1,132600
+Other,Poco F6 5G,8,256,5000,Midrange,1,30500
+Samsung,Galaxy S24 Ultra,12,512,5000,Flagship,1,130400
+Motorola,Edge 40 Neo,8,256,5000,Midrange,1,25800
+Oppo,Oppo Find X7 Ultra,16,256,5000,Flagship,1,87300
+Redmi,Redmi 13C 5G,8,256,5000,Budget,1,19300
+Xiaomi,Xiaomi 14,12,512,4610,Flagship,1,69200
+Apple,iPhone 15,6,256,3349,Flagship,1,85200
+Samsung,Galaxy S23,8,256,3900,Flagship,1,66200
+Other,Poco X6 Pro 5G,12,512,5000,Midrange,1,33000
+Xiaomi,Xiaomi 13 Pro,12,256,4820,Flagship,1,76100
+OnePlus,OnePlus Nord CE 3 Lite,8,128,5000,Budget,1,18300
+Samsung,Galaxy S24 Ultra,12,512,5000,Flagship,1,134900
+Other,Poco X6 Pro 5G,8,512,5000,Midrange,1,27500
+Samsung,Galaxy A55 5G,12,128,5000,Midrange,1,45800
+Google Pixel,Pixel 8 Pro,12,256,5050,Flagship,1,99300
+OnePlus,OnePlus Nord CE 3 Lite,8,128,5000,Budget,1,17800
+Redmi,Redmi Note 12 Pro 5G,6,256,5000,Midrange,1,24600
+OnePlus,OnePlus Nord CE4,8,256,5500,Midrange,1,27600
+Apple,iPhone 16,8,256,3561,Flagship,1,87800
+Oppo,Oppo Reno 11 5G,8,128,5000,Midrange,1,30100
+OnePlus,OnePlus Nord CE 3 Lite,8,256,5000,Budget,1,20500
+Apple,iPhone 14 Pro,6,256,3200,Flagship,1,132100
+Oppo,Oppo Reno 11 5G,8,128,5000,Midrange,1,30300
+Apple,iPhone 15,6,128,3349,Flagship,1,78800
+Samsung,Galaxy F14 5G,4,64,6000,Budget,1,12600
+Xiaomi,Xiaomi 12 Pro,8,256,4600,Upper-Midrange,1,52300
+Motorola,Moto G54 5G,8,128,6000,Budget,1,14700
+Oppo,Oppo A79 5G,8,128,5000,Budget,1,18300
+Apple,iPhone 15 Pro,8,256,3274,Flagship,1,142800
+Oppo,Oppo Reno 12 Pro 5G,12,512,5000,Upper-Midrange,1,39300
+Samsung,Galaxy S24 Ultra,12,256,5000,Flagship,1,132300
+Xiaomi,Xiaomi 14,12,512,4610,Flagship,1,68000
+OnePlus,OnePlus Nord CE 3 Lite,8,128,5000,Budget,1,18300
+Realme,Realme 12 Pro+ 5G,12,256,5000,Midrange,1,37500
+Samsung,Galaxy S22 Ultra,12,256,5000,Flagship,1,84900
+Oppo,Oppo Find X7 Ultra,16,512,5000,Flagship,1,86600
+Apple,iPhone 16 Pro Max,8,1024,4685,Flagship,1,158900
+Oppo,Oppo F25 Pro 5G,8,256,5000,Midrange,1,27600
+Google Pixel,Pixel 7a,8,128,4385,Midrange,1,39100
+Apple,iPhone 15 Pro,8,128,3274,Flagship,1,137400
+Apple,iPhone 15,6,512,3349,Flagship,1,89700
+Apple,iPhone 11,4,256,3110,Upper-Midrange,0,50500
+Other,Poco F6 5G,12,512,5000,Midrange,1,37300
+Oppo,Oppo F25 Pro 5G,8,256,5000,Midrange,1,27200
+Samsung,Galaxy F14 5G,6,128,6000,Budget,1,18800
+Motorola,Edge 50 Pro,8,256,4500,Midrange,1,31100
+Oppo,Oppo F25 Pro 5G,8,256,5000,Midrange,1,26400
+Google Pixel,Pixel 6a,6,128,4410,Midrange,1,29500
+Motorola,Moto G54 5G,12,256,6000,Budget,1,23000
+Realme,Realme C55,4,64,5000,Budget,0,11800
+Other,Nothing Phone (2a),12,128,5000,Midrange,1,29700
+OnePlus,OnePlus Nord CE 3 Lite,8,128,5000,Budget,1,18000
+Google Pixel,Pixel 7 Pro,12,128,5000,Flagship,1,73800
+Apple,iPhone 11,4,64,3110,Upper-Midrange,0,40500
+Other,iQOO Neo 9 Pro,12,256,5160,Upper-Midrange,1,42300
+Oppo,Oppo Reno 11 5G,8,256,5000,Midrange,1,33900
+OnePlus,OnePlus 11,8,256,5000,Flagship,1,60200
+Google Pixel,Pixel 6a,6,128,4410,Midrange,1,30100
+Google Pixel,Pixel 6a,6,128,4410,Midrange,1,29500
+Google Pixel,Pixel 8,8,256,4575,Flagship,1,72100
+Vivo,Vivo V30 Pro,8,512,5000,Upper-Midrange,1,45400
+Apple,iPhone 15 Pro Max,8,512,4422,Flagship,1,166000
+Google Pixel,Pixel 8,8,256,4575,Flagship,1,73200
+Apple,iPhone 15,6,128,3349,Flagship,1,82200
+Samsung,Galaxy S24 Ultra,12,256,5000,Flagship,1,127800
+OnePlus,OnePlus Nord CE4,8,128,5500,Midrange,1,24600
+Redmi,Redmi 12 5G,8,128,5000,Budget,1,17200
+Apple,iPhone 15 Pro,8,512,3274,Flagship,1,144900
+Other,Poco X6 Pro 5G,8,512,5000,Midrange,1,28200
+Samsung,Galaxy A35 5G,6,256,5000,Midrange,1,30200
+Realme,Realme C55,6,128,5000,Budget,0,17500
+Redmi,Redmi Note 13 Pro+ 5G,8,512,5000,Midrange,1,32700
+Realme,Realme 11 Pro 5G,8,256,5000,Midrange,1,27600
+Vivo,Vivo V30 Pro,8,512,5000,Upper-Midrange,1,44500
+Xiaomi,Xiaomi 12 Pro,8,256,4600,Upper-Midrange,1,53100
+Oppo,Oppo Reno 12 Pro 5G,12,512,5000,Upper-Midrange,1,39800
+Oppo,Oppo Reno 11 5G,8,128,5000,Midrange,1,30100
+Vivo,Vivo V29 5G,12,128,4600,Midrange,1,37600
+Google Pixel,Pixel 9,12,128,4700,Flagship,1,80900
+Motorola,Edge 40 Neo,12,256,5000,Midrange,1,30600
+Other,Nothing Phone (2),12,512,4700,Upper-Midrange,1,51700
+Motorola,Moto G54 5G,8,128,6000,Budget,1,15300
+Oppo,Oppo F25 Pro 5G,8,256,5000,Midrange,1,27500
+Motorola,Edge 40 Neo,12,128,5000,Midrange,1,27700
+Google Pixel,Pixel 7 Pro,12,256,5000,Flagship,1,76300
+Apple,iPhone 14 Pro,6,1024,3200,Flagship,1,145700
+OnePlus,OnePlus 11R,8,256,5000,Upper-Midrange,1,38500
+OnePlus,OnePlus Nord CE4,8,256,5500,Midrange,1,28200
+Realme,Realme 12 Pro+ 5G,8,128,5000,Midrange,1,30500
+Google Pixel,Pixel 9,12,128,4700,Flagship,1,78900
+Other,Nothing Phone (2a),8,256,5000,Midrange,1,26900
+Google Pixel,Pixel 7 Pro,12,128,5000,Flagship,1,76500
+Samsung,Galaxy S23 Ultra,12,1024,5000,Flagship,1,112200
+Oppo,Oppo Find X7 Ultra,16,256,5000,Flagship,1,84000
+Realme,Realme C55,4,64,5000,Budget,0,12200
+Oppo,Oppo F25 Pro 5G,8,128,5000,Midrange,1,23600
+OnePlus,OnePlus Nord CE4,8,128,5500,Midrange,1,25300
+Other,Poco X6 Pro 5G,12,512,5000,Midrange,1,32700
+Vivo,Vivo X100 Pro,16,512,5400,Flagship,1,90300
+Google Pixel,Pixel 8,8,128,4575,Flagship,1,71200
+Redmi,Redmi Note 13 5G,6,128,5000,Budget,1,17500
+Realme,Realme C55,6,64,5000,Budget,0,14300
+Realme,Realme Narzo 70 Pro,8,128,5000,Budget,1,19200
+Motorola,Edge 50 Pro,8,256,4500,Midrange,1,31700
+Samsung,Galaxy F14 5G,6,128,6000,Budget,1,18700
+Motorola,Moto G84 5G,12,256,5000,Budget,1,18500
+Google Pixel,Pixel 8 Pro,12,128,5050,Flagship,1,101600
+OnePlus,OnePlus 11,12,128,5000,Flagship,1,61100
+Motorola,Edge 50 Ultra,16,512,4500,Upper-Midrange,1,59800
+Apple,iPhone 12,4,256,2815,Flagship,1,62500
+Redmi,Redmi 12 5G,8,128,5000,Budget,1,16700
+Motorola,Moto G84 5G,12,256,5000,Budget,1,18900
+Apple,iPhone 14 Pro,6,1024,3200,Flagship,1,145400
+OnePlus,OnePlus 12R,16,128,5500,Upper-Midrange,1,50800
+Other,Poco X6 Pro 5G,8,256,5000,Midrange,1,25300
+Apple,iPhone 16 Pro Max,8,256,4685,Flagship,1,141100
+OnePlus,OnePlus 12R,12,128,5500,Upper-Midrange,1,46100
+Apple,iPhone 14 Pro,6,256,3200,Flagship,1,132200
+Samsung,Galaxy S24 Ultra,12,1024,5000,Flagship,1,137700
+Vivo,Vivo T3 5G,8,128,5000,Budget,1,20100
+Samsung,Galaxy A35 5G,8,128,5000,Midrange,1,31000
+Vivo,Vivo V29 5G,8,128,4600,Midrange,1,31200
+Samsung,Galaxy M34 5G,8,128,6000,Budget,1,21300
+Xiaomi,Xiaomi 12 Pro,8,256,4600,Upper-Midrange,1,54500
+Redmi,Redmi 12 5G,6,128,5000,Budget,1,14400
+OnePlus,OnePlus 11,16,128,5000,Flagship,1,67000
+Samsung,Galaxy S23 Ultra,12,256,5000,Flagship,1,107800
+Oppo,Oppo Reno 11 5G,8,128,5000,Midrange,1,30300
+Apple,iPhone 11,4,64,3110,Upper-Midrange,0,40800
+Apple,iPhone 14 Pro,6,512,3200,Flagship,1,138600
+Redmi,Redmi 13C 5G,4,256,5000,Budget,1,13800
+Realme,Realme 11 Pro 5G,8,128,5000,Midrange,1,24200
+Samsung,Galaxy S22 Ultra,12,512,5000,Flagship,1,87200
+Samsung,Galaxy S24,8,512,4000,Flagship,1,80200
+Redmi,Redmi 13C 5G,4,128,5000,Budget,1,10900
+Apple,iPhone 14,6,512,3279,Flagship,1,81300
+Samsung,Galaxy S21 FE,8,128,4500,Upper-Midrange,1,40200
+Realme,Realme C55,4,128,5000,Budget,0,14800
+Samsung,Galaxy S23 Ultra,12,1024,5000,Flagship,1,109400
+Apple,iPhone 16 Pro,8,128,3582,Flagship,1,120900
+Samsung,Galaxy M34 5G,6,128,6000,Budget,1,18900
+Oppo,Oppo A79 5G,8,128,5000,Budget,1,17800
+OnePlus,OnePlus 12R,8,128,5500,Upper-Midrange,1,39900
+Oppo,Oppo Reno 11 5G,8,128,5000,Midrange,1,30500
+OnePlus,OnePlus 12,12,512,5400,Flagship,1,69700
+Other,Nothing Phone (2),12,128,4700,Upper-Midrange,1,44900
+OnePlus,OnePlus 12,12,512,5400,Flagship,1,68200
+OnePlus,OnePlus Nord CE 3 Lite,8,256,5000,Budget,1,21100
+Apple,iPhone 14 Pro,6,256,3200,Flagship,1,133200
+Samsung,Galaxy A55 5G,8,128,5000,Midrange,1,39400
+Vivo,Vivo Y200e 5G,8,128,5000,Budget,1,20600
+Google Pixel,Pixel 9 Pro XL,16,128,5060,Flagship,1,126600
+Samsung,Galaxy S24 Ultra,12,512,5000,Flagship,1,136100
+Oppo,Oppo Reno 11 5G,8,256,5000,Midrange,1,32700
+Apple,iPhone 12,4,128,2815,Flagship,1,55500
+Other,iQOO Neo 9 Pro,12,128,5160,Upper-Midrange,1,40100
+Realme,Realme Narzo 70 Pro,8,256,5000,Budget,1,21900
+Xiaomi,Xiaomi 14,12,512,4610,Flagship,1,70700
+Realme,Realme GT 6,8,512,5500,Upper-Midrange,1,44400
+OnePlus,OnePlus Nord CE 3 Lite,8,128,5000,Budget,1,18500
+Apple,iPhone 15,6,512,3349,Flagship,1,94400
+Realme,Realme C55,6,64,5000,Budget,0,14100
+OnePlus,OnePlus 11,12,128,5000,Flagship,1,61300
+Other,Poco F6 5G,12,512,5000,Midrange,1,36700
+Vivo,Vivo V29 5G,12,256,4600,Midrange,1,40900
+Realme,Realme C55,4,128,5000,Budget,0,14700
+Redmi,Redmi Note 13 Pro+ 5G,8,512,5000,Midrange,1,32400
+Oppo,Oppo A79 5G,8,128,5000,Budget,1,17700
+OnePlus,OnePlus Nord 4,8,128,5500,Midrange,1,30800
+Oppo,Oppo A79 5G,8,128,5000,Budget,1,18500
+Samsung,Galaxy S22 Ultra,12,512,5000,Flagship,1,89200
+OnePlus,OnePlus 12R,12,256,5500,Upper-Midrange,1,47100
+Vivo,Vivo T3 5G,8,128,5000,Budget,1,19700
+Apple,iPhone 14,6,512,3279,Flagship,1,82900
+Apple,iPhone 15,6,128,3349,Flagship,1,81900
+Google Pixel,Pixel 9,12,128,4700,Flagship,1,81300
+Realme,Realme GT 6,12,256,5500,Upper-Midrange,1,45800
+Samsung,Galaxy S21 FE,8,256,4500,Upper-Midrange,1,43800
+OnePlus,OnePlus 12R,8,256,5500,Upper-Midrange,1,42600
+Samsung,Galaxy S24 Ultra,12,1024,5000,Flagship,1,139900
+Samsung,Galaxy S24,8,256,4000,Flagship,1,76200
+OnePlus,OnePlus 11,16,128,5000,Flagship,1,68500
+Oppo,Oppo Reno 11 5G,8,128,5000,Midrange,1,29400
+Samsung,Galaxy M34 5G,8,128,6000,Budget,1,21700
+Realme,Realme Narzo 70 Pro,8,256,5000,Budget,1,21700
+Google Pixel,Pixel 8 Pro,12,256,5050,Flagship,1,103000
+Apple,iPhone 12,4,128,2815,Flagship,1,54800
+Apple,iPhone 13,4,512,3227,Flagship,1,70900
+Google Pixel,Pixel 6a,6,128,4410,Midrange,1,30100
+OnePlus,OnePlus Nord CE 3 Lite,8,256,5000,Budget,1,21100
+Samsung,Galaxy F14 5G,4,64,6000,Budget,1,13100
+Vivo,Vivo V29 5G,12,256,4600,Midrange,1,39600
+OnePlus,OnePlus 11,8,256,5000,Flagship,1,60500
+Realme,Realme 12 Pro+ 5G,8,128,5000,Midrange,1,30800
+Redmi,Redmi 12 5G,4,128,5000,Budget,1,11700
+Oppo,Oppo A79 5G,8,128,5000,Budget,1,17500
+Xiaomi,Xiaomi 12 Pro,12,256,4600,Upper-Midrange,1,59300
+Apple,iPhone 15 Pro,8,1024,3274,Flagship,1,150600
+OnePlus,OnePlus 11,12,256,5000,Flagship,1,63200
+Apple,iPhone 16 Pro,8,512,3582,Flagship,1,130700
+Other,Poco F6 5G,12,512,5000,Midrange,1,37500
+Xiaomi,Xiaomi 13 Pro,12,256,4820,Flagship,1,75900
+Google Pixel,Pixel 8,8,256,4575,Flagship,1,73300
+OnePlus,OnePlus 12,12,256,5400,Flagship,1,63200
+Other,iQOO 12 5G,16,256,5000,Flagship,1,56900
+Motorola,Edge 40 Neo,12,256,5000,Midrange,1,31500
+Samsung,Galaxy S21 FE,8,128,4500,Upper-Midrange,1,38800
+Apple,iPhone 14 Pro,6,256,3200,Flagship,1,139100
+Vivo,Vivo V30 Pro,8,512,5000,Upper-Midrange,1,45200
+Realme,Realme 11 Pro 5G,12,128,5000,Midrange,1,28400
+Xiaomi,Xiaomi 13 Pro,12,256,4820,Flagship,1,76500
+OnePlus,OnePlus Nord CE4,8,128,5500,Midrange,1,24700
+Apple,iPhone 15 Pro Max,8,1024,4422,Flagship,1,174900
+Samsung,Galaxy S24 Ultra,12,512,5000,Flagship,1,136100
+Apple,iPhone 14 Pro,6,256,3200,Flagship,1,138500
+Samsung,Galaxy F14 5G,4,64,6000,Budget,1,12700
+OnePlus,OnePlus Nord CE4,8,128,5500,Midrange,1,24300
+Apple,iPhone 16 Pro,8,1024,3582,Flagship,1,134900
+Realme,Realme Narzo 70 Pro,8,128,5000,Budget,1,18500
+Samsung,Galaxy S21 FE,8,128,4500,Upper-Midrange,1,40100
+Samsung,Galaxy F14 5G,4,128,6000,Budget,1,15600
+Samsung,Galaxy S23 Ultra,12,1024,5000,Flagship,1,111900
+Google Pixel,Pixel 7 Pro,12,256,5000,Flagship,1,77300
+Apple,iPhone 13,4,128,3227,Flagship,1,59200
+Samsung,Galaxy A35 5G,6,256,5000,Midrange,1,30500
+Oppo,Oppo A79 5G,8,128,5000,Budget,1,18200
+Apple,iPhone 14 Pro,6,512,3200,Flagship,1,143500
+Redmi,Redmi Note 13 5G,6,256,5000,Budget,1,20500
+Samsung,Galaxy M34 5G,6,128,6000,Budget,1,18900
+OnePlus,OnePlus 11R,16,128,5000,Upper-Midrange,1,46100
+Other,Nothing Phone (2a),12,128,5000,Midrange,1,28400
+Redmi,Redmi Note 13 5G,6,256,5000,Budget,1,21000
+OnePlus,OnePlus 11,12,256,5000,Flagship,1,64700
+Samsung,Galaxy A55 5G,8,256,5000,Midrange,1,43200
+Redmi,Redmi Note 13 5G,8,256,5000,Budget,1,23000
+OnePlus,OnePlus 11,8,256,5000,Flagship,1,59600
+Samsung,Galaxy S23 Ultra,12,1024,5000,Flagship,1,111300
+Samsung,Galaxy M34 5G,6,128,6000,Budget,1,19300
+Other,iQOO Neo 9 Pro,12,256,5160,Upper-Midrange,1,44100
+Samsung,Galaxy A55 5G,8,128,5000,Midrange,1,40700
+Vivo,Vivo X100 Pro,16,512,5400,Flagship,1,92400
+Oppo,Oppo Reno 12 Pro 5G,12,256,5000,Upper-Midrange,1,36100
+Motorola,Moto G84 5G,12,256,5000,Budget,1,19000
+Other,Poco F6 5G,8,256,5000,Midrange,1,30000
+Apple,iPhone 16 Pro Max,8,256,4685,Flagship,1,143600
+OnePlus,OnePlus 12R,12,128,5500,Upper-Midrange,1,45800
+Apple,iPhone 14,6,256,3279,Flagship,1,75400
+Other,Nothing Phone (2),12,512,4700,Upper-Midrange,1,51700
+Vivo,Vivo V29 5G,8,256,4600,Midrange,1,34900
+OnePlus,OnePlus Nord 4,8,128,5500,Midrange,1,29300
+Other,Poco F6 5G,12,512,5000,Midrange,1,38300
+OnePlus,OnePlus 12,12,256,5400,Flagship,1,66400
+Samsung,Galaxy S23,8,256,3900,Flagship,1,68300
+Samsung,Galaxy M34 5G,8,256,6000,Budget,1,24200
+Other,Nothing Phone (2),8,256,4700,Upper-Midrange,1,42600
+Apple,iPhone 16,8,256,3561,Flagship,1,86600
+Vivo,Vivo V30 Pro,12,256,5000,Upper-Midrange,1,47000
+Xiaomi,Xiaomi 14,12,512,4610,Flagship,1,68200
+Redmi,Redmi 13C 5G,4,256,5000,Budget,1,14200
+Other,Nothing Phone (2a),12,128,5000,Midrange,1,28500
+Apple,iPhone 14,6,512,3279,Flagship,1,80300
+Apple,iPhone 15,6,256,3349,Flagship,1,84900
+Vivo,Vivo Y200e 5G,6,128,5000,Budget,1,17600
+Realme,Realme 12 Pro+ 5G,8,128,5000,Midrange,1,30700
+Xiaomi,Xiaomi 13 Pro,12,256,4820,Flagship,1,75300
+Apple,iPhone 15 Pro,8,128,3274,Flagship,1,136000
+Apple,iPhone 15,6,256,3349,Flagship,1,84700
+Samsung,Galaxy A35 5G,6,128,5000,Midrange,1,27700
+Apple,iPhone 16 Pro,8,256,3582,Flagship,1,123800
+Redmi,Redmi Note 12 Pro 5G,8,128,5000,Midrange,1,24500
+Xiaomi,Xiaomi 14,12,512,4610,Flagship,1,68800
+Apple,iPhone 13,4,128,3227,Flagship,1,61400
+Realme,Realme GT 6,16,512,5500,Upper-Midrange,1,54300
+Redmi,Redmi Note 13 5G,6,256,5000,Budget,1,20500
+Realme,Realme 11 Pro 5G,12,128,5000,Midrange,1,28400
+Other,Poco F6 5G,12,256,5000,Midrange,1,35500
+Redmi,Redmi 12 5G,4,256,5000,Budget,1,15000
+OnePlus,OnePlus 11,12,128,5000,Flagship,1,61800
+OnePlus,OnePlus 11,12,128,5000,Flagship,1,61100
+Other,Nothing Phone (2a),8,128,5000,Midrange,1,24000
+Realme,Realme C55,4,128,5000,Budget,0,15100
+Google Pixel,Pixel 7 Pro,12,128,5000,Flagship,1,75500
+Apple,iPhone 16,8,512,3561,Flagship,1,93100
+Other,Nothing Phone (2a),12,256,5000,Midrange,1,32000
+Other,Poco X6 Pro 5G,8,256,5000,Midrange,1,25500
+Apple,iPhone 12,4,128,2815,Flagship,1,56000
+Other,Poco F6 5G,12,512,5000,Midrange,1,38800
+Samsung,Galaxy S23 Ultra,12,256,5000,Flagship,1,106400
+Motorola,Moto G84 5G,12,256,5000,Budget,1,19500
+OnePlus,OnePlus 12,12,512,5400,Flagship,1,67900
+Redmi,Redmi Note 13 5G,6,256,5000,Budget,1,21600
+Google Pixel,Pixel 8 Pro,12,128,5050,Flagship,1,97500
+Apple,iPhone 14,6,512,3279,Flagship,1,83400
+Other,Poco F6 5G,12,256,5000,Midrange,1,34500
+Google Pixel,Pixel 8 Pro,12,512,5050,Flagship,1,101900
+Google Pixel,Pixel 8,8,256,4575,Flagship,1,74600
+Apple,iPhone 15,6,512,3349,Flagship,1,94200
+Vivo,Vivo T3 5G,8,256,5000,Budget,1,23600
+Samsung,Galaxy S23 Ultra,12,512,5000,Flagship,1,108900
+Apple,iPhone 15 Pro,8,128,3274,Flagship,1,131900
+Google Pixel,Pixel 7 Pro,12,256,5000,Flagship,1,76200
+Motorola,Moto G54 5G,12,256,6000,Budget,1,23100
+Redmi,Redmi Note 13 5G,8,128,5000,Budget,1,20800
+Oppo,Oppo Find X7 Ultra,16,256,5000,Flagship,1,86300
+Motorola,Edge 50 Pro,12,256,4500,Midrange,1,37800
+Samsung,Galaxy S23,8,128,3900,Flagship,1,65000
+OnePlus,OnePlus 12,12,256,5400,Flagship,1,65400
+Google Pixel,Pixel 6a,6,128,4410,Midrange,1,29400
+Samsung,Galaxy A35 5G,6,256,5000,Midrange,1,31100
+OnePlus,OnePlus Nord CE4,8,128,5500,Midrange,1,24800
+Samsung,Galaxy S24,8,512,4000,Flagship,1,82600
+Vivo,Vivo V29 5G,12,128,4600,Midrange,1,35800
+Samsung,Galaxy A55 5G,8,256,5000,Midrange,1,42200
+Samsung,Galaxy A55 5G,12,128,5000,Midrange,1,43500
+Realme,Realme C55,8,64,5000,Budget,0,17000
+Xiaomi,Xiaomi 14 Ultra,16,512,5000,Flagship,1,103000
+Samsung,Galaxy A35 5G,6,256,5000,Midrange,1,30600
+Apple,iPhone 11,4,256,3110,Upper-Midrange,0,53200
+Apple,iPhone 16,8,512,3561,Flagship,1,90200
+Apple,iPhone 15 Pro Max,8,512,4422,Flagship,1,170400
+Other,iQOO 12 5G,12,256,5000,Flagship,1,54000
+Oppo,Oppo Find X7 Ultra,16,256,5000,Flagship,1,83500
+Samsung,Galaxy S24 Ultra,12,1024,5000,Flagship,1,132200
+OnePlus,OnePlus Nord 4,12,128,5500,Midrange,1,35500
